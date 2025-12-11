@@ -1,46 +1,58 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Test build title2</title>
+    <title>Pache4</title>
 
-    <meta name="title" content="Test build title2">
-    <meta name="description" content="Test description">
+    <meta name="title" content="Pache4">
+    <meta name="description" content="fakdgjfasfa">
 
-    <meta property="og:title" content="Test build title2">
-    <meta property="og:description" content="Test description">
+    <meta property="og:title" content="Pache4">
+    <meta property="og:description" content="fakdgjfasfa">
     <meta property="og:url" content="#">
     
-    <meta name="twitter:title" content="Test build title2">
-    <meta name="twitter:description" content="Test description">
+    <meta name="twitter:title" content="Pache4">
+    <meta name="twitter:description" content="fakdgjfasfa">
     
     
     <link href="#" rel="canonical">
 
+    <!-- Deployment Type: mixed_access -->
             <meta name="robots" content="index, follow">
+        <script>
+            (function() {
+                var hostname = window.location.hostname;
+                if (hostname.includes('.pages.dev') || hostname.includes('pages.dev')) {
+                    var metaRobots = document.querySelector('meta[name="robots"]');
+                    if (!metaRobots) {
+                        metaRobots = document.createElement('meta');
+                        metaRobots.name = 'robots';
+                        document.head.appendChild(metaRobots);
+                    }
+                    metaRobots.setAttribute('content', 'noindex, nofollow');
+                    console.log('Robots meta updated to noindex due to pages.dev domain');
+                }
+            })();
+        </script>
                 <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arial%2C+sans-serif&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --d-ffff2a: #81d742;
-            --r-6a7b15: #ffffff;
-            --kz-faq: #fff;
-            --d-ffff2a-faq: #13212d;
-            --a-07879c: #e0c61f;
-            --a-07879c-hover: #ecbe15;
-            --p-be0ced: #7cae8d;
+            --d-a8bafa: #cbff23;
+            --k-cbf258: #ffffff;
+            --m-1aba74: #8224e3;
+            --d-dfddd0: #7cae8d;
         }
 
         * {
             box-sizing: border-box;
         }
-
 * {
     scrollbar-width: thin;           
     scrollbar-color: #cfcfcf transparent;
@@ -63,15 +75,14 @@
 *::-webkit-scrollbar-thumb:hover {
     background: #b5b5b5;
 }
-
         body {
             -webkit-font-smoothing: antialiased;
-            background-color: var(--d-ffff2a);
-            color: var(--r-6a7b15);
-            font-family: "Roboto", sans-serif;
+            background-color: var(--d-a8bafa);
+            color: var(--k-cbf258);
+            font-family: "DM Sans", sans-serif;
             font-size: 16px;
             height: auto;
-            line-height: 1;
+            line-height: 1.5;
             margin: 0;
             outline: 0;
             text-align: left;
@@ -79,11 +90,13 @@
             position: relative;
             scroll-behavior: smooth;
             text-rendering: optimizeSpeed;
+            overflow-x: hidden;
         }
 
         h1, h2, h3, h4, h5, h6 {
             letter-spacing: .03em;
             font-weight: 700;
+            color: var(--k-cbf258);
         }
 
         h1 {
@@ -102,76 +115,47 @@
             line-height: 24px;
         }
 
-        h4 {
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        h5 {
-            font-size: 16px;
-            line-height: 20px;
-        }
-
         p {
             line-height: 150%;
             font-weight: 500;
         }
-        li{
-            margin-bottom:.9em;
-        }
+
         a {
-            color: #e0c61f;
+            color: var(--m-1aba74);
         }
 
         a:active, a:focus, a:hover {
             outline: 0;
         }
-
-        table {
-            border-collapse: collapse;
-            margin: 1rem auto;
-            padding-bottom: 1rem;
-            text-align: center;
-            display:table;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding: 11px 15px;
-            border: 2px solid var(--p-be0ced);
-            border-radius: 18px;
-            width: 100%;
+        .r-91d0fe p img{
+            margin:auto;
+                max-height: 500px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+        }
+        .r-91d0fe {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        table td {
-            padding: 11px 15px;
-            border: 2px solid var(--p-be0ced);
-            border-style: none solid solid none;
-            background: #e0d345;
-            white-space: normal;
-        }
-
-        table tr:nth-child(odd) td {
-            background: #c6c6c6;
-        }
-
-        table tr:nth-child(even) td {
-            background: #a5d686;
-        }
-
-        .m-799305 {
+        /* Mobile Header */
+        .k-b6126a {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: var(--d-ffff2a);
-            border-bottom: 1px solid var(--p-be0ced);
+            background: var(--d-a8bafa);
+            border-bottom: 1px solid var(--d-dfddd0);
             padding: 15px 20px;
             z-index: 1000;
             align-items: center;
             justify-content: space-between;
         }
 
-        .y-1cdaa8 {
+        .g-90e05e {
             width: 30px;
             height: 25px;
             display: flex;
@@ -181,966 +165,1012 @@
             z-index: 1001;
         }
 
-        .y-1cdaa8 span {
+        .g-90e05e span {
             width: 100%;
             height: 3px;
-            background: var(--r-6a7b15);
+            background: var(--k-cbf258);
             transition: all 0.3s;
             border-radius: 2px;
         }
 
-        .y-1cdaa8.active span:nth-child(1) {
+        .g-90e05e.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .y-1cdaa8.active span:nth-child(2) {
+        .g-90e05e.active span:nth-child(2) {
             opacity: 0;
         }
 
-        .y-1cdaa8.active span:nth-child(3) {
+        .g-90e05e.active span:nth-child(3) {
             transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .n-76b361 {
+        .e-3e71c5 {
             max-height: 40px;
         }
-
-        header.z-27f0a4 {
-            display: none!important;
+        
+        .e-3e71c5 img {
+            max-height: 40px;
         }
-
-        .g-c55e17 {
-            position: fixed;
-            padding: 30px;
-            display: flex;
-            height: 100vh;
+        
+        /* Mobile Menu Overlay */
+        .g-84522b.mobile-menu {
             flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            justify-content: start;
+            gap: 0px;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 80%;
             max-width: 300px;
-            width: 100%;
-            border-right: 1px solid var(--p-be0ced);
-            background: var(--d-ffff2a);
+            height: 100vh;
+            background: var(--d-a8bafa);
+            padding: 80px 20px 20px;
+            transition: left 0.3s ease;
             z-index: 999;
             overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
         }
-
-        .q-c31f25 {
-            margin: 15px 0;
+        
+        .g-84522b.mobile-menu.active {
+            left: 0;
         }
-
-        .q-c31f25 img {
-            max-width: 100%;
-            height: auto;
+        
+        .g-84522b.mobile-menu li {
+            margin-bottom: 15px;
         }
-
-        .h-3f5a68 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-        }
-
-        .q-5bc6f6 {
-            color: #ffffff !important;
-            background: #dd9933;
-            border: 1px solid var(--p-be0ced);
-            text-decoration: none;
-            max-height: 48px;
-            padding: 12px 20px;
-            border-radius: 40px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
+        
+        .g-84522b.mobile-menu li a {
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
             text-align: center;
-            justify-content: center;
-            width: 100%;
-            transition: .6s;
-            font-weight: bold;
-            width: -webkit-fill-available;
         }
 
-        .c-69641b {
-            color: #ffffff;
-            background: #1e73be;
-            border: 1px solid var(--p-be0ced);
-            text-decoration: none;
-            max-height: 48px;
-            padding: 12px 20px;
-            border-radius: 40px;
-            font-size: 16px;
+        /* Desktop Header */
+        header.z-f09c7b {
+            background: #a36225;
+            border-bottom: 1px solid var(--d-dfddd0);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        header.z-f09c7b .r-91d0fe {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
-            justify-content: center;
-            width: -webkit-fill-available;
-            transition: .6s;
-            font-weight: bold;
         }
 
-        .q-5bc6f6:hover, .c-69641b:hover {
-            transition: .6s;
-            transform: scale(1.05);
+        .y-22a9e4 img {
+            max-height: 50px;
         }
 
-        .button {
-            color: #ffffff !important;
-            background: #dd9933;
-            border: 1px solid var(--p-be0ced);
-            text-decoration: none;
-            max-height: 48px;
-            padding: 12px 20px;
-            border-radius: 40px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            width: 100%;
-            transition: .6s;
-            font-weight: bold;
-                width: fit-content;
-    min-width: 320px;
-    margin:auto;
-        }
-
-        .btn {
-            color: #ffffff;
-            background: #1e73be;
-            border: 1px solid var(--p-be0ced);
-            text-decoration: none;
-            max-height: 48px;
-            padding: 12px 20px;
-            border-radius: 40px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-                width: fit-content;
-    min-width: 320px;
-            transition: .6s;
-            font-weight: bold;
-             margin:auto;
-        }
-
-        .button:hover, .btn:hover {
-            transition: .6s;
-            transform: scale(1.05);
-        }
-
-        .w-8c6ecc {
+        .g-84522b {
             list-style: none;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
+            gap: 30px;
+            margin: 0;
         }
 
-        .p-897297 .w-8c6ecc {
-            list-style: inherit;
-            padding-left: 40px;
-        }
-
-        .w-8c6ecc li a {
-            display: flex;
-            gap: 12px;
-            align-items: center;
+        .g-84522b li a {
             text-decoration: none;
-            justify-content: center;
+            font-weight: 600;
+            transition: color 0.3s;
         }
 
-        .w-8c6ecc li a:hover {
+        .g-84522b li a:hover {
             text-decoration: underline;
         }
 
-        .b-51fe74 {
-            width: 24px;
-            height: 24px;
-            background: #e0c61f;
-            -webkit-mask-size: contain;
-            mask-size: contain;
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-            display: inline-block;
+        /* Main Content */
+        .e-2ef116 {
+            padding: 40px 0;
         }
-
-        .t-73c9fb {
-            padding: 20px 0px 0px 300px;
-        }
-
-       
-
-        .e-6b4024 {
-            padding: 0 24px;
-        }
-
-        .e-6b4024 img {
-            width: 100%;
-            border-radius: 18px;
-        }
-
-        .e-6b4024 p img {
-            margin: auto;
-            width: 100%;
-            max-height: 500px;
-            width: fit-content;
-            margin: 0 auto;
-            display: flex;
-        }
-
-        .h-21a849 {
-            display: flex;
-            gap: 20px;
-            flex-direction: row;
-            overflow-x: auto;
-            padding: 10px 0;
-            list-style: none;
-        }
-
-        .h-21a849 a {
-            border: 2px solid #80ba39;
-            color: #80ba39;
-            font-weight: bold;
+        figure img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+}
+          .e-9324f6 {
+            color: #ffffff !important;
+            background: #d341a0;
+            border: 1px solid var(--d-dfddd0);
+            text-decoration: none;
+            max-height: 48px;
+            padding: 12px 20px;
             border-radius: 40px;
-            padding: 5px 10px;
-            text-decoration: none;
-            transition: .5s;
-            text-transform: uppercase;
-            white-space: nowrap;
+            font-size: 16px;
             display: flex;
-            gap: 12px;
             align-items: center;
-        }
-
-        .h-21a849 a:hover {
-            text-decoration: none;
-            transition: .5s;
-            filter: hue-rotate(45deg);
-        }
-
-        .h-21a849 .b-51fe74 {
-            width: 20px;
-            height: 20px;
-        }
-
-        .m-01224f {
-            display: flex;
-            gap: 12px;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .a-ddef9a {
-            width: 15%;
-            position: relative;
-            border-radius: 18px;
-            overflow: hidden;
-        }
-
-        .g-26ab82 {
-            position: absolute;
+            text-align: center;
+            justify-content: center;
             width: 100%;
-            height: 100%;
-            top: 0;
-            background: #080808ad;
+            transition: .6s;
+            font-weight: bold;
+            width: -webkit-fill-available;
+        }
+
+        .g-278f99 {
+            color: #ffffff;
+            background: #38b745;
+            border: 1px solid var(--d-dfddd0);
+            text-decoration: none;
+            max-height: 48px;
+            padding: 12px 20px;
+            border-radius: 40px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: -webkit-fill-available;
+            transition: .6s;
+            font-weight: bold;
+        }
+
+        .e-9324f6:hover, .g-278f99:hover {
+            transition: .6s;
+            transform: scale(1.05);
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table tr:nth-child(odd) {
+            background: #bfbfbf;
+        }
+        table tr:nth-child(even) {
+            background: #ffffff;
+        }
+        table td, table th {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid var(--d-dfddd0);
+        }
+        /* Casino Items from User Request */
+        .w-2cbd62 {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            opacity: 0;
-            transition: .6s;
-        }
-
-        .g-26ab82 .c-69641b, .g-26ab82 .q-5bc6f6 {
-            width: fit-content;
-        }
-
-        .a-ddef9a:hover .g-26ab82 {
-            opacity: 1;
-            transition: .6s;
-        }
-
-        .a-ddef9a .c-2abe16 {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            right: 0;
-            padding: 3px;
-            color: #ffffff;
-            background: #1e73be;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .x-e7b276 {
-            width: 100%;
+            gap: 15px;
             margin: 0 auto;
+            margin: 20px 0;
         }
 
-        .a-c128e6 {
-            border: 1px solid var(--p-be0ced);
-            border-radius: 18px;
+        .y-1dbe2c {
+            display: grid;
+            grid-template-columns: 150px .7fr .7fr 100px 140px;
+            gap: 20px;
+            align-items: center;
+            background: #bfbfbf;
+            color: #333;
+            border-radius: 10px;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+        }
+        .y-1dbe2c ul{
+            margin-bottom: 0!important;
+        }
+        .y-1dbe2c ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .y-1dbe2c ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 8px;
+        }
+
+        .y-1dbe2c ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        .y-1dbe2c.casino-border {
+            border-color: #FFD54F;
+        }
+
+        .h-6d4b8d {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .h-6d4b8d img {
+            max-height: 100px;
+            margin-bottom: 5px;
+        }
+
+        .y-472091 {
+            font-size: 14px;
+            color: #333;
+            display: none;
+        }
+
+        .r-e851c2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            line-height: 120%;
+            margin-bottom: 0;
+            letter-spacing: -0.02em;
+            text-transform: capitalize;
+            color: #333;
+        }
+
+        .r-e851c2 ul {
+            margin: 5px 0 0;
+            padding-left: 18px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .r-e851c2 li {
+            margin-bottom: 3px;
+        }
+
+        .c-398a6e {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .c-398a6e .n-114a17 {
+            display: block;
+            font-size: 14px;
+            color: #f5c518;
+        }
+
+        .x-26ef6c {
+            text-align: right;
+        }
+
+        .s-b99bc9 {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #23938e;
+            color: #ffffff !important;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .s-b99bc9:hover {
+            transition:.4s;
+           transform:scale(1.05);
+        }
+
+        /* Author Box */
+        .n-a74635 {
+            background: #dd3333;
+            border-radius: 8px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .v-36ebff {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .m-5a926c {
+            flex: 1;
+        }
+
+        .m-5a926c a {
+            text-decoration: none;
+            color: var(--k-cbf258);
+            font-weight: bold;
+        }
+
+        .m-5a926c a:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ Section */
+        .e-0af955 {
+            margin: 40px 0;
+        }
+
+        .w-956f63 {
+            border: 1px solid var(--d-dfddd0);
+            border-radius: 8px;
             margin-bottom: 15px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            background: #0066bf;
         }
 
-        .h-75ba47 {
-            background: #e0d345;
+        .b-d6fd5a {
             padding: 15px 20px;
             margin: 0;
             cursor: pointer;
             font-weight: 600;
             font-size: 16px;
             position: relative;
-            transition: all 0.3s ease;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .h-75ba47:hover {
-            background: #e0d345;
+        .w-956f63.active .b-d6fd5a {
+            color: #dd9933;
         }
 
-        .h-75ba47::after {
+        .b-d6fd5a:hover {
+            background: rgba(0,0,0,0.02);
+        }
+
+        .b-d6fd5a::after {
             content: '+';
             position: absolute;
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
             font-size: 20px;
-            font-weight: 300;
-            transition: all 0.3s ease;
+            transition: transform 0.3s;
         }
 
-        .a-c128e6.active .h-75ba47::after {
+        .w-956f63.active .b-d6fd5a::after {
             content: '−';
-            transform: translateY(-50%) rotate(0deg);
+            transform: rotate(180deg);
         }
 
-        .e-b551c8 {
+        .y-82a3ce {
             max-height: 0;
             padding: 0 20px;
             margin: 0;
             overflow: hidden;
-            background: #e0d345;
             transition: all 0.4s ease;
             opacity: 0;
             line-height: 1.6;
         }
 
-        .a-c128e6.active .e-b551c8 {
+        .w-956f63.active .y-82a3ce {
             max-height: 500px;
             padding: 15px 20px;
             opacity: 1;
         }
 
-        .a-c128e6.active {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        /* Footer */
+        footer{
+                        background: #1e73be;
         }
-
-        .c-cb1409 {
-            background: #e0d345;
-            display: flex;
-            justify-content: center;
-            padding: 40px;
-            gap: 20px 40px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            list-style:none;
-            margin: 0;
-            border-bottom: 1px solid #C4C9DA;
-        }
-
-        .c-cb1409 img, .s-68c086 img {
-            max-height: 60px;
-        }
-
-        .s-68c086 {
-            display: flex;
-            justify-content: center;
-            padding: 40px;
-             list-style:none;
-            gap: 20px 40px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            margin: 0;
-            border-bottom: 1px solid #C4C9DA;
-        }
-
-        .r-aca198 {
+        .q-813dd7 {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 40px 20px;
-            margin: 0;
-            background: #e0d345;
+        
             list-style: none;
-            text-align:center;
-        }
-
-        .r-aca198 a {
-            text-decoration: underline;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .h-d11e27 {
-            padding: 20px;
             margin: 0;
+        }
+
+        .q-813dd7 a {
+            text-decoration: none;
             text-align: center;
-            border-top: 1px solid #C4C9DA;
+            color: #ffffff !important;
         }
 
-
-        .m-799305-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 998;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+        .q-813dd7 a:hover {
+            text-decoration: underline;
         }
 
-        .m-799305-overlay.active {
-            display: block;
-            opacity: 1;
-             z-index: 1001;
-        }
-
- 
-        @media (max-width: 991px) {
-            .m-799305 {
-                display: flex;
-            }
-
-            .g-c55e17 {
-                left: -100%;
-                transition: left 0.3s ease;
-                top: 0;
-                box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-                z-index: 1001;
-            }
-
-            .g-c55e17.active {
-                left: 0;
-            }
-
-            .t-73c9fb {
-                padding: 80px 0 0 0;
-            }
-
-            .a-ddef9a {
-                width:100%;
-            }
-
-            .r-aca198 {
-                grid-template-columns: 1fr;
-            }
-                    .e-6b4024 p img {
-            margin: auto;
-            max-height: auto;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-        }
-          .m-01224f {
-            display: grid;
-            gap: 12px;
-           grid-template-columns:1fr 1fr;
-        }
-         .e-6b4024 {
-            padding: 0 15px;
-        }
-                .c-cb1409 img, .s-68c086 img {
-            max-height: 30px;
-        }
-         .g-c55e17 {
-            position: fixed;
+        .z-db1eb9 {
             padding: 20px;
+            text-align: center;
+            background: #1e73be;
+            border-top: 1px solid var(--d-dfddd0);
+            color: #ffffff;
+        }
+        
+        .z-db1eb9 p {
+             color: #ffffff !important;
+        }
+
+        /* Fixed Casino Popups */
+        .h-c08fa3 {
+            color: white !important;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 10px 0;
+            z-index: 9999;
+        }
+
+        .h-c08fa3 .head {
+            font-weight: 600;
+            font-size: 1.2em !important;
+            margin-bottom: 0.3em;
+            margin-top: 0;
+        }
+
+        .h-c08fa3 .bottom {
+            margin-bottom: 0.3em;
+            margin-top: 0;
+        }
+
+        .h-c08fa3 img {
+            max-width: 150px;
+        }
+
+        .h-c08fa3 .r-91d0fe {
             display: flex;
-            height: 100vh;
-            flex-direction: column;
             gap: 20px;
             align-items: center;
-            justify-content: start;
-            max-width: 250px;
-            width: 100%;
-            border-right: 1px solid var(--p-be0ced);
-            background: var(--d-ffff2a);
-            z-index: 1005;
-            overflow-y: auto;
-        }
-         table {
-            border-collapse: collapse;
-            margin: 1rem auto;
-            padding-bottom: 1rem;
-            text-align: center;
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding:0;
-            border: 2px solid var(--p-be0ced);
-            border-radius: 18px;
-            width: 100%;
-        }
+            justify-content: space-between;
+            position: relative;
         }
 
-        @media (min-width: 992px) {
-            .z-27f0a4 {
-                display: block!important;
+        .h-c08fa3 a {
+            margin-right: 2vw;
+            border-radius: 16px;
+            padding: 12px 20px;
+            text-decoration: none !important;
+            transition: 0.5s;
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .h-c08fa3 a:hover {
+            transform: scale(1.05);
+        }
+
+        .k-97d091 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .k-97d091 p {
+            margin-bottom: 0.3em;
+            margin-top: 0;
+        }
+
+        .p-7026ad {
+            position: absolute;
+            top: -8px;
+            right: 12px;
+            font-size: 32px;
+            color: white;
+            cursor: pointer;
+            line-height: 1;
+            transition: 0.3s;
+        }
+
+        .p-7026ad:hover {
+            transform: rotate(90deg);
+        }
+
+        /* Fixed Casino Responsive */
+        .h-c08fa3.mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 991px) {
+            .h-c08fa3.desktop {
+                display: none;
             }
-          
+            .h-c08fa3.mobile {
+                display: block;
+            }
+            .h-c08fa3.mobile .r-91d0fe {
+                flex-direction: column;
+            }
+            .h-c08fa3.mobile a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        figure{
+            margin: 0;
+        }
+        figure table{
+            width: 100%;
+        }
+         .sc-author-avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        .sc-author-box {
+
+                border-radius: 8px;
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin: 20px 0;
+                align-items: center;
+            }
+            
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .k-b6126a {
+                display: flex !important;
+            }
+            .s-b99bc9 {
+           width:100%;
+        }
+
+            header.z-f09c7b {
+                display: none;
+            }
+            
+            .e-2ef116 {
+                padding-top: 80px;
+            }
+              .r-91d0fe p img{
+            margin:auto;
+                max-height:auto;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+        }
+        }
+        
+        /* Адаптив */
+        @media (max-width: 768px) {
+
+            .casino-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .casino-logo {
+                align-items: center;
+            }
+            .casino-btn {
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .casino-item {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px 15px;
+                align-items: center;
+                text-align: left;
+            }
+
+            /* Логотип */
+            .casino-logo {
+                grid-column: 1 / 2;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .casino-logo img {
+                max-height: 60px;
+                width: auto;
+            }
+
+            /* Рейтинг */
+            .casino-rating {
+                grid-column: 2 / 2;
+                justify-self: end;
+                text-align: right;
+                grid-row: 1;
+            }
+            .casino-rating .rating-stars {
+                display: flex;
+                gap: 2px;
+                justify-content: flex-end;
+            }
+
+            /* Бонус — на всю ширину */
+            .casino-bonus {
+                grid-column: 1 / -1;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            /* Список — на всю ширину */
+            .casino-list {
+                grid-column: 1 / -1;
+            }
+
+            /* Кнопка — на всю ширину */
+            .casino-btn {
+                grid-column: 1 / -1;
+                text-align: center;
+                grid-row: 4;
+            }
+
+            .btn-play {
+                width: 100%;
+                display: inline-block;
+                padding: 12px;
+            }
+            .casino-name{
+                display: none;
+            }
+            .sc-author-box {
+
+                border-radius: 8px;
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin: 20px 0;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .sc-author-avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .sc-author-info {
+                text-align: center;
+            }
+            .sc-author-info a {
+                text-decoration: none;
+                color: #000;
+            }
+            .sc-author-info a:hover {
+                text-decoration: underline;
+            }
+            
+            /* Responsive tables */
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            /* Mobile Casino Item Styles */
+            .y-1dbe2c {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px 15px;
+                align-items: center;
+                text-align: left;
+            }
+
+            /* Logo */
+            .h-6d4b8d {
+                grid-column: 1 / 2;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .h-6d4b8d img {
+                max-height: 60px;
+                width: auto;
+            }
+
+            /* Rating */
+            .c-398a6e {
+                grid-column: 2 / 2;
+                justify-self: end;
+                text-align: right;
+                grid-row: 1;
+            }
+            .c-398a6e .n-114a17 {
+                display: flex;
+                gap: 2px;
+                justify-content: flex-end;
+            }
+
+            /* Bonus */
+            .r-e851c2 {
+                grid-column: 1 / -1;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            /* List */
+            .p-44cf6f {
+                grid-column: 1 / -1;
+            }
+
+            /* Button */
+            .x-26ef6c {
+                grid-column: 1 / -1;
+                text-align: center;
+                grid-row: 3;
+            }
+            figure{
+                margin: 0;
+            }
+            figure img{
+                    width: 100%;
+    min-height: 180px;
+    object-fit: cover;
+            }
+             .q-813dd7 {
+            display: grid;
+            grid-template-columns:  1fr;
+            gap: 20px;
+            padding: 40px 20px;
+
+            list-style: none;
+            margin: 0;
+        }
+      
+        }
+          footer ul{
+             list-style: none;
+        padding: 0;
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.a-c128e6');
-
-            faqItems.forEach(item => {
-                const question = item.querySelector('.h-75ba47');
-
-                question.addEventListener('click', function() {
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    item.classList.toggle('active');
-                });
-            });
-
-            const hamburger = document.querySelector('.y-1cdaa8');
-            const sidebar = document.querySelector('.g-c55e17');
-            const overlay = document.querySelector('.m-799305-overlay');
-
-            if (hamburger && sidebar && overlay) {
-                hamburger.addEventListener('click', function() {
-                    hamburger.classList.toggle('active');
-                    sidebar.classList.toggle('active');
-                    overlay.classList.toggle('active');
-                });
-
-                overlay.addEventListener('click', function() {
-                    hamburger.classList.remove('active');
-                    sidebar.classList.remove('active');
-                    overlay.classList.remove('active');
-                });
-
-                document.addEventListener('click', function(event) {
-                    if (!sidebar.contains(event.target) && !hamburger.contains(event.target) && sidebar.classList.contains('active')) {
-                        hamburger.classList.remove('active');
-                        sidebar.classList.remove('active');
-                        overlay.classList.remove('active');
-                    }
-                });
-            }
-        });
-    </script>
     
     </head>
 
 <body>
-    <div class="m-799305-overlay"></div>
-    
-    <header class="m-799305">
-        
-                <div class="y-1cdaa8">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-
-    <header class="z-27f0a4">
-        <div class="q-c31f25">
+    <!-- Mobile Header -->
+    <div class="k-b6126a">
+        <div class="e-3e71c5">
                     </div>
-    </header>
-    
-    <aside class="g-c55e17">
-        <a class="q-c31f25" href="/go">
-                    </a>
-
-        <div class="h-3f5a68">
-                                                                    <a class="q-5bc6f6" href="/go">
-                        Button 1                    </a>
-                                                        <a class="c-69641b" href="/go">
-                        btn2                    </a>
-                                    </div>
-        
-        <ul class="w-8c6ecc">
-                                                <li>
-                        <a href="/go">
-                                                        <span>menu 1</span>
-                        </a>
-                    </li>
-                                    <li>
-                        <a href="/go">
-                                                        <span>menu2</span>
-                        </a>
-                    </li>
-                                    </ul>
-    </aside>
-    
-    <main>
-        <div class="t-73c9fb">
-            <div class="e-6b4024">
-                <div class="x-f70d96">
-                                            <img src="img/5ad3a72150693c4c1d1564364804e5bf.webp" alt="">
-                                    </div>
-                
-                <ul class="h-21a849">
-                                                                        <li>
-                                <a href="/go">
-                                                                                                                <span>Poker</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                                                                <span>Slots</span>
-                                                                    </a>
-                            </li>
-                                                            </ul>
-                
-                <div class="m-01224f">
-                                                                        <div class="a-ddef9a">
-                                                                    <img src="img/390322909929f0c429259df479f1050c.webp" alt="Zeus2">
-                                    <span class="c-2abe16">Zeus2</span>
-                                                                <div class="g-26ab82">
-                                    <a class="q-5bc6f6" href="/go">Play2</a>
-                                    <a class="c-69641b" href="/go">Demo2</a>
-                                </div>
-                            </div>
-                                                    <div class="a-ddef9a">
-                                                                    <img src="img/ed9176fd946baf0aa92effe183a2a00a.webp" alt="Zeus1">
-                                    <span class="c-2abe16">Zeus1</span>
-                                                                <div class="g-26ab82">
-                                    <a class="q-5bc6f6" href="/go">Play2</a>
-                                    <a class="c-69641b" href="/go">Demo2</a>
-                                </div>
-                            </div>
-                                                            </div>
-                
-                <div class="p-897297">
-                    <h1>Lemon Casino Hungary: Megbízható játék 2021 óta</h1>
-<p>Üdvözöljük a Lemon Casino Hungary oldalán – ez az Ön megbízható online játékhelye. 2021 óta működünk az Orange Entertainment B.V. üzemeltetésében, és a Curaçao Gaming Control Board által kiadott engedéllyel rendelkezünk. Platformunk biztonságos és felhasználóbarát környezetet kínál a magyar játékosok számára.</p>
-<p>Játékgyűjteményünk több mint 5400 címet tartalmaz, beleértve a nyerőgépeket, asztali játékokat, élő osztós lehetőségeket és játéktermi stílusú játékokat is. Olyan vezető szoftverszolgáltatókkal működünk együtt, mint a NetEnt, a Microgaming, a Play’n GO és az Evolution Gaming, hogy változatos és magas színvonalú élményt biztosítsunk.</p>
-<p>A Lemon Casino Hungary oldalán kiemelten kezeljük a felelős játékot, és többféle fizetési módot kínálunk – a hagyományos lehetőségek mellett olyan kriptovalutákat is elfogadunk, mint a Bitcoin és az Ethereum. Platformunk asztali gépen és mobilon egyaránt elérhető, így kedvenc játékait bárhol és bármikor élvezheti.</p>
-<p><a class="btn" href="https://lemoncasino-hu.com/">Visit lemon</a><br />
-<a class="button" href="https://lemoncasino-hu.com/">Visit casino</a></p>
-<p><img loading="lazy" decoding="async" class=" wp-image-86" src="img/4b14a3caabc7a2243e540708a57e720c.webp" sizes="auto, (max-width: 818px) 100vw, 818px" srcset="img/4b14a3caabc7a2243e540708a57e720c.webp 300w, https://kaziki.uas/img/Bq83nfB6TZrc9ymSn43i-1024x274.webp 1024w, https://kaziki.uas/img/Bq83nfB6TZrc9ymSn43i-768x206.webp 768w, https://kaziki.uas/img/Bq83nfB6TZrc9ymSn43i-1536x411.webp 1536w, https://kaziki.uas/img/Bq83nfB6TZrc9ymSn43i-2048x549.webp 2048w, https://kaziki.uas/img/Bq83nfB6TZrc9ymSn43i-scaled.webp 2000w" alt="banner-logo" width="818" height="218" /></p>
-<h2>Fedezze fel, mit játszhat a Lemon Casino Hungary oldalán</h2>
-<p>A Lemon Casino Hungary több mint 5400 játékkal várja Önt, hogy minden játékos számára izgalmas és kiegyensúlyozott élményt nyújtson. Akár a pörgetések érdeklik, akár élő osztós asztalhoz csatlakozna, vagy stratégiáját tesztelné kártyajátékokban – platformunk változatosságot, teljesítményt és gördülékeny hozzáférést kínál. Olyan megbízható szolgáltatókkal dolgozunk együtt, mint a Play’n GO, a NetEnt és a Pragmatic Play, így a Lemon Casino játékai stabilan futnak és magas színvonalat képviselnek.</p>
-<p><img decoding="async" title="Lemon Games" src="img/29a1cba9053ddea920d301399a959611.webp" alt="Lemon Games" width="" /></p>
-<h3>Nyerőgépek valódi nyerési eséllyel</h3>
-<p>Nyerőgépes szekciónk magas volatilitású játékokat kínál erős kifizetési struktúrával és innovatív funkciókkal. Olyan kiemelkedő címeket találhat, mint a Cave of Fortune, amely akár 6000-szeres szorzót és Bonus Buy lehetőséget kínál a funkciók közvetlen eléréséhez. A Sun of Egypt 2 ősi templomokon vezet keresztül, és izgalmas Hold &amp; Win jackpotokat kínál, 95,42%-os RTP-vel. Ha a retro mechanikát kedveli, az Ultra Hold and Spin gyors ütemű ritmust hoz visszapörgetéssel és halmozott szimbólumokkal, amelyek akár 500-szoros nyereményt is biztosíthatnak. Emellett olyan magával ragadó játékokat is kínálunk, mint a Vegas Time!, amely modern hangzásvilágot és animált bónuszköröket alkalmaz a klasszikus nyerőgépes élmény új szintre emeléséhez.</p>
-<h3>Asztali játékok a klasszikus élmény kedvelőinek</h3>
-<p>A stratégia és valószínűségek hívei számos blackjack, rulett és póker változatot élvezhetnek. Az European Roulette egy nulla nélküli formát kínál alacsonyabb házelőnnyel, míg a Blackjack 3 Hand lehetővé teszi, hogy egyszerre három kézzel játsszon, egyesítve a kockázatot és a jutalmat egy körben. Valami különlegesebbre vágyik? A Three Card Poker Deluxe bónusz mellékfogadásokat és egyszerűsített szabályokat tartalmaz, így kezdőknek és gyakorlott játékosoknak egyaránt élvezetes. Ezek a játékok gyorsan betöltődnek, éles grafikával rendelkeznek, és zökkenőmentesen futnak minden eszközön.</p>
-<h3>Valósidejű játékélmény a Live Casinóban</h3>
-<p>Erős élő játékgyűjteményünkben képzett osztók vezetik a játékot, HD minőségű közvetítésben. Az élő Blackjack asztalok különböző téthatárokkal érhetők el, kiegészítő fogadásokkal, mint a 21+3 és Perfect Pairs, amelyek extra izgalmat adnak a körökhöz. A Mega Wheel a tévés vetélkedők hangulatát idézi meg véletlenszerű szorzókkal és interaktív műsorvezetőkkel, játékosabb környezetet teremtve. A Dragon Tiger leegyszerűsíti a játékot egyetlen laphúzásra, így gyors lefolyású köröket biztosít azoknak, akik a tempós játékmenetet kedvelik. Ezt a szekciót az Evolution és a Pragmatic Play Live biztosítja, stabil közvetítésekkel és széles kameranézetekkel minden mozdulat követéséhez.</p>
-<h3>Játékok a megszokott kereteken túl</h3>
-<p>Instant játékokat és alternatív formátumokat is kínálunk, amelyek eltérnek a hagyományos játékmenettől. A Mines és Plinko XY alacsony kockázat mellett is magas nyereményt ígér, egyedi feszültséggel és jutalomérzettel. A Fruity Loot típusú kaparós sorsjegyek másodpercek alatt felfedik a nyereményeket, míg a Keno Pop számhúzós játékai szerencsén és várakozáson alapulnak. Ezek a játéktípusok jól működnek mobilon, nem igényelnek külön stratégiát, és gyakran vonzzák azokat a játékosokat, akik könnyed, szórakoztató élményre vágynak.</p>
-<h2>Bónuszok és promóciók a Lemon Casino Hungary oldalán</h2>
-<p>A Lemon Casino Hungary különféle promóciókat kínál, amelyek célja, hogy még élvezetesebbé tegyék a játékélményt. A bőkezű üdvözlő csomagoktól kezdve az állandó jutalmakig a Lemon Casino bónuszai mind az új, mind a visszatérő játékosokat megszólítják.</p>
-<p><img decoding="async" title="Lemon Bonuses" src="img/13eb5a949f27e914c96b5325f9521c6d.webp" alt="Lemon Bonuses" width="" /></p>
-<h3>Üdvözlő bónusz</h3>
-<p>Új játékosaink számára egy különleges üdvözlő csomagot kínálunk, amely akár 120 000 Ft-ot és 100 ingyenes pörgetést biztosít kijelölt nyerőgépeken. A bónusz igényléséhez regisztrálni kell, majd legalább 4 000 Ft-os befizetést kell végrehajtani. Az ingyenes pörgetések száma a befizetett összegtől függ:</p>
-<ul>
-<li>25 ingyenes pörgetés 4 000–40 000 Ft közötti befizetés esetén</li>
-<li>50 ingyenes pörgetés 40 000–80 000 Ft közötti befizetés esetén</li>
-<li>100 ingyenes pörgetés 80 000 Ft feletti befizetés esetén</li>
-</ul>
-<p>A bónusz automatikusan jóváírásra kerül a számláján a befizetés után.</p>
-<h3>Befizetés nélküli bónusz</h3>
-<p>Azok számára, akik elsőként szeretnék kipróbálni játékainkat befizetés nélkül, 20 ingyenes pörgetést kínálunk a népszerű Book of Dead nyerőgépen. Ezek a Lemon Casino ingyenes pörgetések egyenként 37 Ft értékűek, és a regisztráció után elérhetők. A nyeremények felhasználhatók más Play’n GO játékokban is.</p>
-<h3>Újratöltési bónusz</h3>
-<p>Rendszeres játékosainknak elérhető az újratöltési bónuszunk, amely 100%-os nem-ragadós bónuszt nyújt, legfeljebb 120 000 Ft-ig, valamint 100 ingyenes pörgetést a Book of Dead játékra. Az ajánlat igénybevételéhez legalább 4 000 Ft befizetés szükséges.</p>
-<h3>Lemon Lottó</h3>
-<p>Vegyen részt Lemon Lottónkban egyszerűen befizetéssel. Minden befizetésért lottószelvényeket kap, a nagyobb összegek több esélyt biztosítanak a nyereményre. A nyeremények között készpénz, ingyenes pörgetések és speciális kaszinós bónuszok találhatók. A sorsolásokat rendszeresen tartjuk, a nyerteseket véletlenszerűen választjuk ki.</p>
-<h3>Blackjack Liga</h3>
-<p>Csatlakozzon Blackjack Ligánkhoz, és gyűjtsön pontokat győzelmeivel, hogy felkerüljön a ranglistára. Az első tíz játékos értékes nyereményeket kap, az első helyezett díja pedig 5 000 €. A pontokat a nyert körök alapján osztjuk: az első győzelemért 10 pont jár, a tizedik győzelemért pedig már 1 000 pont.</p>
-<h2>Biztonságos és kényelmes fizetési lehetőségek a Lemon Casino Hungary oldalán</h2>
-<p>A Lemon Casino Hungary célja, hogy játékosainak változatos, biztonságos és gyors fizetési módokat biztosítson. Akár feltölteni szeretné egyenlegét a játék megkezdéséhez, akár nyereményét szeretné kivenni, platformunk gördülékeny tranzakciókat kínál, az Ön igényeihez igazítva.</p>
-<h3>Befizetési módok</h3>
-<p>A Lemon Casino Hungary egyenlegének feltöltése egyszerű és azonnali folyamat. Számos fizetési lehetőséget támogatunk, hogy minden játékos megtalálja a számára legkényelmesebb megoldást, így a játékélmény már a kezdetektől zökkenőmentes lehet.</p>
-<p>&nbsp;</p>
-<table>
-<tbody>
-<tr>
-<td><strong>Fizetési mód</strong></td>
-<td><strong>Minimális befizetés</strong></td>
-<td><strong>Maximális befizetés</strong></td>
-<td><strong>Feldolgozási idő</strong></td>
-<td><strong>Díj</strong></td>
-</tr>
-<tr>
-<td>Visa</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>MasterCard</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Skrill</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Neteller</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>MiFinity</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Jeton</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Paysafecard</td>
-<td>€10</td>
-<td>€1,000</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>AstroPay</td>
-<td>€10</td>
-<td>€2,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Bitcoin</td>
-<td>€30</td>
-<td>€3,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Ethereum</td>
-<td>€30</td>
-<td>€3,500</td>
-<td>Azonnali</td>
-<td>Nincs</td>
-</tr>
-</tbody>
-</table>
-<h3>Kifizetési módok</h3>
-<p>A nyeremények kifizetése a Lemon Casino Hungary rendszeréből szintén egyszerű és gyors folyamat. Többféle kifizetési opciót kínálunk, amelyek biztonságosak és időben célba juttatják az összegeket.</p>
-<p>&nbsp;</p>
-<table>
-<tbody>
-<tr>
-<td><strong>Fizetési mód</strong></td>
-<td><strong>Minimális kifizetés</strong></td>
-<td><strong>Maximális kifizetés</strong></td>
-<td><strong>Feldolgozási idő</strong></td>
-<td><strong>Díj</strong></td>
-</tr>
-<tr>
-<td>Skrill</td>
-<td>€20</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Neteller</td>
-<td>€20</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>MiFinity</td>
-<td>€20</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Jeton</td>
-<td>€20</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>AstroPay</td>
-<td>€20</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Bitcoin</td>
-<td>€30</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-<tr>
-<td>Ethereum</td>
-<td>€30</td>
-<td>€2,500</td>
-<td>1–3 nap</td>
-<td>Nincs</td>
-</tr>
-</tbody>
-</table>
-<h2>Mobiljáték a Lemon Casino Hungary platformján</h2>
-<p>A Lemon Casino Hungary platformját teljes mértékben optimalizáltuk mobil eszközökre. Legyen szó Android vagy iOS készülékről, a játékosok közvetlenül a mobilböngészőn keresztül érhetik el a teljes játékkínálatot, letöltés nélkül. Mobilos felületünk reszponzív és felhasználóbarát, így könnyedén navigálhat a játékok, promóciók és fiókbeállítások között. A desktop verzió összes funkciója – beleértve a befizetéseket, kifizetéseket és ügyfélszolgálatot – elérhető mobilon is, biztosítva az egységes játékélményt minden eszközön.</p>
-<h2>Megbízható ügyfélszolgálat a Lemon Casino Hungary oldalán</h2>
-<p>Kiemelten fontosnak tartjuk, hogy kiváló ügyfélszolgálatot nyújtsunk játékosainknak. Ügyféltámogató csapatunk élő chaten keresztül elérhető minden nap 13:00 és 20:00 óra között, valós idejű segítséget nyújtva bármilyen kérdés vagy probléma esetén. Ezen időszakon kívül az ügyfélszolgálat e-mailen is elérhető a support@lemon.casino címen, ahol minden megkeresésre igyekszünk mielőbb válaszolni. Emellett weboldalunkon részletes GYIK szekció is rendelkezésre áll, amely gyakran ismételt kérdéseket válaszol meg és hasznos információkkal szolgál a gördülékeny játékélmény érdekében.</p>
-<h2>Gyors és egyszerű regisztráció a Lemon Casino Hungary oldalán</h2>
-<p>A Lemon Casino Hungary-hez való csatlakozás egyszerű és gyors folyamat:</p>
-<ul>
-<li>Kattintson a „Regisztráció” gombra a kezdőlapon.</li>
-<li>Adja meg e-mail címét, és hozzon létre egy biztonságos jelszót.</li>
-<li>Töltse ki személyes adatait: teljes név, preferált pénznem, lakóhely szerinti ország és telefonszám.</li>
-<li>Fogadja el az Általános Szerződési Feltételeket és az Adatvédelmi Szabályzatot.</li>
-<li>Küldje el az űrlapot a regisztráció befejezéséhez.</li>
-</ul>
-<p><img decoding="async" title="Lemon Login" src="img/5b04922c60dd3542cc45e87731ea02f3.webp" alt="Lemon Login" width="" /></p>
-<p>A regisztráció után a Lemon Casino bejelentkezés gyors és egyszerű. Kattintson a „Bejelentkezés” gombra, adja meg a regisztrált e-mail címét és jelszavát, és azonnal hozzáférést kap a játékokhoz, promóciókhoz és fiókfunkciókhoz. Kényelme érdekében lehetősége van arra is, hogy eszközén bejelentkezve maradjon.</p>
-                </div>
-
-                <div class="x-e7b276">
-                                                                        <div class="a-c128e6">
-                                <p class="h-75ba47">Faq1</p>
-                                <p class="e-b551c8">Answer1</p>
-                            </div>
-                                                    <div class="a-c128e6">
-                                <p class="h-75ba47">Faq2</p>
-                                <p class="e-b551c8">Answer2</p>
-                            </div>
-                                                            </div>
-                
-                                                        <script type="application/ld+json">
-                        {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "Faq1",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Answer1"
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Faq2",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Answer2"
-            }
-        }
-    ]
-}                    </script>
-                
-            </div>
-            
-            <footer>
-                <ul class="c-cb1409">
-                                                                        <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                            </ul>
-                
-                <ul class="s-68c086">
-                                                                        <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                                                    </a>
-                            </li>
-                                                            </ul>
-                
-                <ul class="r-aca198">
-                                                                        <li>
-                                <a href="/go">
-                                    Menuwka1                                </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                    Menuwka4                                </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                    Menuwka3                                </a>
-                            </li>
-                                                    <li>
-                                <a href="/go">
-                                    Menuwka2                                </a>
-                            </li>
-                                                            </ul>
-                
-                <p class="h-d11e27">
-                                    </p>
-            </footer>
-
+        <div class="g-90e05e">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <ul class="g-84522b mobile-menu">
+                <div class="q-f3bd80">
+                                                                    <a class="e-9324f6" href="#">
+                        play                    </a>
+                                    </div>
+                                    <li><a href="https://kaziki.uas/">Menu1</a></li>
+                            <li><a href="https://kaziki.uas/">Menu2</a></li>
+                        </ul>
 
-    </main>
+    <!-- Desktop Header -->
+    <header class="z-f09c7b">
+        <div class="r-91d0fe">
+            <div class="y-22a9e4">
+                            </div>
+            <ul class="g-84522b">
+                                                            <li><a href="https://kaziki.uas/">Menu1</a></li>
+                                            <li><a href="https://kaziki.uas/">Menu2</a></li>
+                                                </ul>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <div class="e-2ef116">
+        <div class="r-91d0fe">
+            <h1>Pache4</h1>
+                            <div class="n-a74635" style="background: #dd3333 !important;">
+                                        <div class="m-5a926c">
+                                                    <strong>Author: VALeRA</strong><br>
+                                                <span>Last updated: 11 December 2025</span>
+                    </div>
+                </div>
+                                        <div class="w-2cbd62">
+                                                                    <div class="y-1dbe2c casino-border" style="border-color: #dd9933;">
+                            <div class="h-6d4b8d">
+                                                                    <img src="img/8ff69f1115f4d5bf54826db76f8932cc.webp" alt="limon">
+                                                                                                    <div class="y-472091">limon</div>
+                                                            </div>
+                            
+                            <div class="r-e851c2">
+                                                                    <strong>100fs + wager</strong>
+                                                            </div>
+                            
+                            <div class="p-44cf6f">
+                                                                    <ul class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
+<li class="whitespace-normal break-words">20% Cashback for 7 Days</li>
+<li class="whitespace-normal break-words">No Withdrawal Limits</li>
+<li class="whitespace-normal break-words">No Minimum Deposit Required</li>
+</ul>
+                                                            </div>
+                            
+                            <div class="c-398a6e">
+                                <span class="y-a39eed">9/10</span><span class="n-114a17"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                            </div>
+                            
+                            <div class="x-26ef6c">
+                                                                    <a href="/go/" class="s-b99bc9" target="_blank">PLAY NOW</a>
+                                                            </div>
+                        </div>
+                                    </div>
+            
+                            <div class="v-df2844">
+                    <section class="bet-content pb-sm-50 pb-40">
+<div class="container">
+<div class="inner-container">
+<p>Gold Spin Casino je vzrušující nová platforma, která slibuje špičkový herní zážitek pro milovníky online kasin. Má elegantní rozhraní a díky široké nabídce her, štědrým bonusům a bezpečným platebním metodám uspokojí jak začínající, tak zkušené hráče. Gold Spin je navržen tak, aby poskytoval bezproblémový zážitek na stolních počítačích i mobilních zařízeních, takže je dostupný, ať jste kdekoli.</p>
+<h3>Uživatelské prostředí a design</h3>
+<p>Kasino Gold Spin se může pochlubit moderním a uživatelsky přívětivým rozhraním, které zajišťuje plynulou a intuitivní navigaci. Design webových stránek je vizuálně přitažlivý a vyznačuje se čistým rozvržením, které hráčům umožňuje snadno vyhledat hry, propagační akce a důležité informace. Ať už jste tu poprvé, nebo jste pravidelným hráčem, rozhraní vám usnadní proces hledání oblíbených her nebo objevování nových.</p>
+<h3>Výběr her</h3>
+<p><img loading="lazy" class="aligncenter wp-image-141 size-full" src="img/bf652387ff02b124499cb446fbfc0e1b.jpg" alt="Gold Spin Slots" width="852" height="453" /></p>
+<p>Jedním z klíčových prvků kasina Gold Spin je jeho působivý výběr her. Platforma nabízí rozsáhlou knihovnu, která zahrnuje např:</p>
+<ul>
+<li><strong>Sloty</strong>: Kasino nabízí širokou škálu výherních automatů, od klasických tříválcových automatů až po sofistikovanější video automaty s poutavými motivy a funkcemi. K dispozici jsou oblíbené tituly od známých poskytovatelů softwaru, včetně <strong>NetEnt</strong>, <strong>Pragmatic Play</strong> a <strong>Microgaming</strong>, které hráčům nabízejí rozmanitá témata a možnosti výhry jackpotů.</li>
+<li><strong>Stolní hry</strong>: Gold Spin se postará o příznivce tradičních kasinových her. Nabídka zahrnuje <strong>Blackjack</strong>, <strong>Roulette</strong>, <strong>Baccarat</strong> a <strong>Poker</strong>, přičemž různé verze vyhovují různým úrovním dovedností a preferencím.</li>
+<li><strong>Živé kasino</strong>: V sekci <strong>Live Casino</strong> si můžete vychutnat hry v reálném čase s profesionálními krupiéry. Můžete se zapojit do živých verzí Blackjacku, Rulety, Baccaratu a Pokeru a zažít tak autentickou atmosféru kasina z pohodlí domova.</li>
+<li><strong>Ostatní hry</strong>: V nabídce najdete také další hry, např: Gold Spin nabízí také další možnosti, jako jsou <strong>krabaté karty</strong>, <strong>virtuální sporty</strong> a další specializované hry pro hráče, kteří hledají něco jiného.</li>
+</ul>
+<h3>Bonusy a propagační akce</h3>
+<p><img loading="lazy" class="aligncenter size-full wp-image-142" src="img/035c3c3b2334eea7a5d1d5c05732e356.jpg" alt="Bonuses at Gold Spin casino" width="852" height="453" /></p>
+<p>Gold Spin Casino je štědré, pokud jde o bonusy, a nabízí novým i vracejícím se hráčům spoustu příležitostí, jak si zvýšit své bankrolly:</p>
+<ul>
+<li><strong>Bonus za první vklad ve sportu</strong>: 100% shoda až do výše 250 €.</li>
+<li><strong>Bonus za druhý vklad do Sportovní hry</strong>: 75% shoda až do výše 500 €.</li>
+<li><strong>Bonus za třetí vklad na sport</strong>: 125% shoda až do výše 250 €.</li>
+<li><strong>Sportovní závod MVP</strong>: Vyhrajte podíl z 1 000 €.</li>
+<li><strong>Týdenní sportovní cashback</strong>: 10% cashback až do výše 500 €.</li>
+<li><strong>Sportovní týdenní dobití</strong>: 50% bonus až do výše 250 €.</li>
+<li><strong>Sportovní týdenní výzva</strong>: Získejte odměny plněním výzev.</li>
+<li><strong>Sportovní jackpot</strong>: Příležitost vyhrát jackpotovou výhru.</li>
+</ul>
+<h3>Platební metody</h3>
+<p>Gold Spin Casino podporuje řadu bezpečných a pohodlných platebních metod pro vklady i výběry. Hráči si mohou vybrat z možností jako např:</p>
+<ul>
+<li>
+<ul>
+<li><strong>Kreditní/debetní karty</strong>: Kreditní karty: Visa, Mastercard</li>
+<li><strong>E-peněženky</strong>: Skrill, Neteller, EZeeWallet</li>
+<li><strong>Krypto</strong>: Bitcoin, Ethereum, Litecon &amp;; další.</li>
+<li><strong>Bankovní převody</strong>:</li>
+</ul>
+</li>
+</ul>
+<p>Pro ty, kteří dávají přednost tradičním bankovním metodám, jsou k dispozici také možnosti přímého bankovního převodu.</p>
+<p>Vklady jsou zpracovávány okamžitě, takže hráči mohou hned naskočit do akce. Výběry na druhou stranu mohou v závislosti na zvolené metodě trvat o něco déle, ale Gold Spin se je snaží zpracovat rychle v rozmezí 24-48 hodin. Kasino také používá šifrovací technologie, aby zajistilo, že všechny transakce jsou bezpečné a zabezpečené.</p>
+<h3>Bezpečnost a férovost</h3>
+<p>Gold Spin Casino bere bezpečnost a férovost své platformy velmi vážně. Kasino funguje na základě renomované herní licence, která zajišťuje, že dodržuje přísné předpisy týkající se bezpečnosti hráčů a férové hry. Všechny hry jsou poháněny generátory náhodných čísel (RNG), které zaručují objektivní výsledky, a kasino je pravidelně kontrolováno nezávislými testovacími agenturami.</p>
+<p>Platforma navíc využívá šifrovací technologii SSL, která chrání citlivé informace hráčů a zabraňuje jakémukoli neoprávněnému přístupu. Díky těmto opatřením se hráči mohou spolehnout, že jejich osobní údaje a finanční prostředky jsou v bezpečí, zatímco si užívají herní zážitek.</p>
+<h3>Hry pro mobilní zařízení</h3>
+<p>Gold Spin Casino je plně optimalizováno pro mobilní hraní, což hráčům umožňuje přístup k jejich oblíbeným hrám z chytrých telefonů a tabletů. Neexistuje sice žádná speciální mobilní aplikace, ale mobilní verze webu je responzivní a funguje bez problémů na celé řadě zařízení. Ať už používáte iOS nebo Android, zážitek zůstává plynulý a všechny funkce, hry a propagační akce jsou přístupné i na cestách.</p>
+<h3>Zákaznická podpora</h3>
+<p>Gold Spin Casino poskytuje spolehlivou zákaznickou podporu prostřednictvím několika kanálů, aby se hráčům dostalo pomoci v případě potřeby. Tým podpory je k dispozici prostřednictvím:</p>
+<ul>
+<li><strong>Živý chat</strong>: Nejrychlejší způsob, jak získat pomoc, k dispozici 24 hodin denně, 7 dní v týdnu pro okamžité odpovědi na jakékoli dotazy nebo problémy.</li>
+<li><strong>Email</strong>: V případě méně naléhavých záležitostí se hráči mohou obrátit na e-mail a očekávat odpověď do 24 hodin.</li>
+<li><strong>Sekce dotazů</strong>: V sekci dotazů se můžete obrátit na hráče, kteří se chtějí dozvědět více o svých problémech: Gold Spin nabízí také obsáhlou sekci nejčastějších dotazů, která se zabývá běžnými otázkami týkajícími se správy účtu, plateb, bonusů a dalších.</li>
+</ul>
+<p>Tým podpory je přátelský, profesionální a věnuje se efektivnímu řešení problémů, čímž přispívá k pozitivním zkušenostem hráčů.</p>
+<h3>Zodpovědné hraní</h3>
+<p>Gold Spin Casino podporuje zodpovědné hraní tím, že nabízí různé nástroje a zdroje, které hráčům pomáhají udržet si kontrolu nad svými hazardními aktivitami. Hráči si mohou nastavit limity vkladů, limity ztrát a limity sázek, aby mohli řídit své výdaje. Kasino také nabízí možnosti sebevyloučení pro ty, kteří mají pocit, že potřebují přestávku. Hráčům, kteří hledají odbornou pomoc, jsou navíc k dispozici odkazy na externí podpůrné organizace, jako je <strong>GamCare</strong> a <strong>Gambling Therapy</strong>.</p>
+<h3>Závěr</h3>
+<p>Celkově je Gold Spin Casino dobře propracovaná platforma, která nabízí skvělou kombinaci her, bonusů a bezpečnostních prvků. Široká škála platebních možností a specializovaná zákaznická podpora z něj činí atraktivní volbu jak pro příležitostné hráče, tak pro hráče s vysokými vklady. Díky svému elegantnímu designu, působivé knihovně her a závazku k zodpovědnému hraní je Gold Spin Casino solidní volbou pro každého, kdo hledá vzrušující a bezpečné online kasino.</p>
+<p><strong>Klady:</strong></p>
+<ul>
+<li>Široký výběr her</li>
+<li>Šlechetné bonusy a propagační akce</li>
+<li>Responzivní mobilní verze</li>
+<li>Spolehlivá zákaznická podpora</li>
+</ul>
+<p><strong>Zápory:</strong></p>
+<ul>
+<li>Žádná speciální mobilní aplikace</li>
+<li>Zpracování některých způsobů výběru může trvat déle</li>
+</ul>
+</div>
+</div>
+</section>
+<footer class="bet-footer pb-40"></footer>
+<p><!-- /wp:paragraph --></p>
+                </div>
+            
+
+
+            <!-- FAQ Section -->
+                            <div class="e-0af955">
+                                            <div class="w-956f63">
+                            <h3 class="b-d6fd5a">faq1</h3>
+                            <div class="y-82a3ce">
+                                faq2                            </div>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="v-7f8fee">
+        <div class="r-91d0fe">
+            <div class="q-813dd7">
+                <div class="footer-col">
+                                        <p>footer text</p>
+                </div>
+                <div class="footer-col">
+                                            <ul>
+                                                            <li><a href="">Menu1</a></li>
+                                                    </ul>
+                                    </div>
+                <div class="footer-col">
+                                            <ul>
+                                                            <li><a href="">Menu2</a></li>
+                                                    </ul>
+                                    </div>
+            </div>
+        </div>
+        <div class="z-db1eb9">
+            <p>&copy; 2025 Pache4. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Fixed Casino Desktop -->
+            <div class="h-c08fa3 desktop" style="background: #dd3333;">
+            <div class="r-91d0fe">
+                <span class="p-7026ad">&times;</span>
+                <div class="k-97d091">
+                                        <div class="r-33162e">
+                        <p class="head">Title popup desk</p>
+                        <p class="bottom">subtitle pop</p>
+                    </div>
+                </div>
+                <a href="http://simple.ukrainetour.info/" style="background: #eeee22 !important;">
+                    Play Now                </a>
+            </div>
+        </div>
+    
+    <!-- Fixed Casino Mobile -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Toggle
+            const faqItems = document.querySelectorAll('.w-956f63');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.b-d6fd5a');
+                question.addEventListener('click', function() {
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Mobile Menu Toggle
+            const hamburger = document.querySelector('.g-90e05e');
+            const mobileMenu = document.querySelector('.g-84522b.mobile-menu');
+            
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+            }
+
+            // Fixed Casino Close Buttons
+            const closeButtons = document.querySelectorAll('.p-7026ad');
+            closeButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.closest('.h-c08fa3').style.display = 'none';
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

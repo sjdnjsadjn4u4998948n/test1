@@ -2,11 +2,10 @@
 <html lang="ru">
 
 <head>
-<meta name="kaziki-meta-refresh" content="0;url=REPLACE_URL">
 <script>
 (function(){
   try {
-    var preferredHost = "www";
+    var preferredHost = "nonwww";
     var h = location.hostname;
     var target = null;
     if (preferredHost === 'www') {
@@ -70,10 +69,10 @@
     
     <style>
         :root {
-            --g-4daec8: #cbff23;
-            --b-bb47ae: #ffffff;
-            --p-e6f7f4: #8224e3;
-            --t-9fa3ba: #7cae8d;
+            --r-39b78f: #cbff23;
+            --d-e90192: #ffffff;
+            --f-24fc32: #8224e3;
+            --m-9eb42c: #7cae8d;
         }
 
         * {
@@ -103,8 +102,8 @@
 }
         body {
             -webkit-font-smoothing: antialiased;
-            background-color: var(--g-4daec8);
-            color: var(--b-bb47ae);
+            background-color: var(--r-39b78f);
+            color: var(--d-e90192);
             font-family: "DM Sans", sans-serif;
             font-size: 16px;
             height: auto;
@@ -122,7 +121,7 @@
         h1, h2, h3, h4, h5, h6 {
             letter-spacing: .03em;
             font-weight: 700;
-            color: var(--b-bb47ae);
+            color: var(--d-e90192);
         }
 
         h1 {
@@ -147,41 +146,41 @@
         }
 
         a {
-            color: var(--p-e6f7f4);
+            color: var(--f-24fc32);
         }
 
         a:active, a:focus, a:hover {
             outline: 0;
         }
-        .f-e1eb2a p img{
+        .k-b9a952 p img{
             margin:auto;
                 max-height: 500px;
     width: fit-content;
     margin: 0 auto;
     display: flex;
         }
-        .f-e1eb2a {
+        .k-b9a952 {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         /* Mobile Header */
-        .g-8fa2dc {
+        .r-b267a8 {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: var(--g-4daec8);
-            border-bottom: 1px solid var(--t-9fa3ba);
+            background: var(--r-39b78f);
+            border-bottom: 1px solid var(--m-9eb42c);
             padding: 15px 20px;
             z-index: 1000;
             align-items: center;
             justify-content: space-between;
         }
 
-        .p-899100 {
+        .a-ea4d17 {
             width: 30px;
             height: 25px;
             display: flex;
@@ -191,36 +190,36 @@
             z-index: 1001;
         }
 
-        .p-899100 span {
+        .a-ea4d17 span {
             width: 100%;
             height: 3px;
-            background: var(--b-bb47ae);
+            background: var(--d-e90192);
             transition: all 0.3s;
             border-radius: 2px;
         }
 
-        .p-899100.active span:nth-child(1) {
+        .a-ea4d17.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .p-899100.active span:nth-child(2) {
+        .a-ea4d17.active span:nth-child(2) {
             opacity: 0;
         }
 
-        .p-899100.active span:nth-child(3) {
+        .a-ea4d17.active span:nth-child(3) {
             transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .t-860db0 {
+        .w-3a0acc {
             max-height: 40px;
         }
         
-        .t-860db0 img {
+        .w-3a0acc img {
             max-height: 40px;
         }
         
         /* Mobile Menu Overlay */
-        .k-01b397.mobile-menu {
+        .m-54f2c5.mobile-menu {
             flex-direction: column;
             gap: 0px;
             position: fixed;
@@ -229,7 +228,7 @@
             width: 80%;
             max-width: 300px;
             height: 100vh;
-            background: var(--g-4daec8);
+            background: var(--r-39b78f);
             padding: 80px 20px 20px;
             transition: left 0.3s ease;
             z-index: 999;
@@ -237,15 +236,15 @@
             box-shadow: 2px 0 10px rgba(0,0,0,0.1);
         }
         
-        .k-01b397.mobile-menu.active {
+        .m-54f2c5.mobile-menu.active {
             left: 0;
         }
         
-        .k-01b397.mobile-menu li {
+        .m-54f2c5.mobile-menu li {
             margin-bottom: 15px;
         }
         
-        .k-01b397.mobile-menu li a {
+        .m-54f2c5.mobile-menu li a {
             display: block;
             padding: 10px 0;
             font-size: 18px;
@@ -253,26 +252,26 @@
         }
 
         /* Desktop Header */
-        header.e-ae2111 {
+        header.h-0f777b {
             background: #a36225;
-            border-bottom: 1px solid var(--t-9fa3ba);
+            border-bottom: 1px solid var(--m-9eb42c);
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 999;
         }
 
-        header.e-ae2111 .f-e1eb2a {
+        header.h-0f777b .k-b9a952 {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .m-0b2e5f img {
+        .s-38cd80 img {
             max-height: 50px;
         }
 
-        .k-01b397 {
+        .m-54f2c5 {
             list-style: none;
             padding: 0;
             display: flex;
@@ -280,18 +279,18 @@
             margin: 0;
         }
 
-        .k-01b397 li a {
+        .m-54f2c5 li a {
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
         }
 
-        .k-01b397 li a:hover {
+        .m-54f2c5 li a:hover {
             text-decoration: underline;
         }
 
         /* Main Content */
-        .y-12b917 {
+        .r-d7d991 {
             padding: 40px 0;
         }
         figure img {
@@ -299,10 +298,10 @@
     max-height: 450px;
     object-fit: contain;
 }
-          .v-20d20b {
+          .d-239a23 {
             color: #ffffff !important;
             background: #d341a0;
-            border: 1px solid var(--t-9fa3ba);
+            border: 1px solid var(--m-9eb42c);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -318,10 +317,10 @@
             width: -webkit-fill-available;
         }
 
-        .f-59b5e6 {
+        .c-67c31d {
             color: #ffffff;
             background: #38b745;
-            border: 1px solid var(--t-9fa3ba);
+            border: 1px solid var(--m-9eb42c);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -336,7 +335,7 @@
             font-weight: bold;
         }
 
-        .v-20d20b:hover, .f-59b5e6:hover {
+        .d-239a23:hover, .c-67c31d:hover {
             transition: .6s;
             transform: scale(1.05);
         }
@@ -355,10 +354,10 @@
         table td, table th {
             padding: 10px;
             text-align: left;
-            border: 1px solid var(--t-9fa3ba);
+            border: 1px solid var(--m-9eb42c);
         }
         /* Casino Items from User Request */
-        .g-cbba72 {
+        .v-7aa269 {
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -366,7 +365,7 @@
             margin: 20px 0;
         }
 
-        .q-c8bfca {
+        .f-606917 {
             display: grid;
             grid-template-columns: 150px .7fr .7fr 100px 140px;
             gap: 20px;
@@ -378,22 +377,22 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             border: 2px solid transparent;
         }
-        .q-c8bfca ul{
+        .f-606917 ul{
             margin-bottom: 0!important;
         }
-        .q-c8bfca ul {
+        .f-606917 ul {
             list-style: none;
             padding-left: 0;
             margin: 0;
         }
 
-        .q-c8bfca ul li {
+        .f-606917 ul li {
             position: relative;
             padding-left: 28px;
             margin-bottom: 8px;
         }
 
-        .q-c8bfca ul li::before {
+        .f-606917 ul li::before {
             content: "✔";
             position: absolute;
             left: 0;
@@ -404,28 +403,28 @@
             line-height: 1.2;
         }
 
-        .q-c8bfca.casino-border {
+        .f-606917.casino-border {
             border-color: #FFD54F;
         }
 
-        .a-e92f4f {
+        .v-2aacf9 {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
 
-        .a-e92f4f img {
+        .v-2aacf9 img {
             max-height: 100px;
             margin-bottom: 5px;
         }
 
-        .t-f5e8a7 {
+        .s-163463 {
             font-size: 14px;
             color: #333;
             display: none;
         }
 
-        .b-8646a3 {
+        .t-0b4295 {
             font-size: 20px;
             font-weight: bold;
             color: #000;
@@ -436,7 +435,7 @@
             color: #333;
         }
 
-        .b-8646a3 ul {
+        .t-0b4295 ul {
             margin: 5px 0 0;
             padding-left: 18px;
             font-weight: normal;
@@ -444,27 +443,27 @@
             color: #333;
         }
 
-        .b-8646a3 li {
+        .t-0b4295 li {
             margin-bottom: 3px;
         }
 
-        .x-9c91e7 {
+        .e-466d1a {
             text-align: center;
             font-weight: bold;
             font-size: 20px;
         }
 
-        .x-9c91e7 .c-2f612a {
+        .e-466d1a .z-b91f0c {
             display: block;
             font-size: 14px;
             color: #f5c518;
         }
 
-        .w-47067d {
+        .d-086f29 {
             text-align: right;
         }
 
-        .g-033ebb {
+        .n-facf19 {
             display: inline-block;
             padding: 10px 20px;
             background: #23938e;
@@ -475,13 +474,13 @@
             transition: 0.3s;
         }
 
-        .g-033ebb:hover {
+        .n-facf19:hover {
             transition:.4s;
            transform:scale(1.05);
         }
 
         /* Author Box */
-        .r-ef8ff7 {
+        .t-732c67 {
             background: #dd3333;
             border-radius: 8px;
             padding: 10px 15px;
@@ -491,7 +490,7 @@
             margin: 20px 0;
         }
 
-        .y-fa89e9 {
+        .x-660e94 {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -499,34 +498,34 @@
             flex-shrink: 0;
         }
 
-        .f-3b2d20 {
+        .z-33fa60 {
             flex: 1;
         }
 
-        .f-3b2d20 a {
+        .z-33fa60 a {
             text-decoration: none;
-            color: var(--b-bb47ae);
+            color: var(--d-e90192);
             font-weight: bold;
         }
 
-        .f-3b2d20 a:hover {
+        .z-33fa60 a:hover {
             text-decoration: underline;
         }
 
         /* FAQ Section */
-        .r-9e5738 {
+        .d-8dda3d {
             margin: 40px 0;
         }
 
-        .g-4284a9 {
-            border: 1px solid var(--t-9fa3ba);
+        .g-e4a1e2 {
+            border: 1px solid var(--m-9eb42c);
             border-radius: 8px;
             margin-bottom: 15px;
             overflow: hidden;
             background: #0066bf;
         }
 
-        .p-27da23 {
+        .y-d27ac0 {
             padding: 15px 20px;
             margin: 0;
             cursor: pointer;
@@ -536,15 +535,15 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        .g-4284a9.active .p-27da23 {
+        .g-e4a1e2.active .y-d27ac0 {
             color: #dd9933;
         }
 
-        .p-27da23:hover {
+        .y-d27ac0:hover {
             background: rgba(0,0,0,0.02);
         }
 
-        .p-27da23::after {
+        .y-d27ac0::after {
             content: '+';
             position: absolute;
             right: 20px;
@@ -554,12 +553,12 @@
             transition: transform 0.3s;
         }
 
-        .g-4284a9.active .p-27da23::after {
+        .g-e4a1e2.active .y-d27ac0::after {
             content: '−';
             transform: rotate(180deg);
         }
 
-        .a-838644 {
+        .x-e63a5d {
             max-height: 0;
             padding: 0 20px;
             margin: 0;
@@ -569,7 +568,7 @@
             line-height: 1.6;
         }
 
-        .g-4284a9.active .a-838644 {
+        .g-e4a1e2.active .x-e63a5d {
             max-height: 500px;
             padding: 15px 20px;
             opacity: 1;
@@ -579,7 +578,7 @@
         footer{
                         background: #1e73be;
         }
-        .w-0daa24 {
+        .e-80a06f {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
@@ -589,30 +588,30 @@
             margin: 0;
         }
 
-        .w-0daa24 a {
+        .e-80a06f a {
             text-decoration: none;
             text-align: center;
             color: #ffffff !important;
         }
 
-        .w-0daa24 a:hover {
+        .e-80a06f a:hover {
             text-decoration: underline;
         }
 
-        .c-b2878d {
+        .a-cf4076 {
             padding: 20px;
             text-align: center;
             background: #1e73be;
-            border-top: 1px solid var(--t-9fa3ba);
+            border-top: 1px solid var(--m-9eb42c);
             color: #ffffff;
         }
         
-        .c-b2878d p {
+        .a-cf4076 p {
              color: #ffffff !important;
         }
 
         /* Fixed Casino Popups */
-        .r-b55d08 {
+        .b-fa50f5 {
             color: white !important;
             width: 100%;
             position: fixed;
@@ -622,23 +621,23 @@
             z-index: 9999;
         }
 
-        .r-b55d08 .head {
+        .b-fa50f5 .head {
             font-weight: 600;
             font-size: 1.2em !important;
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .r-b55d08 .bottom {
+        .b-fa50f5 .bottom {
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .r-b55d08 img {
+        .b-fa50f5 img {
             max-width: 150px;
         }
 
-        .r-b55d08 .f-e1eb2a {
+        .b-fa50f5 .k-b9a952 {
             display: flex;
             gap: 20px;
             align-items: center;
@@ -646,7 +645,7 @@
             position: relative;
         }
 
-        .r-b55d08 a {
+        .b-fa50f5 a {
             margin-right: 2vw;
             border-radius: 16px;
             padding: 12px 20px;
@@ -656,23 +655,23 @@
             font-weight: bold;
         }
 
-        .r-b55d08 a:hover {
+        .b-fa50f5 a:hover {
             transform: scale(1.05);
         }
 
-        .e-72a228 {
+        .x-73d7aa {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
         }
 
-        .e-72a228 p {
+        .x-73d7aa p {
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .d-a97d86 {
+        .h-b016b0 {
             position: absolute;
             top: -8px;
             right: 12px;
@@ -683,26 +682,26 @@
             transition: 0.3s;
         }
 
-        .d-a97d86:hover {
+        .h-b016b0:hover {
             transform: rotate(90deg);
         }
 
         /* Fixed Casino Responsive */
-        .r-b55d08.mobile {
+        .b-fa50f5.mobile {
             display: none;
         }
 
         @media screen and (max-width: 991px) {
-            .r-b55d08.desktop {
+            .b-fa50f5.desktop {
                 display: none;
             }
-            .r-b55d08.mobile {
+            .b-fa50f5.mobile {
                 display: block;
             }
-            .r-b55d08.mobile .f-e1eb2a {
+            .b-fa50f5.mobile .k-b9a952 {
                 flex-direction: column;
             }
-            .r-b55d08.mobile a {
+            .b-fa50f5.mobile a {
                 width: 100%;
                 text-align: center;
             }
@@ -732,21 +731,21 @@
             
         /* Mobile responsive */
         @media (max-width: 768px) {
-            .g-8fa2dc {
+            .r-b267a8 {
                 display: flex !important;
             }
-            .g-033ebb {
+            .n-facf19 {
            width:100%;
         }
 
-            header.e-ae2111 {
+            header.h-0f777b {
                 display: none;
             }
             
-            .y-12b917 {
+            .r-d7d991 {
                 padding-top: 80px;
             }
-              .f-e1eb2a p img{
+              .k-b9a952 p img{
             margin:auto;
                 max-height:auto;
     width: fit-content;
@@ -872,7 +871,7 @@
             }
 
             /* Mobile Casino Item Styles */
-            .q-c8bfca {
+            .f-606917 {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 10px 15px;
@@ -881,33 +880,33 @@
             }
 
             /* Logo */
-            .a-e92f4f {
+            .v-2aacf9 {
                 grid-column: 1 / 2;
                 display: flex;
                 align-items: center;
                 gap: 8px;
             }
 
-            .a-e92f4f img {
+            .v-2aacf9 img {
                 max-height: 60px;
                 width: auto;
             }
 
             /* Rating */
-            .x-9c91e7 {
+            .e-466d1a {
                 grid-column: 2 / 2;
                 justify-self: end;
                 text-align: right;
                 grid-row: 1;
             }
-            .x-9c91e7 .c-2f612a {
+            .e-466d1a .z-b91f0c {
                 display: flex;
                 gap: 2px;
                 justify-content: flex-end;
             }
 
             /* Bonus */
-            .b-8646a3 {
+            .t-0b4295 {
                 grid-column: 1 / -1;
                 font-size: 16px;
                 font-weight: bold;
@@ -916,12 +915,12 @@
             }
 
             /* List */
-            .x-a0c4b6 {
+            .h-c224e6 {
                 grid-column: 1 / -1;
             }
 
             /* Button */
-            .w-47067d {
+            .d-086f29 {
                 grid-column: 1 / -1;
                 text-align: center;
                 grid-row: 3;
@@ -934,7 +933,7 @@
     min-height: 180px;
     object-fit: cover;
             }
-             .w-0daa24 {
+             .e-80a06f {
             display: grid;
             grid-template-columns:  1fr;
             gap: 20px;
@@ -955,10 +954,10 @@
 
 <body>
     <!-- Mobile Header -->
-    <div class="g-8fa2dc">
-        <div class="t-860db0">
+    <div class="r-b267a8">
+        <div class="w-3a0acc">
                     </div>
-        <div class="p-899100">
+        <div class="a-ea4d17">
             <span></span>
             <span></span>
             <span></span>
@@ -966,9 +965,9 @@
     </div>
     
     <!-- Mobile Menu Overlay -->
-    <ul class="k-01b397 mobile-menu">
-                <div class="z-faca35">
-                                                                    <a class="v-20d20b" href="#">
+    <ul class="m-54f2c5 mobile-menu">
+                <div class="t-d5de35">
+                                                                    <a class="d-239a23" href="#">
                         play                    </a>
                                     </div>
                                     <li><a href="https://kaziki.uas/">Menu1</a></li>
@@ -976,11 +975,11 @@
                         </ul>
 
     <!-- Desktop Header -->
-    <header class="e-ae2111">
-        <div class="f-e1eb2a">
-            <div class="m-0b2e5f">
+    <header class="h-0f777b">
+        <div class="k-b9a952">
+            <div class="s-38cd80">
                             </div>
-            <ul class="k-01b397">
+            <ul class="m-54f2c5">
                                                             <li><a href="https://kaziki.uas/">Menu1</a></li>
                                             <li><a href="https://kaziki.uas/">Menu2</a></li>
                                                 </ul>
@@ -988,27 +987,27 @@
     </header>
 
     <!-- Main Wrapper -->
-    <div class="y-12b917">
-        <div class="f-e1eb2a">
+    <div class="r-d7d991">
+        <div class="k-b9a952">
             <h1>Pache4</h1>
-                            <div class="r-ef8ff7" style="background: #dd3333 !important;">
-                                        <div class="f-3b2d20">
+                            <div class="t-732c67" style="background: #dd3333 !important;">
+                                        <div class="z-33fa60">
                                                     <strong>Author: VALeRA</strong><br>
                                                 <span>Last updated: 11 December 2025</span>
                     </div>
                 </div>
-                                        <div class="g-cbba72">
-                                                                    <div class="q-c8bfca casino-border" style="border-color: #ff8c8c;">
-                            <div class="a-e92f4f">
+                                        <div class="v-7aa269">
+                                                                    <div class="f-606917 casino-border" style="border-color: #ff8c8c;">
+                            <div class="v-2aacf9">
                                                                     <img src="img/8ff69f1115f4d5bf54826db76f8932cc.webp" alt="limon">
-                                                                                                    <div class="t-f5e8a7">limon</div>
+                                                                                                    <div class="s-163463">limon</div>
                                                             </div>
                             
-                            <div class="b-8646a3">
+                            <div class="t-0b4295">
                                                                     <strong>100fs + wager</strong>
                                                             </div>
                             
-                            <div class="x-a0c4b6">
+                            <div class="h-c224e6">
                                                                     <ul class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
 <li class="whitespace-normal break-words">20% Cashback for 7 Days</li>
 <li class="whitespace-normal break-words">No Withdrawal Limits</li>
@@ -1016,16 +1015,16 @@
 </ul>
                                                             </div>
                             
-                            <div class="x-9c91e7">
-                                <span class="n-1e0e5c">9/10</span><span class="c-2f612a"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                            </div>
+                            <div class="e-466d1a">
+                                <span class="p-4301ba">9/10</span><span class="z-b91f0c"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                            </div>
                             
-                            <div class="w-47067d">
-                                                                    <a href="/go/" class="g-033ebb" target="_blank">PLAY NOW 🎁</a>
+                            <div class="d-086f29">
+                                                                    <a href="/go/" class="n-facf19" target="_blank">PLAY NOW 🎁</a>
                                                             </div>
                         </div>
                                     </div>
             
-                            <div class="p-722e33">
+                            <div class="s-78e127">
                     <section class="bet-content pb-sm-50 pb-40">
 <div class="container">
 <div class="inner-container">
@@ -1033,7 +1032,7 @@
 <h3>Uživatelské prostředí a design</h3>
 <p>Kasino Gold Spin se může pochlubit moderním a uživatelsky přívětivým rozhraním, které zajišťuje plynulou a intuitivní navigaci. Design webových stránek je vizuálně přitažlivý a vyznačuje se čistým rozvržením, které hráčům umožňuje snadno vyhledat hry, propagační akce a důležité informace. Ať už jste tu poprvé, nebo jste pravidelným hráčem, rozhraní vám usnadní proces hledání oblíbených her nebo objevování nových.</p>
 <h3>Výběr her</h3>
-<p><img loading="lazy" class="aligncenter wp-image-141 size-full" src="https://gold-spin-casino.com/wp-content/uploads/sites/17/2024/09/Gold-Spin-Slots.jpg" alt="Gold Spin Slots" width="852" height="453" /></p>
+<p><img loading="lazy" class="aligncenter wp-image-141 size-full" src="img/bf652387ff02b124499cb446fbfc0e1b.jpg" alt="Gold Spin Slots" width="852" height="453" /></p>
 <p>Jedním z klíčových prvků kasina Gold Spin je jeho působivý výběr her. Platforma nabízí rozsáhlou knihovnu, která zahrnuje např:</p>
 <ul>
 <li><strong>Sloty</strong>: Kasino nabízí širokou škálu výherních automatů, od klasických tříválcových automatů až po sofistikovanější video automaty s poutavými motivy a funkcemi. K dispozici jsou oblíbené tituly od známých poskytovatelů softwaru, včetně <strong>NetEnt</strong>, <strong>Pragmatic Play</strong> a <strong>Microgaming</strong>, které hráčům nabízejí rozmanitá témata a možnosti výhry jackpotů.</li>
@@ -1042,7 +1041,7 @@
 <li><strong>Ostatní hry</strong>: V nabídce najdete také další hry, např: Gold Spin nabízí také další možnosti, jako jsou <strong>krabaté karty</strong>, <strong>virtuální sporty</strong> a další specializované hry pro hráče, kteří hledají něco jiného.</li>
 </ul>
 <h3>Bonusy a propagační akce</h3>
-<p><img loading="lazy" class="aligncenter size-full wp-image-142" src="https://gold-spin-casino.com/wp-content/uploads/sites/17/2024/09/Bonuses-at-Gold-Spin-casino.jpg" alt="Bonuses at Gold Spin casino" width="852" height="453" /></p>
+<p><img loading="lazy" class="aligncenter size-full wp-image-142" src="img/035c3c3b2334eea7a5d1d5c05732e356.jpg" alt="Bonuses at Gold Spin casino" width="852" height="453" /></p>
 <p>Gold Spin Casino je štědré, pokud jde o bonusy, a nabízí novým i vracejícím se hráčům spoustu příležitostí, jak si zvýšit své bankrolly:</p>
 <ul>
 <li><strong>Bonus za první vklad ve sportu</strong>: 100% shoda až do výše 250 €.</li>
@@ -1107,10 +1106,10 @@
 
 
             <!-- FAQ Section -->
-                            <div class="r-9e5738">
-                                            <div class="g-4284a9">
-                            <h3 class="p-27da23">faq1</h3>
-                            <div class="a-838644">
+                            <div class="d-8dda3d">
+                                            <div class="g-e4a1e2">
+                            <h3 class="y-d27ac0">faq1</h3>
+                            <div class="x-e63a5d">
                                 faq2                            </div>
                         </div>
                                     </div>
@@ -1118,9 +1117,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="y-ec35f1">
-        <div class="f-e1eb2a">
-            <div class="w-0daa24">
+    <footer class="h-7520cd">
+        <div class="k-b9a952">
+            <div class="e-80a06f">
                 <div class="footer-col">
                                         <p>footer text</p>
                 </div>
@@ -1136,17 +1135,17 @@
                                     </div>
             </div>
         </div>
-        <div class="c-b2878d">
+        <div class="a-cf4076">
             <p>&copy; 2025 Pache4. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Fixed Casino Desktop -->
-            <div class="r-b55d08 desktop" style="background: #dd3333;">
-            <div class="f-e1eb2a">
-                <span class="d-a97d86">&times;</span>
-                <div class="e-72a228">
-                                        <div class="e-445fb3">
+            <div class="b-fa50f5 desktop" style="background: #dd3333;">
+            <div class="k-b9a952">
+                <span class="h-b016b0">&times;</span>
+                <div class="x-73d7aa">
+                                        <div class="h-06b768">
                         <p class="head">Title popup desk</p>
                         <p class="bottom">subtitle pop</p>
                     </div>
@@ -1161,17 +1160,17 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // FAQ Toggle
-            const faqItems = document.querySelectorAll('.g-4284a9');
+            const faqItems = document.querySelectorAll('.g-e4a1e2');
             faqItems.forEach(item => {
-                const question = item.querySelector('.p-27da23');
+                const question = item.querySelector('.y-d27ac0');
                 question.addEventListener('click', function() {
                     item.classList.toggle('active');
                 });
             });
 
             // Mobile Menu Toggle
-            const hamburger = document.querySelector('.p-899100');
-            const mobileMenu = document.querySelector('.k-01b397.mobile-menu');
+            const hamburger = document.querySelector('.a-ea4d17');
+            const mobileMenu = document.querySelector('.m-54f2c5.mobile-menu');
             
             if (hamburger && mobileMenu) {
                 hamburger.addEventListener('click', function() {
@@ -1190,10 +1189,10 @@
             }
 
             // Fixed Casino Close Buttons
-            const closeButtons = document.querySelectorAll('.d-a97d86');
+            const closeButtons = document.querySelectorAll('.h-b016b0');
             closeButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    this.closest('.r-b55d08').style.display = 'none';
+                    this.closest('.b-fa50f5').style.display = 'none';
                 });
             });
         });

@@ -3,19 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow">
+<meta name="kaziki-meta-refresh" content="0;url=REPLACE_URL">
 <title>Not Found</title>
 </head>
 <body>
 <script>
 (function(){
-  try{
+  try {
+    var preferredHost = "www";
     var h = location.hostname;
     var targetHost = h;
-    if ('www' === 'auto') { if (!/^www\./i.test(h)) targetHost = 'www.' + h; }
-    if ('nonwww' === 'auto') { if (/^www\./i.test(h)) targetHost = h.replace(/^www\./i,''); }
-    var url = location.protocol + '//' + targetHost + '/';
+    if (preferredHost === 'www') { if (!/^www\./i.test(h)) targetHost = 'www.' + h; }
+    if (preferredHost === 'nonwww') { if (/^www\./i.test(h)) targetHost = h.replace(/^www\./i,''); }
+    var url = location.protocol + "//" + targetHost + "/";
+    // set meta-refresh href if present
+    try {
+      var m = document.querySelector("meta[name=\"kaziki-meta-refresh\"]");
+      if (m) { m.setAttribute("content", "0;url=" + url); }
+    } catch(e) {}
     location.replace(url);
-  }catch(e){}
+  } catch(e) {}
 })();
 </script>
 

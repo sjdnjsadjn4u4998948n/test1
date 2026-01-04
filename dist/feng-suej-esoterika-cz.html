@@ -46,10 +46,10 @@
     
     <style>
         :root {
-            --h-28bbca: #ffffff;
-            --h-4a4a65: #000000;
-            --c-eda188: #ffffff;
-            --h-143c32: #eabebe;
+            --b-9ca50c: #ffffff;
+            --n-4017f8: #000000;
+            --d-ce5bb6: #ffffff;
+            --q-015c19: #eabebe;
         }
 
         * {
@@ -58,8 +58,8 @@
 
         body {
             -webkit-font-smoothing: antialiased;
-            background-color: var(--h-28bbca);
-            color: var(--h-4a4a65);
+            background-color: var(--b-9ca50c);
+            color: var(--n-4017f8);
             font-family: "DM Sans", sans-serif;
             font-size: 16px;
             height: auto;
@@ -77,7 +77,7 @@
         h1, h2, h3, h4, h5, h6 {
             letter-spacing: .03em;
             font-weight: 700;
-            color: var(--h-4a4a65);
+            color: var(--n-4017f8);
         }
 
         h1 {
@@ -107,13 +107,13 @@
             display: inline-block;
         }
         a {
-            color: var(--c-eda188);
+            color: var(--d-ce5bb6);
         }
 
         a:active, a:focus, a:hover {
             outline: 0;
         }
-        .d-9b8b92{
+        .e-984a3c{
                position: fixed;
     bottom: 30px;
     right: 10px;
@@ -125,31 +125,33 @@
     background: #0000007d;
     border-radius: 50%;
         }
-        .m-2ddfb6 p img{
+        .h-126e54 p img{
             display: flex;
             margin: auto;
+            width: 100%;
+            height: fit-content;
         }
-        .x-11aa3a {
+        .w-9014f2 {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        .r-06d994 {
+        .m-ec3ab3 {
             display: none;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             background: #eabebe;
-            border-bottom: 1px solid var(--h-143c32);
+            border-bottom: 1px solid var(--q-015c19);
             padding: 9px 20px;
             z-index: 1000;
             align-items: center;
             justify-content: space-between;
         }   
 
-        .p-2879aa {
+        .z-9a5f0e {
             width: 30px;
             height: 25px;
             display: flex;
@@ -159,35 +161,35 @@
             z-index: 1001;
         }
 
-        .p-2879aa span {
+        .z-9a5f0e span {
             width: 100%;
             height: 3px;
-            background: var(--h-4a4a65);
+            background: var(--n-4017f8);
             transition: all 0.3s;
             border-radius: 2px;
         }
 
-        .p-2879aa.active span:nth-child(1) {
+        .z-9a5f0e.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .p-2879aa.active span:nth-child(2) {
+        .z-9a5f0e.active span:nth-child(2) {
             opacity: 0;
         }
 
-        .p-2879aa.active span:nth-child(3) {
+        .z-9a5f0e.active span:nth-child(3) {
             transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .k-dbef4d {
+        .n-a976a6 {
             max-height: 50px;
         }
         
-        .k-dbef4d img {
+        .n-a976a6 img {
             max-height: 50px;
         }
         
-        .w-e36a14.mobile-menu {
+        .f-84a95e.mobile-menu {
             flex-direction: column;
             gap: 0px;
             position: fixed;
@@ -196,7 +198,7 @@
             width: 80%;
             max-width: 300px;
             height: 100vh;
-            background: var(--h-28bbca);
+            background: var(--b-9ca50c);
             padding: 80px 20px 20px;
             transition: left 0.3s ease;
             z-index: 999;
@@ -204,41 +206,41 @@
             box-shadow: 2px 0 10px rgba(0,0,0,0.1);
         }
         
-        .w-e36a14.mobile-menu.active {
+        .f-84a95e.mobile-menu.active {
             left: 0;
         }
         
-        .w-e36a14.mobile-menu li {
+        .f-84a95e.mobile-menu li {
             margin-bottom: 15px;
         }
         
-        .w-e36a14.mobile-menu li a {
+        .f-84a95e.mobile-menu li a {
             display: block;
             padding: 10px 0;
             font-size: 18px;
             text-align: center;
         }
 
-        header.n-682ae6 {
+        header.b-efcebf {
             background: #eabebe;
-            border-bottom: 1px solid var(--h-143c32);
+            border-bottom: 1px solid var(--q-015c19);
             padding: 10px 0;
             position: static;
             top: 0;
             z-index: 999;
         }
 
-        header.n-682ae6 .x-11aa3a {
+        header.b-efcebf .w-9014f2 {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .k-8e54cb img {
+        .p-2f9964 img {
             max-height: 65px;
         }
 
-        .w-e36a14 {
+        .f-84a95e {
             list-style: none;
             padding: 0;
             display: flex;
@@ -246,23 +248,22 @@
             margin: 0;
         }
 
-        .w-e36a14 li a {
+        .f-84a95e li a {
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
         }
 
-        .w-e36a14 li a:hover {
+        .f-84a95e li a:hover {
             text-decoration: underline;
         }
         
-        .w-e36a14 li.current a {
+        .f-84a95e li.current a {
             text-decoration: underline;
-            color: #eabebe;
             font-weight: 700;
         }
 
-        .t-8d5915 {
+        .m-7d710a {
             padding: 40px 0;
         }
         figure img {
@@ -270,10 +271,10 @@
     max-height: 450px;
     object-fit: contain;
 }
-          .c-0955cf {
+          .e-4dd397 {
             color: #ffffff !important;
             background: #eabebe;
-            border: 1px solid var(--h-143c32);
+            border: 1px solid var(--q-015c19);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -289,10 +290,10 @@
             width: -webkit-fill-available;
         }
 
-        .s-ed0b5c {
+        .k-94386d {
             color: #ffffff;
             background: #ffffff;
-            border: 1px solid var(--h-143c32);
+            border: 1px solid var(--q-015c19);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -307,7 +308,7 @@
             font-weight: bold;
         }
 
-        .c-0955cf:hover, .s-ed0b5c:hover {
+        .e-4dd397:hover, .k-94386d:hover {
             transition: .6s;
             transform: scale(1.05);
         }
@@ -328,36 +329,36 @@
             
         }
         
-        .d-04ae0b {
+        .b-4548c5 {
             width: 100%;
             margin: 20px 0;
             border-collapse: collapse;
         }
-        .d-04ae0b thead {
+        .b-4548c5 thead {
             background: #eae5e5;
             font-weight: bold;
             border-radius: 8px;
         }
-        .d-04ae0b thead th {
+        .b-4548c5 thead th {
             padding: 15px 10px;
             text-align: center;
            
             color: #000000;
         }
-        .d-04ae0b tbody tr {
-             border: 1px solid var(--h-143c32);
+        .b-4548c5 tbody tr {
+             border: 1px solid var(--q-015c19);
             position: relative;
             background: #eae5e5;
         }
-        .d-04ae0b tbody tr:hover {
+        .b-4548c5 tbody tr:hover {
             background: #eae5e5;
         }
-        .d-04ae0b tbody td {
+        .b-4548c5 tbody td {
            
             padding: 15px;
             vertical-align: middle;
         }
-         .d-04ae0b thead tr {
+         .b-4548c5 thead tr {
               display: grid;
                       grid-template-columns: 10px 130px .5fr .8fr 150px 0.3fr;
                 gap: 20px;
@@ -369,15 +370,15 @@
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 
         }
-         .d-04ae0b thead tr{
+         .b-4548c5 thead tr{
 padding: 0!important;
          }
-         .d-04ae0b thead tr td:nth-child(1){
+         .b-4548c5 thead tr td:nth-child(1){
  position: absolute;
     margin-left: -17px;
          }
            
-         .d-04ae0b tbody tr {
+         .b-4548c5 tbody tr {
               display: grid;
                 grid-template-columns:130px .5fr .7fr 130px 0.3fr   ;
                 gap: 10px;
@@ -389,20 +390,20 @@ padding: 0!important;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
                 border: 2px solid transparent;
         }
-        .d-04ae0b tbody tr td:nth-child(3) {
+        .b-4548c5 tbody tr td:nth-child(3) {
 
         font-size: 20px;
         }
-        .d-04ae0b tbody ul{
+        .b-4548c5 tbody ul{
             padding-left: 0;
         }
-       .d-04ae0b td ul li {
+       .b-4548c5 td ul li {
         position: relative;
         padding-left: 28px;
         margin-bottom: 8px;
         list-style: none;
         }
-        .d-04ae0b td ul li::before {
+        .b-4548c5 td ul li::before {
             content: "✔";
             position: absolute;
             left: 0;
@@ -412,7 +413,7 @@ padding: 0!important;
             font-size: 16px;
             line-height: 1.2;
         }
-        .a-5021bd {
+        .h-f75e0d {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -423,23 +424,23 @@ padding: 0!important;
             padding: 15px;
             border: 2px solid transparent;
         }
-        .a-5021bd ul{
+        .h-f75e0d ul{
             margin-bottom: 0!important;
             position: relative;
         }
-        .a-5021bd ul {
+        .h-f75e0d ul {
             list-style: none;
             padding-left: 0;
             margin: 0;
         }
 
-        .a-5021bd ul li {
+        .h-f75e0d ul li {
             position: relative;
             padding-left: 28px;
             margin-bottom: 8px;
         }
 
-        .a-5021bd ul li::before {
+        .h-f75e0d ul li::before {
             content: "✔";
             position: absolute;
             left: 0;
@@ -451,27 +452,27 @@ padding: 0!important;
         }
 
 
-        .y-f2557a {
+        .q-20d9e3 {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
         }
 
-        .y-f2557a img {
+        .q-20d9e3 img {
             max-height: 110px;
             margin: 0 auto 10px;
             display: block;
         }
 
-        .c-0f0c8e {
+        .m-3acb4c {
             font-size: 14px;
             color: #000000;
             text-align: center;
             width: 100%;
         }
 
-        .d-3d4fcd {
+        .f-1a9842 {
             font-size: 18px;
             font-weight: bold;
             line-height: 120%;
@@ -483,7 +484,7 @@ padding: 0!important;
             text-align: center;
         }
 
-        .d-3d4fcd ul {
+        .f-1a9842 ul {
             margin: 5px 0 0;
             padding-left: 18px;
             font-weight: normal;
@@ -491,28 +492,28 @@ padding: 0!important;
              color: #000000;
         }
 
-        .d-3d4fcd li {
+        .f-1a9842 li {
             margin-bottom: 3px;
         }
 
-        .w-52e433 {
+        .d-f32e32 {
             text-align: center;
             font-weight: bold;
             font-size: 20px;
             margin-top: 10px;
         }
 
-        .w-52e433 .y-efc7bb {
+        .d-f32e32 .d-40eec3 {
             display: block;
             font-size: 14px;
             color: #f5c518;
         }
 
-        .m-1a740d {
+        .n-7ac318 {
             text-align: center;
             padding: 15px 10px;
         }
-        .n-8c3d58 {
+        .w-da2e4f {
           
             color: #ffffff !important;
             background: #ea6262;
@@ -527,7 +528,7 @@ padding: 0!important;
         border-radius: 8px 0 19px 0px;
         }
         
-        .k-9b214a {
+        .w-9aaf0b {
             display: inline-block;
             padding: 10px 20px;
             background: #ea6262;
@@ -539,16 +540,16 @@ padding: 0!important;
             white-space: nowrap;
         }
 
-        .k-9b214a:hover {
+        .w-9aaf0b:hover {
             transition:.4s;
            transform:scale(1.05);
         }
         
  @media (max-width: 769px) {
-    .d-04ae0b{
-        
+    .b-4548c5{
+        white-space: inherit;
     }
- .d-04ae0b tbody tr {
+ .b-4548c5 tbody tr {
            display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -558,20 +559,20 @@ padding: 0!important;
         gap: 0;
     
         }
-        .d-04ae0b thead{
+        .b-4548c5 thead{
             display: none!important;
         }
-        .d-04ae0b tbody tr td{
+        .b-4548c5 tbody tr td{
             padding: 0px!important;
         }
        
-.d-04ae0b tbody{
+.b-4548c5 tbody{
     padding: 0!important;
 }
-.d-04ae0b tbody tr td:nth-child(1) {
+.b-4548c5 tbody tr td:nth-child(1) {
          padding: 3px 8px !important;
         }
-        .d-04ae0b tbody tr td:nth-child(2) {
+        .b-4548c5 tbody tr td:nth-child(2) {
             display: flex;
         order: 1;
         max-width: 35px;
@@ -579,23 +580,23 @@ padding: 0!important;
         justify-content: center;
         max-height: 42px;
         }
-        .d-04ae0b tbody tr td:nth-child(3) {
+        .b-4548c5 tbody tr td:nth-child(3) {
     display: flex;
                    display: flex;
         order: 3;
         width: 100%;
         justify-content: center;
         }
-        .d-04ae0b tbody tr td:nth-child(4) {
+        .b-4548c5 tbody tr td:nth-child(4) {
     display: flex;
                  display: flex;
         order: 4;
         }
-        .d-04ae0b tbody tr td:nth-child(5) {
+        .b-4548c5 tbody tr td:nth-child(5) {
 
             order: 2;
         }
-         .d-04ae0b tbody tr td:nth-child(6) {
+         .b-4548c5 tbody tr td:nth-child(6) {
     display: flex;
                    display: flex;
         order: 6;
@@ -603,7 +604,7 @@ padding: 0!important;
         }
  }
 
-        .a-6be78f {
+        .m-8a3d3b {
             background: ;
             border-radius: 8px;
             padding: 10px 15px;
@@ -613,7 +614,7 @@ padding: 0!important;
             margin: 20px 0;
         }
 
-        .e-2e2701 {
+        .h-466c8f {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -621,33 +622,33 @@ padding: 0!important;
             flex-shrink: 0;
         }
 
-        .k-dc527c {
+        .c-959ad8 {
             flex: 1;
         }
 
-        .k-dc527c a {
+        .c-959ad8 a {
             text-decoration: none;
-            color: var(--h-4a4a65);
+            color: var(--n-4017f8);
             font-weight: bold;
         }
 
-        .k-dc527c a:hover {
+        .c-959ad8 a:hover {
             text-decoration: underline;
         }
 
-        .p-408535 {
+        .v-0fd3a3 {
             margin: 40px 0;
         }
 
-        .n-da258f {
-            border: 1px solid var(--h-143c32);
+        .e-8bb574 {
+            border: 1px solid var(--q-015c19);
             border-radius: 8px;
             margin-bottom: 15px;
             overflow: hidden;
             background: #eae5e5;
         }
 
-        .h-da91eb {
+        .q-473e27 {
             padding: 15px 20px;
             margin: 0;
             cursor: pointer;
@@ -657,15 +658,15 @@ padding: 0!important;
             transition: background 0.3s, color 0.3s;
         }
 
-        .n-da258f.active .h-da91eb {
+        .e-8bb574.active .q-473e27 {
             color: #000000;
         }
 
-        .h-da91eb:hover {
+        .q-473e27:hover {
             background: rgba(0,0,0,0.02);
         }
 
-        .h-da91eb::after {
+        .q-473e27::after {
             content: '+';
             position: absolute;
             right: 20px;
@@ -675,12 +676,12 @@ padding: 0!important;
             transition: transform 0.3s;
         }
 
-        .n-da258f.active .h-da91eb::after {
+        .e-8bb574.active .q-473e27::after {
             content: '−';
             transform: rotate(180deg);
         }
 
-        .b-44547c {
+        .y-299f03 {
             max-height: 0;
             padding: 0 20px;
             margin: 0;
@@ -690,7 +691,7 @@ padding: 0!important;
             line-height: 1.6;
         }
 
-        .n-da258f.active .b-44547c {
+        .e-8bb574.active .y-299f03 {
             max-height: 500px;
             padding: 15px 20px;
             opacity: 1;
@@ -699,7 +700,7 @@ padding: 0!important;
         footer{
                         background: #eabebe;
         }
-        .b-b0f121 {
+        .v-362ef5 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
@@ -709,29 +710,29 @@ padding: 0!important;
             margin: 0;
         }
 
-        .b-b0f121 a {
+        .v-362ef5 a {
             text-decoration: none;
             text-align: center;
             color: #ffffff !important;
         }
 
-        .b-b0f121 a:hover {
+        .v-362ef5 a:hover {
             text-decoration: underline;
         }
 
-        .w-5819fa {
+        .w-076497 {
             padding: 20px;
             text-align: center;
             background: #eabebe;
-            border-top: 1px solid var(--h-143c32);
+            border-top: 1px solid var(--q-015c19);
             color: #ffffff;
         }
         
-        .w-5819fa p {
+        .w-076497 p {
              color: #ffffff !important;
         }
 
-        .s-13ffa0 {
+        .v-be7db4 {
             color: white !important;
             width: 100%;
             position: fixed;
@@ -741,24 +742,24 @@ padding: 0!important;
             z-index: 9999;
         }
 
-        .s-13ffa0 .head {
+        .v-be7db4 .head {
             font-weight: 600;
             font-size: 1.2em !important;
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .s-13ffa0 .bottom {
+        .v-be7db4 .bottom {
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .s-13ffa0 img {
+        .v-be7db4 img {
             max-width: 150px;
             max-height: 65px;
         }
 
-        .s-13ffa0 .x-11aa3a {
+        .v-be7db4 .w-9014f2 {
             display: flex;
             gap: 20px;
             align-items: center;
@@ -766,7 +767,7 @@ padding: 0!important;
             position: relative;
         }
 
-        .s-13ffa0 a {
+        .v-be7db4 a {
             margin-right: 2vw;
             border-radius: 16px;
             padding: 12px 20px;
@@ -776,23 +777,23 @@ padding: 0!important;
             font-weight: bold;
         }
 
-        .s-13ffa0 a:hover {
+        .v-be7db4 a:hover {
             transform: scale(1.05);
         }
 
-        .v-ce7167 {
+        .e-17b98a {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
         }
 
-        .v-ce7167 p {
+        .e-17b98a p {
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .q-73fe53 {
+        .t-84f817 {
             position: absolute;
             top: -8px;
             right: 12px;
@@ -803,25 +804,25 @@ padding: 0!important;
             transition: 0.3s;
         }
 
-        .q-73fe53:hover {
+        .t-84f817:hover {
             transform: rotate(90deg);
         }
 
-        .s-13ffa0.mobile {
+        .v-be7db4.mobile {
             display: none;
         }
 
         @media screen and (max-width: 991px) {
-            .s-13ffa0.desktop {
+            .v-be7db4.desktop {
                 display: none;
             }
-            .s-13ffa0.mobile {
+            .v-be7db4.mobile {
                 display: block;
             }
-            .s-13ffa0.mobile .x-11aa3a {
+            .v-be7db4.mobile .w-9014f2 {
                 flex-direction: column;
             }
-            .s-13ffa0.mobile a {
+            .v-be7db4.mobile a {
                 width: 100%;
                 text-align: center;
             }
@@ -835,15 +836,15 @@ padding: 0!important;
     
             
         @media (max-width: 768px) {
-            .r-06d994 {
+            .m-ec3ab3 {
                 display: flex !important;
             }
             
-            header.n-682ae6 {
+            header.b-efcebf {
                 display: none;
             }
             
-            .t-8d5915 {
+            .m-7d710a {
                 padding-top: 80px;
             }
         }
@@ -857,13 +858,13 @@ padding: 0!important;
                 white-space: nowrap;
             }
             
-            .d-04ae0b thead th {
+            .b-4548c5 thead th {
                 font-size: 14px;
                 padding: 10px 5px;
             }
 
            
-            .a-5021bd {
+            .h-f75e0d {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -872,29 +873,29 @@ padding: 0!important;
                 min-width: 150px;
             }
 
-            .y-f2557a {
+            .q-20d9e3 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 8px;
             }
 
-            .y-f2557a img {
+            .q-20d9e3 img {
                 max-height: 100px;
                 border-radius: 8px;
                 width: auto;
             }
 
-            .w-52e433 {
+            .d-f32e32 {
                 text-align: center;
             }
-            .w-52e433 .y-efc7bb {
+            .d-f32e32 .d-40eec3 {
                 display: flex;
                 gap: 2px;
                 justify-content: center;
             }
 
-            .d-3d4fcd {
+            .f-1a9842 {
                 font-size: 14px;
                 font-weight: bold;
                 text-align: center;
@@ -903,22 +904,22 @@ padding: 0!important;
             }
 
            
-            .r-a8b022 {
+            .c-ea7725 {
                 font-size: 12px;
                 padding: 10px 5px;
             }
 
             
-            .m-1a740d {
+            .n-7ac318 {
                 text-align: center;
                 padding: 10px 5px;
             }
-             .m-1a740d a{
+             .n-7ac318 a{
                 width: 100%;
                 padding: 8px 12px;
                 font-size: 14px;
              }
-             .n-8c3d58 {
+             .w-da2e4f {
                 font-size: 18px;
              }
             figure{
@@ -934,7 +935,7 @@ padding: 0!important;
                 max-width: 100%;
                 height: auto;
             }
-             .b-b0f121 {
+             .v-362ef5 {
             display: grid;
             grid-template-columns:  1fr;
             gap: 20px;
@@ -974,22 +975,22 @@ padding: 0!important;
 
 <body>
     
-    <div class="r-06d994">
-        <div class="k-dbef4d">
+    <div class="m-ec3ab3">
+        <div class="n-a976a6">
                             <a href="https://casina.feng-suej-esoterika.cz/">
                     <img src="img/0ab923b17460fee876b9c755d42acba2.webp" alt="Logo">
                 </a>
                     </div>
-        <div class="p-2879aa">
+        <div class="z-9a5f0e">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
 
-    <ul class="w-e36a14 mobile-menu">
-                <div class="p-90ea6a">
-                                                                    <a class="c-0955cf" href="https://casina.feng-suej-esoterika.cz/">
+    <ul class="f-84a95e mobile-menu">
+                <div class="t-eb9a64">
+                                                                    <a class="e-4dd397" href="https://casina.feng-suej-esoterika.cz/">
                         Play                    </a>
                                     </div>
                                                             <li>
@@ -1009,14 +1010,14 @@ padding: 0!important;
                 </li>
                         </ul>
 
-    <header class="n-682ae6">
-        <div class="x-11aa3a">
-            <div class="k-8e54cb">
+    <header class="b-efcebf">
+        <div class="w-9014f2">
+            <div class="p-2f9964">
                                     <a href="https://casina.feng-suej-esoterika.cz/">
                         <img src="img/0ab923b17460fee876b9c755d42acba2.webp" alt="Logo">
                     </a>
                             </div>
-            <ul class="w-e36a14">
+            <ul class="f-84a95e">
                                                                                                     <li>
                             <a href="/index.html">MULTI PAGES</a>
                         </li>
@@ -1036,17 +1037,17 @@ padding: 0!important;
         </div>
     </header>
 
-    <div class="t-8d5915">
-        <div class="x-11aa3a">
+    <div class="m-7d710a">
+        <div class="w-9014f2">
             <h1>Zahraniční Casina Pro České Hráče 2025 – TOP 10 | Test &amp; Recenze</h1>
-                            <div class="a-6be78f" style="background:  !important;">
-                                            <img src="img/71d0ab3921a01b7a6af41b7f415551ee.webp" alt="Petr Svoboda" class="e-2e2701">
-                                        <div class="k-dc527c">
+                            <div class="m-8a3d3b" style="background:  !important;">
+                                            <img src="img/71d0ab3921a01b7a6af41b7f415551ee.webp" alt="Petr Svoboda" class="h-466c8f">
+                                        <div class="c-959ad8">
                                                     <strong>Author: Petr Svoboda</strong><br>
                                                 <span>Last updated: 04 January 2026</span>
                     </div>
                 </div>
-                    <table class="d-04ae0b">
+                    <table class="b-4548c5">
         <thead>
             <tr>
                 <th>№</th>
@@ -1059,23 +1060,23 @@ padding: 0!important;
         </thead>
         <tbody>
                             
-            <tr class="d-04ae0b casino-border" style="border-color: #eabebe;">
-                <td class="n-8c3d58">1</td>
+            <tr class="b-4548c5 casino-border" style="border-color: #eabebe;">
+                <td class="w-da2e4f">1</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/bc2ab077c4387ac8128e868aba6ddc1e.webp" alt="QuickWin">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 QuickWin                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>100% do 12500 Kč + 200FS</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Curacao (8048/JAZ2020-001)</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1083,12 +1084,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">5/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">5/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/quickwin/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1096,23 +1097,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b casino-border" style="border-color: #eabebe;">
-                <td class="n-8c3d58">2</td>
+            <tr class="b-4548c5 casino-border" style="border-color: #eabebe;">
+                <td class="w-da2e4f">2</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/576fea123e61bbc5a8f1762be5a41c3e.webp" alt="GoldSpin">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 GoldSpin                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>100% až do částky 37500 Kč + 100 free spinů</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Anjouan Gaming License Authority</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1120,12 +1121,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.9/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.9/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/goldspin/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1133,23 +1134,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b casino-border" style="border-color: #eabebe;">
-                <td class="n-8c3d58">3</td>
+            <tr class="b-4548c5 casino-border" style="border-color: #eabebe;">
+                <td class="w-da2e4f">3</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/378071ac29abb771d9558a037c0ebabb.webp" alt="Spinanga">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 Spinanga                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>100% AŽ DO 12 500 Kč + 200 FS + 1 BONUS CRAB</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Comoro Islands / PAGCOR</li>
 <li><strong>Minimální vklad</strong>: €20 (pro bonus, €10 obecně)</li>
@@ -1157,12 +1158,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.9/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.9/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/spinanga/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1170,23 +1171,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">4</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">4</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/f05ca30372fb6c7691e8430fdb9edf23.webp" alt="OnlySpins">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 OnlySpins                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>28 000 Kč + 50 FS</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Tobique Gaming Commission</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1194,12 +1195,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.8/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.8/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/onlyspins/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1207,23 +1208,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">5</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">5</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/45e29ba798e829fb4003367d090ed63e.webp" alt="Dragonia">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 Dragonia                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>3000 Kč+ 300 FS!</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Anjouan Gaming</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1231,12 +1232,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.8/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.8/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/dragonia/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1244,23 +1245,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">6</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">6</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/afd4a70e219e6d7fb8e69fd23f659aa7.webp" alt="Legiano">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 Legiano                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>100% AŽ DO 12,500 Kč + 200 FS + 1 BONUS CRAB</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Comoro Islands / Anjouan</li>
 <li><strong>Minimální vklad</strong>: €10 (€20 pro bonus)</li>
@@ -1268,12 +1269,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.7/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.7/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/legiano/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1281,23 +1282,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">7</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">7</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/92d461f12919d2fed78d377d8b4f8625.webp" alt="Bankonbet">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 Bankonbet                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>100% bonus až do 12 500 Kč + 200 zatočení zdarma</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Curacao</li>
 <li><strong>Minimální vklad</strong>: €10 (€20 pro bonus)</li>
@@ -1305,12 +1306,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.7/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.7/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/bankonbet/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1318,23 +1319,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">8</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">8</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/84853a38dac5346d5f29a58840b7851e.webp" alt="National Casino">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 National Casino                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>+100 Zatočení Zdarma Až do Výše 2500 CZK</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Curacao (8048/JAZ2017-067)</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1342,12 +1343,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.6/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.6/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/national-casino/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1355,23 +1356,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">9</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">9</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/0bf102f49595c8a8d34840686ea78eb4.webp" alt="Bizzo Casino">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 Bizzo Casino                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>125% až do výše 31 250 CZK + 1 BONUSOVÁ HRA</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Curacao / Kahnawake</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1379,12 +1380,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.6/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.6/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/bizzo-casino/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1392,23 +1393,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">10</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">10</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/6a27f108d3e8494cbbc9480a2cd0f0ba.svg" alt="Dragon Slots">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 Dragon Slots                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>225% až do výše 55 000 Kč + 200 FS</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Curacao (TechSolutions Group N.V.)</li>
 <li><strong>Minimální vklad</strong>: €10</li>
@@ -1416,12 +1417,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.6/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.6/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/dragon-slots/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1429,23 +1430,23 @@ padding: 0!important;
             </tr>
 
                             
-            <tr class="d-04ae0b" >
-                <td class="n-8c3d58">11</td>
+            <tr class="b-4548c5" >
+                <td class="w-da2e4f">11</td>
                 
-                <td class="a-5021bd">
-                    <div class="y-f2557a">
+                <td class="h-f75e0d">
+                    <div class="q-20d9e3">
                                                     <img src="img/f6199dc6a070647f2e5096622a9367fe.webp" alt="CasinoLab">
                         
-                                                    <div class="c-0f0c8e">
+                                                    <div class="m-3acb4c">
                                 CasinoLab                            </div>
                                             </div>
                 </td>
                 
-                <td class="d-3d4fcd">
+                <td class="f-1a9842">
                                             <strong>100% až do 12,500 Kč + 200 FS</strong>
                                     </td>
                 
-                <td class="r-a8b022">
+                <td class="c-ea7725">
                                             <ul>
 <li><strong>Licence</strong>: Curacao</li>
 <li><strong>Minimální vklad</strong>: €10 (€30 pro Bitcoin)</li>
@@ -1453,12 +1454,12 @@ padding: 0!important;
 </ul>
                                     </td>
                 
-                <td class="w-52e433">
-                    <span class="y-70ace7">4.5/5</span><span class="y-efc7bb"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="d-f32e32">
+                    <span class="b-b8237e">4.5/5</span><span class="d-40eec3"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="m-1a740d">
+                <td class="n-7ac318">
                                             <a href="/go/casinolab/"
-                           class="k-9b214a" 
+                           class="w-9aaf0b" 
                            target="_blank">
                            Získat bonus                        </a>
                                     </td>
@@ -1542,7 +1543,7 @@ padding: 0!important;
     ]
 }</script>
 
-                            <div class="m-2ddfb6">
+                            <div class="h-126e54">
                     <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Chcete hrát v zahraničních casinech, ale nevíte kam se vrhnout? Za pět let testování jsem prošel přes 80 mezinárodních provozovatelů a našel skutečné skvosty. Tady jsou ty nejlepší platformy pro české hráče v roce 2025 – s férovými bonusy, rychlými výběry a obrovským výběrem her.</p>
 <p class="font-claude-response-body break-words whitespace-normal leading-[1.7]"><strong>Nejlepší zahraniční casina pro české hráče:</strong></p>
 <ol class="[li_&amp;]:mb-0 [li_&amp;]:mt-1.5 [li_&amp;]:gap-1.5 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-decimal flex flex-col gap-2 pl-8 mb-3">
@@ -1955,40 +1956,40 @@ padding: 0!important;
 <h2 class="text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold">FAQ – Nejčastější Otázky o Zahraničních Casinech Pro České Hráče</h2>
                 </div>
             
-                            <div class="p-408535">
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Můžu legálně hrát v zahraničních casinech z Česka?</h3>
-                            <div class="b-44547c">
+                            <div class="v-0fd3a3">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Můžu legálně hrát v zahraničních casinech z Česka?</h3>
+                            <div class="y-299f03">
                                 Ano, můžete. Český hazardní zákon č. 186/2016 Sb. reguluje pouze provozovatele s domácí licencí od Ministerstva financí. Jednotliví hráči nejsou trestáni za používání zahraničních platforem. Pozor ale na daňovou povinnost – výhry nad milion Kč ročně musíte zdanit 15%.                            </div>
                         </div>
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Jaký je rozdíl mezi českými a zahraničními casiny?</h3>
-                            <div class="b-44547c">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Jaký je rozdíl mezi českými a zahraničními casiny?</h3>
+                            <div class="y-299f03">
                                 Zásadní rozdíly: (1) Bonusy – české max 500 Kč, zahraniční desítky tisíc. (2) Výběry – české po 24h cool-off, zahraniční okamžitě. (3) Hry – české 500-2 000, zahraniční 5 000-11 000 titulů. (4) Limity sázek – české omezené, zahraniční vysoké pro high rollery. (5) Daně – české odvádějí automaticky, zahraniční musíte sami přiznat.                            </div>
                         </div>
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Jak jsou rychlé výběry v zahraničních casinech?</h3>
-                            <div class="b-44547c">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Jak jsou rychlé výběry v zahraničních casinech?</h3>
+                            <div class="y-299f03">
                                 Závisí na metodě a casinu. Krypto (Bitcoin, Ethereum) 0-2 hodiny u top casin jako Quickwin nebo Spinanga. E-peněženky (Skrill, Neteller) 12-24 hodin. Kreditky 1-3 dny. Bankovní převod 3-5 dní. První výběr vždy trvá déle kvůli KYC verifikaci – počítejte s 24-72 hodinami navíc.                            </div>
                         </div>
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Které zahraniční casino má nejvyšší bonus?</h3>
-                            <div class="b-44547c">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Které zahraniční casino má nejvyšší bonus?</h3>
+                            <div class="y-299f03">
                                 Goldspin vévodí s až 75 000 Kč celkově (první vklad 37 500 Kč, druhý 25 000 Kč, třetí 12 500 Kč). Procentuálně Dragonia nabízí 200% match. National Casino láká 250 free spiny zdarma bez vkladu. Záleží čeho si ceníte – vysoké částky, procenta nebo free spinů.                            </div>
                         </div>
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Potřebuji VPN pro hraní v zahraničních casinech?</h3>
-                            <div class="b-44547c">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Potřebuji VPN pro hraní v zahraničních casinech?</h3>
+                            <div class="y-299f03">
                                 Ne, většinou není nutné. Zahraniční casina akceptují české hráče přímo bez VPN. Některá dokonce mají české rozhraní a support. VPN může způsobit problémy – casina detekují změnu lokace a mohou zablokovat účet pro podezření z podvodu. Pokud casino blokuje Českou republiku, raději hledejte jiné.                            </div>
                         </div>
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Jak poznám důvěryhodné zahraniční casino?</h3>
-                            <div class="b-44547c">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Jak poznám důvěryhodné zahraniční casino?</h3>
+                            <div class="y-299f03">
                                 Kontrolujte: (1) Licenci – Curacao minimum, MGA nebo UKGC ideál. (2) SSL šifrování – zámek v URL. (3) Recenze hráčů – Trustpilot, Askgamblers, fóra. (4) Rychlost podpory – otestujte live chat. (5) Transparentnost podmínek – jasné wagering, limity, pravidla. (6) Historie – staší casina důvěryhodnější než nová. Vyhněte se casinům bez licence nebo s desítkami stížností online.                            </div>
                         </div>
-                                            <div class="n-da258f">
-                            <h3 class="h-da91eb">Mají zahraniční casina podporu v češtině?</h3>
-                            <div class="b-44547c">
+                                            <div class="e-8bb574">
+                            <h3 class="q-473e27">Mají zahraniční casina podporu v češtině?</h3>
+                            <div class="y-299f03">
                                 TOP casina ano – Quickwin, Goldspin, Spinanga nabízejí české rozhraní a live chat v češtině 24/7. Menší operátoři často jen anglicky nebo přes Google Translate integraci. Před registrací otestujte chat – zjistíte zda rozumí českým dotazům. Emailová podpora bývá anglická, ale kvalitnější operátoři akceptují české zprávy.                            </div>
                         </div>
                                     </div>
@@ -2057,15 +2058,15 @@ padding: 0!important;
         </div>
     </div>
 
-    <footer class="n-d3f366">
-        <span class="d-9b8b92">
+    <footer class="v-4ec023">
+        <span class="e-984a3c">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z"/>
   <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
 </svg>
         </span>
-        <div class="x-11aa3a">
-            <div class="b-b0f121">
+        <div class="w-9014f2">
+            <div class="v-362ef5">
                 <div class="footer-col">
                                             <img src="img/0ab923b17460fee876b9c755d42acba2.webp" alt="Logo" style="max-width: 100px; margin-bottom: 15px;">
                                         <p></p>
@@ -2076,17 +2077,17 @@ padding: 0!important;
                                     </div>
             </div>
         </div>
-        <div class="w-5819fa">
+        <div class="w-076497">
             <p>&copy; 2026 Zahraniční Casina Pro České Hráče 2025 – TOP 10 | Test &amp; Recenze. All rights reserved.</p>
         </div>
     </footer>
 
-            <div class="s-13ffa0 desktop" style="background: #eabebe;">
-            <div class="x-11aa3a">
-                <span class="q-73fe53">&times;</span>
-                <div class="v-ce7167">
+            <div class="v-be7db4 desktop" style="background: #eabebe;">
+            <div class="w-9014f2">
+                <span class="t-84f817">&times;</span>
+                <div class="e-17b98a">
                                             <img src="img/bc2ab077c4387ac8128e868aba6ddc1e.webp" alt="Casino">
-                                        <div class="c-97478d">
+                                        <div class="k-ebf6c5">
                         <p class="head">100% do 12500 Kč + 200FS</p>
                         <p class="bottom">QuickWin</p>
                     </div>
@@ -2096,12 +2097,12 @@ padding: 0!important;
             </div>
         </div>
     
-            <div class="s-13ffa0 mobile" style="background: #eabebe;">
-            <div class="x-11aa3a">
-                <span class="q-73fe53">&times;</span>
-                <div class="v-ce7167">
+            <div class="v-be7db4 mobile" style="background: #eabebe;">
+            <div class="w-9014f2">
+                <span class="t-84f817">&times;</span>
+                <div class="e-17b98a">
                                             <img src="img/bc2ab077c4387ac8128e868aba6ddc1e.webp" alt="Casino">
-                                        <div class="c-97478d">
+                                        <div class="k-ebf6c5">
                         <p class="head">100% do 12500 Kč + 200FS</p>
                         <p class="bottom">QuickWin</p>
                     </div>
@@ -2113,16 +2114,16 @@ padding: 0!important;
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.n-da258f');
+            const faqItems = document.querySelectorAll('.e-8bb574');
             faqItems.forEach(item => {
-                const question = item.querySelector('.h-da91eb');
+                const question = item.querySelector('.q-473e27');
                 question.addEventListener('click', function() {
                     item.classList.toggle('active');
                 });
             });
 
-            const hamburger = document.querySelector('.p-2879aa');
-            const mobileMenu = document.querySelector('.w-e36a14.mobile-menu');
+            const hamburger = document.querySelector('.z-9a5f0e');
+            const mobileMenu = document.querySelector('.f-84a95e.mobile-menu');
             
             if (hamburger && mobileMenu) {
                 hamburger.addEventListener('click', function() {
@@ -2140,17 +2141,17 @@ padding: 0!important;
             }
 
  
-            const closeButtons = document.querySelectorAll('.q-73fe53');
+            const closeButtons = document.querySelectorAll('.t-84f817');
             closeButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    this.closest('.s-13ffa0').style.display = 'none';
+                    this.closest('.v-be7db4').style.display = 'none';
                 });
             });
         });
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const scrollTopBtn = document.querySelector('.d-9b8b92');
+        const scrollTopBtn = document.querySelector('.e-984a3c');
 
         if (!scrollTopBtn) return;
 

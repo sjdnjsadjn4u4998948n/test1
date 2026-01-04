@@ -1,48 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-<script>
-(function(){
-  try {
-    var preferredHost = "nonwww";
-    var h = location.hostname;
-    var target = null;
-    if (preferredHost === 'www') {
-      if (!/^www\./i.test(h)) { target = "www." + h; }
-    } else if (preferredHost === "nonwww") {
-      if (/^www\./i.test(h)) { target = h.replace(/^www\./i,""); }
-    }
-    if (target) {
-      var newUrl = location.protocol + '//' + target + location.pathname + location.search + location.hash;
-      // update meta-refresh if present for non-JS fallback
-      try {
-        var m = document.querySelector("meta[name=\"kaziki-meta-refresh\"]");
-        if (m) { m.setAttribute("content", "0;url=" + newUrl); }
-      } catch(e) {}
-      // use replace to avoid adding history entry
-      location.replace(newUrl);
-    }
-  } catch(e) {}
-})();
-</script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pache4</title>
+    <title>MULTI PAGES</title>
 
-    <meta name="title" content="Pache4">
-    <meta name="description" content="fakdgjfasfa">
+    <meta name="title" content="MULTI PAGES">
+    <meta name="description" content="odgsiufhd">
 
-    <meta property="og:title" content="Pache4">
-    <meta property="og:description" content="fakdgjfasfa">
+    <meta property="og:title" content="MULTI PAGES">
+    <meta property="og:description" content="odgsiufhd">
     <meta property="og:url" content="#">
     
-    <meta name="twitter:title" content="Pache4">
-    <meta name="twitter:description" content="fakdgjfasfa">
+    <meta name="twitter:title" content="MULTI PAGES">
+    <meta name="twitter:description" content="odgsiufhd">
     
+            <link type="image/png" href="img/0ab923b17460fee876b9c755d42acba2.webp" rel="icon" sizes="16x16">
+        <link type="image/png" href="img/0ab923b17460fee876b9c755d42acba2.webp" rel="icon" sizes="32x32">
+        <link type="image/x-icon" href="img/0ab923b17460fee876b9c755d42acba2.webp" rel="icon">
     
     <link rel="canonical" href="#">
 
@@ -68,10 +46,10 @@
     
     <style>
         :root {
-            --a-cc20e6: #cbff23;
-            --s-3ec185: #ffffff;
-            --v-799eb7: #8224e3;
-            --t-9b65bb: #7cae8d;
+            --a-4ff4fe: #ffffff;
+            --r-e27a3a: #000000;
+            --g-70a623: #ffffff;
+            --b-3c4f60: #eabebe;
         }
 
         * {
@@ -80,8 +58,8 @@
 
         body {
             -webkit-font-smoothing: antialiased;
-            background-color: var(--a-cc20e6);
-            color: var(--s-3ec185);
+            background-color: var(--a-4ff4fe);
+            color: var(--r-e27a3a);
             font-family: "DM Sans", sans-serif;
             font-size: 16px;
             height: auto;
@@ -99,7 +77,7 @@
         h1, h2, h3, h4, h5, h6 {
             letter-spacing: .03em;
             font-weight: 700;
-            color: var(--s-3ec185);
+            color: var(--r-e27a3a);
         }
 
         h1 {
@@ -129,13 +107,13 @@
             display: inline-block;
         }
         a {
-            color: var(--v-799eb7);
+            color: var(--g-70a623);
         }
 
         a:active, a:focus, a:hover {
             outline: 0;
         }
-        .z-79a917{
+        .q-3e7911{
                position: fixed;
     bottom: 30px;
     right: 10px;
@@ -147,31 +125,31 @@
     background: #0000007d;
     border-radius: 50%;
         }
-        .c-b3dd53 p img{
+        .r-65081e p img{
             display: flex;
             margin: auto;
         }
-        .f-f0a694 {
+        .r-b4724f {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        .x-992525 {
+        .h-a5eccf {
             display: none;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            background: #a36225;
-            border-bottom: 1px solid var(--t-9b65bb);
+            background: #eabebe;
+            border-bottom: 1px solid var(--b-3c4f60);
             padding: 9px 20px;
             z-index: 1000;
             align-items: center;
             justify-content: space-between;
         }   
 
-        .y-67cbc9 {
+        .w-ded166 {
             width: 30px;
             height: 25px;
             display: flex;
@@ -181,35 +159,35 @@
             z-index: 1001;
         }
 
-        .y-67cbc9 span {
+        .w-ded166 span {
             width: 100%;
             height: 3px;
-            background: var(--s-3ec185);
+            background: var(--r-e27a3a);
             transition: all 0.3s;
             border-radius: 2px;
         }
 
-        .y-67cbc9.active span:nth-child(1) {
+        .w-ded166.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .y-67cbc9.active span:nth-child(2) {
+        .w-ded166.active span:nth-child(2) {
             opacity: 0;
         }
 
-        .y-67cbc9.active span:nth-child(3) {
+        .w-ded166.active span:nth-child(3) {
             transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .g-91f10a {
+        .a-23564e {
             max-height: 50px;
         }
         
-        .g-91f10a img {
+        .a-23564e img {
             max-height: 50px;
         }
         
-        .t-932f54.mobile-menu {
+        .g-c82250.mobile-menu {
             flex-direction: column;
             gap: 0px;
             position: fixed;
@@ -218,7 +196,7 @@
             width: 80%;
             max-width: 300px;
             height: 100vh;
-            background: var(--a-cc20e6);
+            background: var(--a-4ff4fe);
             padding: 80px 20px 20px;
             transition: left 0.3s ease;
             z-index: 999;
@@ -226,41 +204,41 @@
             box-shadow: 2px 0 10px rgba(0,0,0,0.1);
         }
         
-        .t-932f54.mobile-menu.active {
+        .g-c82250.mobile-menu.active {
             left: 0;
         }
         
-        .t-932f54.mobile-menu li {
+        .g-c82250.mobile-menu li {
             margin-bottom: 15px;
         }
         
-        .t-932f54.mobile-menu li a {
+        .g-c82250.mobile-menu li a {
             display: block;
             padding: 10px 0;
             font-size: 18px;
             text-align: center;
         }
 
-        header.q-819b54 {
-            background: #a36225;
-            border-bottom: 1px solid var(--t-9b65bb);
+        header.m-b21f4e {
+            background: #eabebe;
+            border-bottom: 1px solid var(--b-3c4f60);
             padding: 10px 0;
             position: static;
             top: 0;
             z-index: 999;
         }
 
-        header.q-819b54 .f-f0a694 {
+        header.m-b21f4e .r-b4724f {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .r-7cb7d5 img {
+        .n-98c444 img {
             max-height: 65px;
         }
 
-        .t-932f54 {
+        .g-c82250 {
             list-style: none;
             padding: 0;
             display: flex;
@@ -268,17 +246,23 @@
             margin: 0;
         }
 
-        .t-932f54 li a {
+        .g-c82250 li a {
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
         }
 
-        .t-932f54 li a:hover {
+        .g-c82250 li a:hover {
             text-decoration: underline;
         }
+        
+        .g-c82250 li.current a {
+            text-decoration: underline;
+            color: #eabebe;
+            font-weight: 700;
+        }
 
-        .w-f37880 {
+        .g-934154 {
             padding: 40px 0;
         }
         figure img {
@@ -286,10 +270,10 @@
     max-height: 450px;
     object-fit: contain;
 }
-          .m-2aae67 {
+          .h-0f0de6 {
             color: #ffffff !important;
-            background: #d341a0;
-            border: 1px solid var(--t-9b65bb);
+            background: #eabebe;
+            border: 1px solid var(--b-3c4f60);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -305,10 +289,10 @@
             width: -webkit-fill-available;
         }
 
-        .c-955c8e {
+        .m-dc8b71 {
             color: #ffffff;
-            background: #38b745;
-            border: 1px solid var(--t-9b65bb);
+            background: #ffffff;
+            border: 1px solid var(--b-3c4f60);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -323,7 +307,7 @@
             font-weight: bold;
         }
 
-        .m-2aae67:hover, .c-955c8e:hover {
+        .h-0f0de6:hover, .m-dc8b71:hover {
             transition: .6s;
             transform: scale(1.05);
         }
@@ -333,72 +317,129 @@
             border-collapse: collapse;
         }
         table tr:nth-child(odd) {
-            background: #bfbfbf;
+            background: #eae5e5;
         }
         table tr:nth-child(even) {
-            background: #ffffff;
+            background: #eae5e5;
         }
         table td, table th {
             padding: 10px;
             text-align: left;
-            border: 1px solid var(--t-9b65bb);
+            
         }
         
-        .t-bfeaf7 {
+        .y-c9c29e {
             width: 100%;
             margin: 20px 0;
             border-collapse: collapse;
         }
-        .t-bfeaf7 thead {
-            background: #bfbfbf;
+        .y-c9c29e thead {
+            background: #eae5e5;
             font-weight: bold;
+            border-radius: 8px;
         }
-        .t-bfeaf7 thead th {
+        .y-c9c29e thead th {
             padding: 15px 10px;
             text-align: center;
-            border: 1px solid var(--t-9b65bb);
-            color: #333;
+           
+            color: #000000;
         }
-        .t-bfeaf7 tbody tr {
+        .y-c9c29e tbody tr {
+             border: 1px solid var(--b-3c4f60);
             position: relative;
-            background: #bfbfbf;
+            background: #eae5e5;
         }
-        .t-bfeaf7 tbody tr:hover {
-            background: #bfbfbf;
+        .y-c9c29e tbody tr:hover {
+            background: #eae5e5;
         }
-        .t-bfeaf7 tbody td {
-            border: 1px solid var(--t-9b65bb);
+        .y-c9c29e tbody td {
+           
             padding: 15px;
             vertical-align: middle;
         }
-        .v-adf75a {
+         .y-c9c29e thead tr {
+              display: grid;
+                      grid-template-columns: 10px 130px .5fr .8fr 150px 0.3fr;
+                gap: 20px;
+                align-items: center;
+                background: #eae5e5!important;
+                color: #000000;
+                border-radius: 10px;
+                padding: 15px 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+        }
+         .y-c9c29e thead tr{
+padding: 0!important;
+         }
+         .y-c9c29e thead tr td:nth-child(1){
+ position: absolute;
+    margin-left: -17px;
+         }
+           
+         .y-c9c29e tbody tr {
+              display: grid;
+                grid-template-columns:130px .5fr .7fr 130px 0.3fr   ;
+                gap: 10px;
+                align-items: center;
+                background: #eae5e5!important;
+                color: #000000;
+                border-radius: 10px;
+                padding: 15px 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                border: 2px solid transparent;
+        }
+        .y-c9c29e tbody tr td:nth-child(3) {
+
+        font-size: 20px;
+        }
+        .y-c9c29e tbody ul{
+            padding-left: 0;
+        }
+       .y-c9c29e td ul li {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 8px;
+        list-style: none;
+        }
+        .y-c9c29e td ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        .k-f3d423 {
             display: flex;
             flex-direction: column;
             gap: 10px;
             min-height:160px;
             align-items: flex-start;
-            background: #bfbfbf;
-            color: #333;
+            background: #eae5e5;
+            color: #000000;
             padding: 15px;
             border: 2px solid transparent;
         }
-        .v-adf75a ul{
+        .k-f3d423 ul{
             margin-bottom: 0!important;
             position: relative;
         }
-        .v-adf75a ul {
+        .k-f3d423 ul {
             list-style: none;
             padding-left: 0;
             margin: 0;
         }
 
-        .v-adf75a ul li {
+        .k-f3d423 ul li {
             position: relative;
             padding-left: 28px;
             margin-bottom: 8px;
         }
 
-        .v-adf75a ul li::before {
+        .k-f3d423 ul li::before {
             content: "✔";
             position: absolute;
             left: 0;
@@ -410,79 +451,86 @@
         }
 
 
-        .y-f6144d {
+        .c-7217c0 {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
         }
 
-        .y-f6144d img {
+        .c-7217c0 img {
             max-height: 110px;
             margin: 0 auto 10px;
             display: block;
         }
 
-        .w-4bb345 {
+        .x-401fd6 {
             font-size: 14px;
-            color: #333;
+            color: #000000;
             text-align: center;
             width: 100%;
         }
 
-        .q-e0d1a9 {
+        .e-c19e61 {
             font-size: 18px;
             font-weight: bold;
             line-height: 120%;
             margin-bottom: 0;
             letter-spacing: -0.02em;
             text-transform: capitalize;
-            color: #333;
+            color: #000000;
             padding: 15px 10px;
             text-align: center;
         }
 
-        .q-e0d1a9 ul {
+        .e-c19e61 ul {
             margin: 5px 0 0;
             padding-left: 18px;
             font-weight: normal;
             font-size: 14px;
-             color: #333;
+             color: #000000;
         }
 
-        .q-e0d1a9 li {
+        .e-c19e61 li {
             margin-bottom: 3px;
         }
 
-        .z-081453 {
+        .c-315073 {
             text-align: center;
             font-weight: bold;
             font-size: 20px;
             margin-top: 10px;
         }
 
-        .z-081453 .g-af785f {
+        .c-315073 .e-a70e86 {
             display: block;
             font-size: 14px;
             color: #f5c518;
         }
 
-        .c-f07ab2 {
+        .w-d36ebf {
             text-align: center;
             padding: 15px 10px;
         }
-        .q-8f5189 {
-            text-align: center;
-            font-weight: bold;
-            font-size: 24px;
+        .n-3fdd72 {
+          
             color: #ffffff !important;
-            background: #23938e;
+            background: #ea6262;
+               text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px !important;
+        border-radius: 8px 0 19px 0px;
         }
         
-        .c-9c906f {
+        .e-d97a9a {
             display: inline-block;
             padding: 10px 20px;
-            background: #23938e;
+            background: #ea6262;
             color: #ffffff !important;
             font-weight: bold;
             border-radius: 30px;
@@ -491,14 +539,72 @@
             white-space: nowrap;
         }
 
-        .c-9c906f:hover {
+        .e-d97a9a:hover {
             transition:.4s;
            transform:scale(1.05);
         }
+        
+ @media (max-width: 769px) {
+    .y-c9c29e{
+        
+    }
+ .y-c9c29e tbody tr {
+           display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        max-width: 100%;
+        justify-content: center;
+        gap: 0;
+    
+        }
+        .y-c9c29e thead{
+            display: none!important;
+        }
+        .y-c9c29e tbody tr td{
+            padding: 0px!important;
+        }
+       
+.y-c9c29e tbody{
+    padding: 0!important;
+}
+.y-c9c29e tbody tr td:nth-child(1) {
+         padding: 3px 8px !important;
+        }
+        .y-c9c29e tbody tr td:nth-child(2) {
+            display: flex;
+        order: 1;
+        max-width: 35px;
+        align-items: center;
+        justify-content: center;
+        max-height: 42px;
+        }
+        .y-c9c29e tbody tr td:nth-child(3) {
+    display: flex;
+                   display: flex;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        }
+        .y-c9c29e tbody tr td:nth-child(4) {
+    display: flex;
+                 display: flex;
+        order: 4;
+        }
+        .y-c9c29e tbody tr td:nth-child(5) {
 
+            order: 2;
+        }
+         .y-c9c29e tbody tr td:nth-child(6) {
+    display: flex;
+                   display: flex;
+        order: 6;
+        width: 100%;
+        }
+ }
 
-        .b-772bf7 {
-            background: #dd3333;
+        .z-3dc5d1 {
+            background: ;
             border-radius: 8px;
             padding: 10px 15px;
             display: flex;
@@ -507,7 +613,7 @@
             margin: 20px 0;
         }
 
-        .c-7d8086 {
+        .a-d3a2cd {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -515,33 +621,33 @@
             flex-shrink: 0;
         }
 
-        .w-359dae {
+        .s-728dfa {
             flex: 1;
         }
 
-        .w-359dae a {
+        .s-728dfa a {
             text-decoration: none;
-            color: var(--s-3ec185);
+            color: var(--r-e27a3a);
             font-weight: bold;
         }
 
-        .w-359dae a:hover {
+        .s-728dfa a:hover {
             text-decoration: underline;
         }
 
-        .g-54bc4d {
+        .e-960ffc {
             margin: 40px 0;
         }
 
-        .c-b0f989 {
-            border: 1px solid var(--t-9b65bb);
+        .d-71417e {
+            border: 1px solid var(--b-3c4f60);
             border-radius: 8px;
             margin-bottom: 15px;
             overflow: hidden;
-            background: #0066bf;
+            background: #eae5e5;
         }
 
-        .v-5bd1c0 {
+        .s-a8a7ac {
             padding: 15px 20px;
             margin: 0;
             cursor: pointer;
@@ -551,15 +657,15 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        .c-b0f989.active .v-5bd1c0 {
-            color: #dd9933;
+        .d-71417e.active .s-a8a7ac {
+            color: #000000;
         }
 
-        .v-5bd1c0:hover {
+        .s-a8a7ac:hover {
             background: rgba(0,0,0,0.02);
         }
 
-        .v-5bd1c0::after {
+        .s-a8a7ac::after {
             content: '+';
             position: absolute;
             right: 20px;
@@ -569,12 +675,12 @@
             transition: transform 0.3s;
         }
 
-        .c-b0f989.active .v-5bd1c0::after {
+        .d-71417e.active .s-a8a7ac::after {
             content: '−';
             transform: rotate(180deg);
         }
 
-        .d-5506d9 {
+        .g-0b58b2 {
             max-height: 0;
             padding: 0 20px;
             margin: 0;
@@ -584,16 +690,16 @@
             line-height: 1.6;
         }
 
-        .c-b0f989.active .d-5506d9 {
+        .d-71417e.active .g-0b58b2 {
             max-height: 500px;
             padding: 15px 20px;
             opacity: 1;
         }
 
         footer{
-                        background: #1e73be;
+                        background: #eabebe;
         }
-        .n-34d87b {
+        .b-e64859 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
@@ -603,29 +709,29 @@
             margin: 0;
         }
 
-        .n-34d87b a {
+        .b-e64859 a {
             text-decoration: none;
             text-align: center;
             color: #ffffff !important;
         }
 
-        .n-34d87b a:hover {
+        .b-e64859 a:hover {
             text-decoration: underline;
         }
 
-        .e-fe7964 {
+        .p-d4e214 {
             padding: 20px;
             text-align: center;
-            background: #1e73be;
-            border-top: 1px solid var(--t-9b65bb);
+            background: #eabebe;
+            border-top: 1px solid var(--b-3c4f60);
             color: #ffffff;
         }
         
-        .e-fe7964 p {
+        .p-d4e214 p {
              color: #ffffff !important;
         }
 
-        .h-e4da12 {
+        .w-70df20 {
             color: white !important;
             width: 100%;
             position: fixed;
@@ -635,24 +741,24 @@
             z-index: 9999;
         }
 
-        .h-e4da12 .head {
+        .w-70df20 .head {
             font-weight: 600;
             font-size: 1.2em !important;
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .h-e4da12 .bottom {
+        .w-70df20 .bottom {
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .h-e4da12 img {
+        .w-70df20 img {
             max-width: 150px;
             max-height: 65px;
         }
 
-        .h-e4da12 .f-f0a694 {
+        .w-70df20 .r-b4724f {
             display: flex;
             gap: 20px;
             align-items: center;
@@ -660,7 +766,7 @@
             position: relative;
         }
 
-        .h-e4da12 a {
+        .w-70df20 a {
             margin-right: 2vw;
             border-radius: 16px;
             padding: 12px 20px;
@@ -670,23 +776,23 @@
             font-weight: bold;
         }
 
-        .h-e4da12 a:hover {
+        .w-70df20 a:hover {
             transform: scale(1.05);
         }
 
-        .v-1f82ac {
+        .q-9a4496 {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
         }
 
-        .v-1f82ac p {
+        .q-9a4496 p {
             margin-bottom: 0.3em;
             margin-top: 0;
         }
 
-        .x-b5cef5 {
+        .d-5cbea8 {
             position: absolute;
             top: -8px;
             right: 12px;
@@ -697,25 +803,25 @@
             transition: 0.3s;
         }
 
-        .x-b5cef5:hover {
+        .d-5cbea8:hover {
             transform: rotate(90deg);
         }
 
-        .h-e4da12.mobile {
+        .w-70df20.mobile {
             display: none;
         }
 
         @media screen and (max-width: 991px) {
-            .h-e4da12.desktop {
+            .w-70df20.desktop {
                 display: none;
             }
-            .h-e4da12.mobile {
+            .w-70df20.mobile {
                 display: block;
             }
-            .h-e4da12.mobile .f-f0a694 {
+            .w-70df20.mobile .r-b4724f {
                 flex-direction: column;
             }
-            .h-e4da12.mobile a {
+            .w-70df20.mobile a {
                 width: 100%;
                 text-align: center;
             }
@@ -729,15 +835,15 @@
     
             
         @media (max-width: 768px) {
-            .x-992525 {
+            .h-a5eccf {
                 display: flex !important;
             }
             
-            header.q-819b54 {
+            header.m-b21f4e {
                 display: none;
             }
             
-            .w-f37880 {
+            .g-934154 {
                 padding-top: 80px;
             }
         }
@@ -751,13 +857,13 @@
                 white-space: nowrap;
             }
             
-            .t-bfeaf7 thead th {
+            .y-c9c29e thead th {
                 font-size: 14px;
                 padding: 10px 5px;
             }
 
            
-            .v-adf75a {
+            .k-f3d423 {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -766,28 +872,29 @@
                 min-width: 150px;
             }
 
-            .y-f6144d {
+            .c-7217c0 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 8px;
             }
 
-            .y-f6144d img {
-                max-height: 60px;
+            .c-7217c0 img {
+                max-height: 100px;
+                border-radius: 8px;
                 width: auto;
             }
 
-            .z-081453 {
+            .c-315073 {
                 text-align: center;
             }
-            .z-081453 .g-af785f {
+            .c-315073 .e-a70e86 {
                 display: flex;
                 gap: 2px;
                 justify-content: center;
             }
 
-            .q-e0d1a9 {
+            .e-c19e61 {
                 font-size: 14px;
                 font-weight: bold;
                 text-align: center;
@@ -796,22 +903,22 @@
             }
 
            
-            .r-c8251a {
+            .a-f439b2 {
                 font-size: 12px;
                 padding: 10px 5px;
             }
 
             
-            .c-f07ab2 {
+            .w-d36ebf {
                 text-align: center;
                 padding: 10px 5px;
             }
-             .c-f07ab2 a{
+             .w-d36ebf a{
                 width: 100%;
                 padding: 8px 12px;
                 font-size: 14px;
              }
-             .q-8f5189 {
+             .n-3fdd72 {
                 font-size: 18px;
              }
             figure{
@@ -827,7 +934,7 @@
                 max-width: 100%;
                 height: auto;
             }
-             .n-34d87b {
+             .b-e64859 {
             display: grid;
             grid-template-columns:  1fr;
             gap: 20px;
@@ -862,132 +969,497 @@
             }
         });
     </script>
-            <link rel="alternate" hreflang="x-default" href="https://feng-suej-esoterika.cz/">    </head>
+    </head>
 
 <body>
     
-    <div class="x-992525">
-        <div class="g-91f10a">
+    <div class="h-a5eccf">
+        <div class="a-23564e">
                             <a href="#">
-                    <img src="img/c584e58bdda16ac2f25156180b1be809.webp" alt="Logo">
+                    <img src="img/0ab923b17460fee876b9c755d42acba2.webp" alt="Logo">
                 </a>
                     </div>
-        <div class="y-67cbc9">
+        <div class="w-ded166">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
 
-    <ul class="t-932f54 mobile-menu">
-                <div class="h-c36aa8">
-                                                                    <a class="m-2aae67" href="#">
-                        play                    </a>
+    <ul class="g-c82250 mobile-menu">
+                <div class="p-536474">
+                                                                    <a class="h-0f0de6" href="#">
+                        Play                    </a>
                                     </div>
-                                    <li><a href="https://kaziki.uas/">Menu1</a></li>
-                            <li><a href="https://kaziki.uas/">Menu2</a></li>
+                                                            <li class="current">
+                    <a href="/index.html">MULTI PAGES</a>
+                </li>
+                                            <li>
+                    <a href="/armywear-cz.html">army</a>
+                </li>
+                                            <li>
+                    <a href="/balikylisyanglie-cz.html">baliky</a>
+                </li>
+                                            <li>
+                    <a href="/ematerstvi-cz.html">ema</a>
+                </li>
+                                            <li>
+                    <a href="/feng-suej-esoterika-cz.html">feng</a>
+                </li>
                         </ul>
 
-    <header class="q-819b54">
-        <div class="f-f0a694">
-            <div class="r-7cb7d5">
+    <header class="m-b21f4e">
+        <div class="r-b4724f">
+            <div class="n-98c444">
                                     <a href="#">
-                        <img src="img/c584e58bdda16ac2f25156180b1be809.webp" alt="Logo">
+                        <img src="img/0ab923b17460fee876b9c755d42acba2.webp" alt="Logo">
                     </a>
                             </div>
-            <ul class="t-932f54">
-                                                            <li><a href="https://kaziki.uas/">Menu1</a></li>
-                                            <li><a href="https://kaziki.uas/">Menu2</a></li>
+            <ul class="g-c82250">
+                                                                                                    <li class="current">
+                            <a href="/index.html">MULTI PAGES</a>
+                        </li>
+                                                                    <li>
+                            <a href="/armywear-cz.html">army</a>
+                        </li>
+                                                                    <li>
+                            <a href="/balikylisyanglie-cz.html">baliky</a>
+                        </li>
+                                                                    <li>
+                            <a href="/ematerstvi-cz.html">ema</a>
+                        </li>
+                                                                    <li>
+                            <a href="/feng-suej-esoterika-cz.html">feng</a>
+                        </li>
                                                 </ul>
         </div>
     </header>
 
-    <div class="w-f37880">
-        <div class="f-f0a694">
-            <h1>Pache4</h1>
-                            <div class="b-772bf7" style="background: #dd3333 !important;">
-                                        <div class="w-359dae">
-                                                    <strong>Author: VALeRA</strong><br>
-                                                <span>Last updated: 03 January 2026</span>
+    <div class="g-934154">
+        <div class="r-b4724f">
+            <h1>MULTI PAGES</h1>
+                            <div class="z-3dc5d1" style="background:  !important;">
+                                            <img src="img/71d0ab3921a01b7a6af41b7f415551ee.webp" alt="Petr Svoboda" class="a-d3a2cd">
+                                        <div class="s-728dfa">
+                                                    <strong>Author: Petr Svoboda</strong><br>
+                                                <span>Last updated: 04 January 2026</span>
                     </div>
                 </div>
-                <table class="t-bfeaf7">
+                    <table class="y-c9c29e">
         <thead>
             <tr>
                 <th>№</th>
-                <th>NAME </th>
-                <th>BONUSE</th>
-                <th>Descrpition</th>
-                <th>Rating</th>
-                <th>LINK</th>
+                <th>Название</th>
+                <th>Бонус</th>
+                <th>Описание</th>
+                <th>Рейтинг</th>
+                <th>Ссылка</th>
             </tr>
         </thead>
         <tbody>
                             
-            <tr>
-                <td class="q-8f5189">1</td>
+            <tr class="y-c9c29e casino-border" style="border-color: #eabebe;">
+                <td class="n-3fdd72">1</td>
                 
-                <td class="v-adf75a" >
-                    <div class="y-f6144d">
-                                                    <img src="img/6b85fa3f703f416b9a0c6365b055296d.webp" alt="limon">
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/bc2ab077c4387ac8128e868aba6ddc1e.webp" alt="QuickWin">
                         
-                                                    <div class="w-4bb345">
-                                limon                            </div>
+                                                    <div class="x-401fd6">
+                                QuickWin                            </div>
                                             </div>
                 </td>
                 
-                <td class="q-e0d1a9">
-                                            <strong>100fs + wager</strong>
+                <td class="e-c19e61">
+                                            <strong>100% do 12500 Kč + 200FS</strong>
                                     </td>
                 
-                <td class="r-c8251a">
-                                            <ul class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
-<li class="whitespace-normal break-words">20% Cashback for 7 Days</li>
-<li class="whitespace-normal break-words">No Withdrawal Limits</li>
-<li class="whitespace-normal break-words">No Minimum Deposit Required</li>
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Curacao (8048/JAZ2020-001)</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: €7.000/měsíc (€20.000 pro VIP)</li>
 </ul>
                                     </td>
                 
-                <td class="z-081453">
-                    <span class="a-395fde">3/5</span><span class="g-af785f"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#ccc"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#ccc"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="c-315073">
+                    <span class="b-7c4d58">5/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="c-f07ab2">
-                                            <a href="/go/"
-                           class="c-9c906f" 
+                <td class="w-d36ebf">
+                                            <a href="/go/quickwin/"
+                           class="e-d97a9a" 
                            target="_blank">
-                           PLAY NOW 🎁                        </a>
+                           Získat bonus                        </a>
                                     </td>
 
             </tr>
 
                             
-            <tr>
-                <td class="q-8f5189">2</td>
+            <tr class="y-c9c29e casino-border" style="border-color: #eabebe;">
+                <td class="n-3fdd72">2</td>
                 
-                <td class="v-adf75a" >
-                    <div class="y-f6144d">
-                                                    <img src="img/ee428098946a90a4f29a15e12a5573da.webp" alt="limon">
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/576fea123e61bbc5a8f1762be5a41c3e.webp" alt="GoldSpin">
                         
-                                                    <div class="w-4bb345">
-                                limon                            </div>
+                                                    <div class="x-401fd6">
+                                GoldSpin                            </div>
                                             </div>
                 </td>
                 
-                <td class="q-e0d1a9">
-                                            <strong>100fs + wager</strong>
+                <td class="e-c19e61">
+                                            <strong>100% až do částky 37500 Kč + 100 free spinů</strong>
                                     </td>
                 
-                <td class="r-c8251a">
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Anjouan Gaming License Authority</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: €12.000/měsíc (€600/den, €3.000/týden)</li>
+</ul>
                                     </td>
                 
-                <td class="z-081453">
-                    <span class="a-395fde">4/5</span><span class="g-af785f"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#ccc"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.9/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
                     
-                <td class="c-f07ab2">
-                                            <a href="/ge/"
-                           class="c-9c906f" 
+                <td class="w-d36ebf">
+                                            <a href="/go/goldspin/"
+                           class="e-d97a9a" 
                            target="_blank">
-                           PLAY NOW                        </a>
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e casino-border" style="border-color: #eabebe;">
+                <td class="n-3fdd72">3</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/378071ac29abb771d9558a037c0ebabb.webp" alt="Spinanga">
+                        
+                                                    <div class="x-401fd6">
+                                Spinanga                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>100% AŽ DO 12 500 Kč + 200 FS + 1 BONUS CRAB</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Comoro Islands / PAGCOR</li>
+<li><strong>Minimální vklad</strong>: €20 (pro bonus, €10 obecně)</li>
+<li><strong>Maximální výběr</strong>: €500/den</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.9/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/spinanga/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">4</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/f05ca30372fb6c7691e8430fdb9edf23.webp" alt="OnlySpins">
+                        
+                                                    <div class="x-401fd6">
+                                OnlySpins                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>28 000 Kč + 50 FS</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Tobique Gaming Commission</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: Nedoloženo (typicky €500/den nebo vyšší)</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.8/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/onlyspins/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">5</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/45e29ba798e829fb4003367d090ed63e.webp" alt="Dragonia">
+                        
+                                                    <div class="x-401fd6">
+                                Dragonia                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>3000 Kč+ 300 FS!</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Anjouan Gaming</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: €500/den (€1.500 pro VIP)</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.8/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/dragonia/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">6</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/afd4a70e219e6d7fb8e69fd23f659aa7.webp" alt="Legiano">
+                        
+                                                    <div class="x-401fd6">
+                                Legiano                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>100% AŽ DO 12,500 Kč + 200 FS + 1 BONUS CRAB</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Comoro Islands / Anjouan</li>
+<li><strong>Minimální vklad</strong>: €10 (€20 pro bonus)</li>
+<li><strong>Maximální výběr</strong>: Nedoloženo (standardně €500-€1.000/den)</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.7/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/legiano/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">7</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/92d461f12919d2fed78d377d8b4f8625.webp" alt="Bankonbet">
+                        
+                                                    <div class="x-401fd6">
+                                Bankonbet                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>100% bonus až do 12 500 Kč + 200 zatočení zdarma</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Curacao</li>
+<li><strong>Minimální vklad</strong>: €10 (€20 pro bonus)</li>
+<li><strong>Maximální výběr</strong>: €7.000/měsíc (Level 1), €20.000/měsíc (Level 5)</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.7/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/bankonbet/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">8</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/84853a38dac5346d5f29a58840b7851e.webp" alt="National Casino">
+                        
+                                                    <div class="x-401fd6">
+                                National Casino                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>+100 Zatočení Zdarma Až do Výše 2500 CZK</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Curacao (8048/JAZ2017-067)</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: €4.000/den, €16.000/týden, €50.000/měsíc</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.6/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/national-casino/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">9</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/0bf102f49595c8a8d34840686ea78eb4.webp" alt="Bizzo Casino">
+                        
+                                                    <div class="x-401fd6">
+                                Bizzo Casino                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>125% až do výše 31 250 CZK + 1 BONUSOVÁ HRA</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Curacao / Kahnawake</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: €4.000/den, €16.000/týden, €50.000/měsíc</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.6/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/bizzo-casino/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">10</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/6a27f108d3e8494cbbc9480a2cd0f0ba.svg" alt="Dragon Slots">
+                        
+                                                    <div class="x-401fd6">
+                                Dragon Slots                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>225% až do výše 55 000 Kč + 200 FS</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Curacao (TechSolutions Group N.V.)</li>
+<li><strong>Minimální vklad</strong>: €10</li>
+<li><strong>Maximální výběr</strong>: Nedoloženo (typicky €500-€1.000/den pro standardní hráče)</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.6/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/dragon-slots/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
+                                    </td>
+
+            </tr>
+
+                            
+            <tr class="y-c9c29e" >
+                <td class="n-3fdd72">11</td>
+                
+                <td class="k-f3d423">
+                    <div class="c-7217c0">
+                                                    <img src="img/f6199dc6a070647f2e5096622a9367fe.webp" alt="CasinoLab">
+                        
+                                                    <div class="x-401fd6">
+                                CasinoLab                            </div>
+                                            </div>
+                </td>
+                
+                <td class="e-c19e61">
+                                            <strong>100% až do 12,500 Kč + 200 FS</strong>
+                                    </td>
+                
+                <td class="a-f439b2">
+                                            <ul>
+<li><strong>Licence</strong>: Curacao</li>
+<li><strong>Minimální vklad</strong>: €10 (€30 pro Bitcoin)</li>
+<li><strong>Maximální výběr</strong>: €20.000 (VIP Level 5)</li>
+</ul>
+                                    </td>
+                
+                <td class="c-315073">
+                    <span class="b-7c4d58">4.5/5</span><span class="e-a70e86"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stop-color="#FFD700"/><stop offset="50%" stop-color="#ccc"/></linearGradient></defs><path fill="url(#half)" d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                </td>
+                    
+                <td class="w-d36ebf">
+                                            <a href="/go/casinolab/"
+                           class="e-d97a9a" 
+                           target="_blank">
+                           Získat bonus                        </a>
                                     </td>
 
             </tr>
@@ -998,107 +1470,92 @@
     "@context": "https:\/\/schema.org",
     "@type": "ItemList",
     "itemListOrder": "https:\/\/schema.org\/ItemListOrderAscending",
-    "numberOfItems": 2,
+    "numberOfItems": 11,
     "itemListElement": [
         {
             "@type": "ListItem",
             "position": 1,
-            "name": "limon",
-            "url": "\/go\/"
+            "name": "QuickWin",
+            "url": "\/go\/quickwin\/"
         },
         {
             "@type": "ListItem",
             "position": 2,
-            "name": "limon",
-            "url": "\/ge\/"
+            "name": "GoldSpin",
+            "url": "\/go\/goldspin\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Spinanga",
+            "url": "\/go\/spinanga\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "OnlySpins",
+            "url": "\/go\/onlyspins\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Dragonia",
+            "url": "\/go\/dragonia\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Legiano",
+            "url": "\/go\/legiano\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Bankonbet",
+            "url": "\/go\/bankonbet\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "National Casino",
+            "url": "\/go\/national-casino\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Bizzo Casino",
+            "url": "\/go\/bizzo-casino\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Dragon Slots",
+            "url": "\/go\/dragon-slots\/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "CasinoLab",
+            "url": "\/go\/casinolab\/"
         }
     ]
 }</script>
 
-                            <div class="c-b3dd53">
-                    <section class="bet-content pb-sm-50 pb-40">
-<div class="container">
-<div class="inner-container">
-<p>Gold Spin Casino je vzrušující nová platforma, která slibuje špičkový herní zážitek pro milovníky online kasin. Má elegantní rozhraní a díky široké nabídce her, štědrým bonusům a bezpečným platebním metodám uspokojí jak začínající, tak zkušené hráče. Gold Spin je navržen tak, aby poskytoval bezproblémový zážitek na stolních počítačích i mobilních zařízeních, takže je dostupný, ať jste kdekoli.</p>
-<h3>Uživatelské prostředí a design</h3>
-<p>Kasino Gold Spin se může pochlubit moderním a uživatelsky přívětivým rozhraním, které zajišťuje plynulou a intuitivní navigaci. Design webových stránek je vizuálně přitažlivý a vyznačuje se čistým rozvržením, které hráčům umožňuje snadno vyhledat hry, propagační akce a důležité informace. Ať už jste tu poprvé, nebo jste pravidelným hráčem, rozhraní vám usnadní proces hledání oblíbených her nebo objevování nových.</p>
-<h3>Výběr her</h3>
-<p><img loading="lazy" class="aligncenter wp-image-141 size-full" src="img/bf652387ff02b124499cb446fbfc0e1b.jpg" alt="Gold Spin Slots" width="852" height="453" /></p>
-<p>Jedním z klíčových prvků kasina Gold Spin je jeho působivý výběr her. Platforma nabízí rozsáhlou knihovnu, která zahrnuje např:</p>
-<ul>
-<li><strong>Sloty</strong>: Kasino nabízí širokou škálu výherních automatů, od klasických tříválcových automatů až po sofistikovanější video automaty s poutavými motivy a funkcemi. K dispozici jsou oblíbené tituly od známých poskytovatelů softwaru, včetně <strong>NetEnt</strong>, <strong>Pragmatic Play</strong> a <strong>Microgaming</strong>, které hráčům nabízejí rozmanitá témata a možnosti výhry jackpotů.</li>
-<li><strong>Stolní hry</strong>: Gold Spin se postará o příznivce tradičních kasinových her. Nabídka zahrnuje <strong>Blackjack</strong>, <strong>Roulette</strong>, <strong>Baccarat</strong> a <strong>Poker</strong>, přičemž různé verze vyhovují různým úrovním dovedností a preferencím.</li>
-<li><strong>Živé kasino</strong>: V sekci <strong>Live Casino</strong> si můžete vychutnat hry v reálném čase s profesionálními krupiéry. Můžete se zapojit do živých verzí Blackjacku, Rulety, Baccaratu a Pokeru a zažít tak autentickou atmosféru kasina z pohodlí domova.</li>
-<li><strong>Ostatní hry</strong>: V nabídce najdete také další hry, např: Gold Spin nabízí také další možnosti, jako jsou <strong>krabaté karty</strong>, <strong>virtuální sporty</strong> a další specializované hry pro hráče, kteří hledají něco jiného.</li>
-</ul>
-<h3>Bonusy a propagační akce</h3>
-<p><img loading="lazy" class="aligncenter size-full wp-image-142" src="img/035c3c3b2334eea7a5d1d5c05732e356.jpg" alt="Bonuses at Gold Spin casino" width="852" height="453" /></p>
-<p>Gold Spin Casino je štědré, pokud jde o bonusy, a nabízí novým i vracejícím se hráčům spoustu příležitostí, jak si zvýšit své bankrolly:</p>
-<ul>
-<li><strong>Bonus za první vklad ve sportu</strong>: 100% shoda až do výše 250 €.</li>
-<li><strong>Bonus za druhý vklad do Sportovní hry</strong>: 75% shoda až do výše 500 €.</li>
-<li><strong>Bonus za třetí vklad na sport</strong>: 125% shoda až do výše 250 €.</li>
-<li><strong>Sportovní závod MVP</strong>: Vyhrajte podíl z 1 000 €.</li>
-<li><strong>Týdenní sportovní cashback</strong>: 10% cashback až do výše 500 €.</li>
-<li><strong>Sportovní týdenní dobití</strong>: 50% bonus až do výše 250 €.</li>
-<li><strong>Sportovní týdenní výzva</strong>: Získejte odměny plněním výzev.</li>
-<li><strong>Sportovní jackpot</strong>: Příležitost vyhrát jackpotovou výhru.</li>
-</ul>
-<h3>Platební metody</h3>
-<p>Gold Spin Casino podporuje řadu bezpečných a pohodlných platebních metod pro vklady i výběry. Hráči si mohou vybrat z možností jako např:</p>
-<ul>
-<li>
-<ul>
-<li><strong>Kreditní/debetní karty</strong>: Kreditní karty: Visa, Mastercard</li>
-<li><strong>E-peněženky</strong>: Skrill, Neteller, EZeeWallet</li>
-<li><strong>Krypto</strong>: Bitcoin, Ethereum, Litecon &amp;; další.</li>
-<li><strong>Bankovní převody</strong>:</li>
-</ul>
-</li>
-</ul>
-<p>Pro ty, kteří dávají přednost tradičním bankovním metodám, jsou k dispozici také možnosti přímého bankovního převodu.</p>
-<p>Vklady jsou zpracovávány okamžitě, takže hráči mohou hned naskočit do akce. Výběry na druhou stranu mohou v závislosti na zvolené metodě trvat o něco déle, ale Gold Spin se je snaží zpracovat rychle v rozmezí 24-48 hodin. Kasino také používá šifrovací technologie, aby zajistilo, že všechny transakce jsou bezpečné a zabezpečené.</p>
-<h3>Bezpečnost a férovost</h3>
-<p>Gold Spin Casino bere bezpečnost a férovost své platformy velmi vážně. Kasino funguje na základě renomované herní licence, která zajišťuje, že dodržuje přísné předpisy týkající se bezpečnosti hráčů a férové hry. Všechny hry jsou poháněny generátory náhodných čísel (RNG), které zaručují objektivní výsledky, a kasino je pravidelně kontrolováno nezávislými testovacími agenturami.</p>
-<p>Platforma navíc využívá šifrovací technologii SSL, která chrání citlivé informace hráčů a zabraňuje jakémukoli neoprávněnému přístupu. Díky těmto opatřením se hráči mohou spolehnout, že jejich osobní údaje a finanční prostředky jsou v bezpečí, zatímco si užívají herní zážitek.</p>
-<h3>Hry pro mobilní zařízení</h3>
-<p>Gold Spin Casino je plně optimalizováno pro mobilní hraní, což hráčům umožňuje přístup k jejich oblíbeným hrám z chytrých telefonů a tabletů. Neexistuje sice žádná speciální mobilní aplikace, ale mobilní verze webu je responzivní a funguje bez problémů na celé řadě zařízení. Ať už používáte iOS nebo Android, zážitek zůstává plynulý a všechny funkce, hry a propagační akce jsou přístupné i na cestách.</p>
-<h3>Zákaznická podpora</h3>
-<p>Gold Spin Casino poskytuje spolehlivou zákaznickou podporu prostřednictvím několika kanálů, aby se hráčům dostalo pomoci v případě potřeby. Tým podpory je k dispozici prostřednictvím:</p>
-<ul>
-<li><strong>Živý chat</strong>: Nejrychlejší způsob, jak získat pomoc, k dispozici 24 hodin denně, 7 dní v týdnu pro okamžité odpovědi na jakékoli dotazy nebo problémy.</li>
-<li><strong>Email</strong>: V případě méně naléhavých záležitostí se hráči mohou obrátit na e-mail a očekávat odpověď do 24 hodin.</li>
-<li><strong>Sekce dotazů</strong>: V sekci dotazů se můžete obrátit na hráče, kteří se chtějí dozvědět více o svých problémech: Gold Spin nabízí také obsáhlou sekci nejčastějších dotazů, která se zabývá běžnými otázkami týkajícími se správy účtu, plateb, bonusů a dalších.</li>
-</ul>
-<p>Tým podpory je přátelský, profesionální a věnuje se efektivnímu řešení problémů, čímž přispívá k pozitivním zkušenostem hráčů.</p>
-<h3>Zodpovědné hraní</h3>
-<p>Gold Spin Casino podporuje zodpovědné hraní tím, že nabízí různé nástroje a zdroje, které hráčům pomáhají udržet si kontrolu nad svými hazardními aktivitami. Hráči si mohou nastavit limity vkladů, limity ztrát a limity sázek, aby mohli řídit své výdaje. Kasino také nabízí možnosti sebevyloučení pro ty, kteří mají pocit, že potřebují přestávku. Hráčům, kteří hledají odbornou pomoc, jsou navíc k dispozici odkazy na externí podpůrné organizace, jako je <strong>GamCare</strong> a <strong>Gambling Therapy</strong>.</p>
-<h3>Závěr</h3>
-<p>Celkově je Gold Spin Casino dobře propracovaná platforma, která nabízí skvělou kombinaci her, bonusů a bezpečnostních prvků. Široká škála platebních možností a specializovaná zákaznická podpora z něj činí atraktivní volbu jak pro příležitostné hráče, tak pro hráče s vysokými vklady. Díky svému elegantnímu designu, působivé knihovně her a závazku k zodpovědnému hraní je Gold Spin Casino solidní volbou pro každého, kdo hledá vzrušující a bezpečné online kasino.</p>
-<p><strong>Klady:</strong></p>
-<ul>
-<li>Široký výběr her</li>
-<li>Šlechetné bonusy a propagační akce</li>
-<li>Responzivní mobilní verze</li>
-<li>Spolehlivá zákaznická podpora</li>
-</ul>
-<p><strong>Zápory:</strong></p>
-<ul>
-<li>Žádná speciální mobilní aplikace</li>
-<li>Zpracování některých způsobů výběru může trvat déle</li>
-</ul>
-</div>
-</div>
-</section>
-<footer class="bet-footer pb-40"></footer>
-<p><!-- /wp:paragraph --></p>
+                            <div class="r-65081e">
+                    <p>TEXT 5 MULTIPAGe</p>
                 </div>
             
-                            <div class="g-54bc4d">
-                                            <div class="c-b0f989">
-                            <h3 class="v-5bd1c0">faq1</h3>
-                            <div class="d-5506d9">
-                                faq2                            </div>
+                            <div class="e-960ffc">
+                                            <div class="d-71417e">
+                            <h3 class="s-a8a7ac">faq 1</h3>
+                            <div class="g-0b58b2">
+                                faffasfsafa                            </div>
+                        </div>
+                                            <div class="d-71417e">
+                            <h3 class="s-a8a7ac">faq 2 </h3>
+                            <div class="g-0b58b2">
+                                MULTIK
+                            </div>
                         </div>
                                     </div>
                         <script type="application/ld+json">{
@@ -1107,10 +1564,18 @@
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "faq1",
+            "name": "faq 1",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "faq2"
+                "text": "faffasfsafa"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "faq 2",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MULTIK"
             }
         }
     ]
@@ -1118,64 +1583,72 @@
         </div>
     </div>
 
-    <footer class="s-3c25c7">
-        <span class="z-79a917">
+    <footer class="b-c7f0c9">
+        <span class="q-3e7911">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z"/>
   <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
 </svg>
         </span>
-        <div class="f-f0a694">
-            <div class="n-34d87b">
+        <div class="r-b4724f">
+            <div class="b-e64859">
                 <div class="footer-col">
-                                            <img src="img/c584e58bdda16ac2f25156180b1be809.webp" alt="Logo" style="max-width: 100px; margin-bottom: 15px;">
-                                        <p>footer text</p>
+                                            <img src="img/0ab923b17460fee876b9c755d42acba2.webp" alt="Logo" style="max-width: 100px; margin-bottom: 15px;">
+                                        <p></p>
                 </div>
                 <div class="footer-col">
-                                            <ul>
-                                                            <li><a href="">Menu1</a></li>
-                                                    </ul>
                                     </div>
                 <div class="footer-col">
-                                            <ul>
-                                                            <li><a href="">Menu2</a></li>
-                                                    </ul>
                                     </div>
             </div>
         </div>
-        <div class="e-fe7964">
-            <p>&copy; 2026 Pache4. All rights reserved.</p>
+        <div class="p-d4e214">
+            <p>&copy; 2026 MULTI PAGES. All rights reserved.</p>
         </div>
     </footer>
 
-            <div class="h-e4da12 desktop" style="background: #dd3333;">
-            <div class="f-f0a694">
-                <span class="x-b5cef5">&times;</span>
-                <div class="v-1f82ac">
-                                            <img src="img/de8e324fdc11872831393fda33b2ada3.webp" alt="Casino">
-                                        <div class="z-3c5bf5">
-                        <p class="head">Title popup desk</p>
-                        <p class="bottom">subtitle pop</p>
+            <div class="w-70df20 desktop" style="background: #eabebe;">
+            <div class="r-b4724f">
+                <span class="d-5cbea8">&times;</span>
+                <div class="q-9a4496">
+                                            <img src="img/bc2ab077c4387ac8128e868aba6ddc1e.webp" alt="Casino">
+                                        <div class="t-095d51">
+                        <p class="head">100% do 12500 Kč + 200FS</p>
+                        <p class="bottom">QuickWin</p>
                     </div>
                 </div>
-                <a href="http://simple.ukrainetour.info/" style="background: #eeee22 !important;">
-                    Play Now                </a>
+                <a href="/go/quickwin/" style="background: #ea6262 !important;">
+                    Hrát hned                </a>
             </div>
         </div>
     
+            <div class="w-70df20 mobile" style="background: #eabebe;">
+            <div class="r-b4724f">
+                <span class="d-5cbea8">&times;</span>
+                <div class="q-9a4496">
+                                            <img src="img/bc2ab077c4387ac8128e868aba6ddc1e.webp" alt="Casino">
+                                        <div class="t-095d51">
+                        <p class="head">100% do 12500 Kč + 200FS</p>
+                        <p class="bottom">QuickWin</p>
+                    </div>
+                </div>
+                <a href="https://afftopbrand.com/18Phs2" style="background: #ea6262 !important;">
+                    Hrát hned                </a>
+            </div>
+        </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.c-b0f989');
+            const faqItems = document.querySelectorAll('.d-71417e');
             faqItems.forEach(item => {
-                const question = item.querySelector('.v-5bd1c0');
+                const question = item.querySelector('.s-a8a7ac');
                 question.addEventListener('click', function() {
                     item.classList.toggle('active');
                 });
             });
 
-            const hamburger = document.querySelector('.y-67cbc9');
-            const mobileMenu = document.querySelector('.t-932f54.mobile-menu');
+            const hamburger = document.querySelector('.w-ded166');
+            const mobileMenu = document.querySelector('.g-c82250.mobile-menu');
             
             if (hamburger && mobileMenu) {
                 hamburger.addEventListener('click', function() {
@@ -1193,17 +1666,17 @@
             }
 
  
-            const closeButtons = document.querySelectorAll('.x-b5cef5');
+            const closeButtons = document.querySelectorAll('.d-5cbea8');
             closeButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    this.closest('.h-e4da12').style.display = 'none';
+                    this.closest('.w-70df20').style.display = 'none';
                 });
             });
         });
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const scrollTopBtn = document.querySelector('.z-79a917');
+        const scrollTopBtn = document.querySelector('.q-3e7911');
 
         if (!scrollTopBtn) return;
 

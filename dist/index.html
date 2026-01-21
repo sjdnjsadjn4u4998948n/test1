@@ -36,13 +36,13 @@
     
     <style>
         :root {
-            --v-20112d: #ffffff;
-            --k-4243bd: #000000;
+            --b-f0fd23: #9ed682;
+            --v-fa90d6: #000000;
             --kz-faq: #fff;
-            --v-20112d-faq: #13212d;
-            --x-c616da: #389d29;
-            --x-c616da-hover: #ecbe15;
-            --t-4e40c0: #000000;
+            --b-f0fd23-faq: #13212d;
+            --v-368e37: #389d29;
+            --v-368e37-hover: #ecbe15;
+            --f-7473a4: #000000;
         }
 
         * {
@@ -74,8 +74,8 @@
 
         body {
             -webkit-font-smoothing: antialiased;
-            background-color: var(--v-20112d);
-            color: var(--k-4243bd);
+            background-color: var(--b-f0fd23);
+            color: var(--v-fa90d6);
             font-family: "Inter", sans-serif;
             font-size: 16px;
             height: auto;
@@ -150,15 +150,15 @@
             overflow-x: auto;
             white-space: nowrap;
             padding: 11px 15px;
-            border: 2px solid var(--t-4e40c0);
+            border: 2px solid var(--f-7473a4);
             border-radius: 18px;
             width: 100%;
         }
 
         table td {
             padding: 11px 15px;
-            border: 2px solid var(--t-4e40c0);
-            background: #cccccc;
+            border: 2px solid var(--f-7473a4);
+            background: #dd3333;
             white-space: normal;
         }
 
@@ -170,21 +170,21 @@
             background: #f2f2f2;
         }
 
-        .a-2453d0 {
+        .f-835407 {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: var(--v-20112d);
-            border-bottom: 1px solid var(--t-4e40c0);
+            background: var(--b-f0fd23);
+            border-bottom: 1px solid var(--f-7473a4);
             padding: 15px 20px;
             z-index: 1000;
             align-items: center;
             justify-content: space-between;
         }
 
-        .d-616645 {
+        .w-a33f7c {
             width: 30px;
             height: 25px;
             display: flex;
@@ -194,35 +194,35 @@
             z-index: 1001;
         }
 
-        .d-616645 span {
+        .w-a33f7c span {
             width: 100%;
             height: 3px;
-            background: var(--k-4243bd);
+            background: var(--v-fa90d6);
             transition: all 0.3s;
             border-radius: 2px;
         }
 
-        .d-616645.active span:nth-child(1) {
+        .w-a33f7c.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .d-616645.active span:nth-child(2) {
+        .w-a33f7c.active span:nth-child(2) {
             opacity: 0;
         }
 
-        .d-616645.active span:nth-child(3) {
+        .w-a33f7c.active span:nth-child(3) {
             transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .x-5b579e {
+        .f-013fab {
             max-height: 40px;
         }
 
-        header.e-e6bc54 {
+        header.g-c33d5d {
             display: none!important;
         }
 
-        .r-10a8cb {
+        .m-d61968 {
             position: fixed;
             padding: 30px;
             display: flex;
@@ -233,22 +233,22 @@
             justify-content: start;
             max-width: 300px;
             width: 100%;
-            border-right: 1px solid var(--t-4e40c0);
-            background: var(--v-20112d);
+            border-right: 1px solid var(--f-7473a4);
+            background: var(--b-f0fd23);
             z-index: 999;
             overflow-y: auto;
         }
 
-        .c-11fb04 {
+        .v-f456d7 {
             margin: 15px 0;
         }
 
-        .c-11fb04 img {
+        .v-f456d7 img {
             max-width: 100%;
             height: auto;
         }
 
-        .q-53ec63 {
+        .b-4feece {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -257,10 +257,10 @@
             width: 100%;
         }
 
-        .x-dadccf {
+        .x-4a51ea {
             color: #ffffff !important;
             background: #389d29;
-            border: 1px solid var(--t-4e40c0);
+            border: 1px solid var(--f-7473a4);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -276,10 +276,10 @@
             width: -webkit-fill-available;
         }
 
-        .q-25c347 {
+        .y-2d6170 {
             color: #ffffff;
             background: #389d29;
-            border: 1px solid var(--t-4e40c0);
+            border: 1px solid var(--f-7473a4);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -294,7 +294,7 @@
             font-weight: bold;
         }
 
-        .x-dadccf:hover, .q-25c347:hover {
+        .x-4a51ea:hover, .y-2d6170:hover {
             transition: .6s;
             transform: scale(1.05);
         }
@@ -302,7 +302,7 @@
         .button {
             color: #ffffff !important;
             background: #389d29;
-            border: 1px solid var(--t-4e40c0);
+            border: 1px solid var(--f-7473a4);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -323,7 +323,7 @@
         .btn {
             color: #ffffff;
             background: #389d29;
-            border: 1px solid var(--t-4e40c0);
+            border: 1px solid var(--f-7473a4);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -345,7 +345,7 @@
             transform: scale(1.05);
         }
 
-        .z-3dc72f {
+        .c-897876 {
             list-style: none;
             padding: 0;
             display: flex;
@@ -354,12 +354,12 @@
             width: 100%;
         }
 
-        .b-4fa4d3 .z-3dc72f {
+        .p-ebce1e .c-897876 {
             list-style: inherit;
             padding-left: 40px;
         }
 
-        .z-3dc72f li a {
+        .c-897876 li a {
             display: flex;
             gap: 12px;
             align-items: center;
@@ -367,11 +367,11 @@
             justify-content: center;
         }
 
-        .z-3dc72f li a:hover {
+        .c-897876 li a:hover {
             text-decoration: underline;
         }
 
-        .p-164380 {
+        .h-324733 {
             width: 24px;
             height: 24px;
             background: #389d29;
@@ -382,22 +382,22 @@
             display: inline-block;
         }
 
-        .a-1de982 {
+        .d-e13ded {
             padding: 20px 0px 0px 300px;
         }
 
        
 
-        .v-e4a3e4 {
+        .q-aae69e {
             padding: 0 24px;
         }
 
-        .v-e4a3e4 img {
+        .q-aae69e img {
             width: 100%;
             border-radius: 18px;
         }
 
-        .v-e4a3e4 p img {
+        .q-aae69e p img {
             margin: auto;
             width: 100%;
             max-height: 500px;
@@ -406,7 +406,7 @@
             display: flex;
         }
 
-        .c-42d649 {
+        .g-084bb7 {
             display: flex;
             gap: 20px;
             flex-direction: row;
@@ -415,7 +415,7 @@
             list-style: none;
         }
 
-        .c-42d649 a {
+        .g-084bb7 a {
             border: 2px solid #222222;
             color: #222222;
             font-weight: bold;
@@ -430,32 +430,32 @@
             align-items: center;
         }
 
-        .c-42d649 a:hover {
+        .g-084bb7 a:hover {
             text-decoration: none;
             transition: .5s;
             filter: hue-rotate(45deg);
         }
 
-        .c-42d649 .p-164380 {
+        .g-084bb7 .h-324733 {
             width: 20px;
             height: 20px;
         }
 
-        .y-aae73c {
+        .k-5415fe {
             display: flex;
             gap: 12px;
             justify-content: space-between;
             flex-wrap: wrap;
         }
 
-        .r-fe79a0 {
+        .r-02b33a {
             width: 15%;
             position: relative;
             border-radius: 18px;
             overflow: hidden;
         }
 
-        .c-2fbcf6 {
+        .n-141e91 {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -470,16 +470,16 @@
             transition: .6s;
         }
 
-        .c-2fbcf6 .q-25c347, .c-2fbcf6 .x-dadccf {
+        .n-141e91 .y-2d6170, .n-141e91 .x-4a51ea {
             width: fit-content;
         }
 
-        .r-fe79a0:hover .c-2fbcf6 {
+        .r-02b33a:hover .n-141e91 {
             opacity: 1;
             transition: .6s;
         }
 
-        .r-fe79a0 .p-77d8c7 {
+        .r-02b33a .e-ed342c {
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -491,21 +491,21 @@
             text-align: center;
         }
 
-        .q-07ecb8 {
+        .e-aa3140 {
             width: 100%;
             margin: 0 auto;
         }
 
-        .x-3eb98f {
-            border: 1px solid var(--t-4e40c0);
+        .x-9502a5 {
+            border: 1px solid var(--f-7473a4);
             border-radius: 18px;
             margin-bottom: 15px;
             overflow: hidden;
             transition: all 0.3s ease;
         }
 
-        .c-33714f {
-            background: #cccccc;
+        .b-b38747 {
+            background: #dd3333;
             padding: 15px 20px;
             margin: 0;
             cursor: pointer;
@@ -515,11 +515,11 @@
             transition: all 0.3s ease;
         }
 
-        .c-33714f:hover {
-            background: #cccccc;
+        .b-b38747:hover {
+            background: #dd3333;
         }
 
-        .c-33714f::after {
+        .b-b38747::after {
             content: '+';
             position: absolute;
             right: 20px;
@@ -530,34 +530,34 @@
             transition: all 0.3s ease;
         }
 
-        .x-3eb98f.active .c-33714f::after {
+        .x-9502a5.active .b-b38747::after {
             content: '−';
             transform: translateY(-50%) rotate(0deg);
         }
 
-        .d-6ee26f {
+        .g-a32e1a {
             max-height: 0;
             padding: 0 20px;
             margin: 0;
             overflow: hidden;
-            background: #cccccc;
+            background: #dd3333;
             transition: all 0.4s ease;
             opacity: 0;
             line-height: 1.6;
         }
 
-        .x-3eb98f.active .d-6ee26f {
+        .x-9502a5.active .g-a32e1a {
             max-height: 500px;
             padding: 15px 20px;
             opacity: 1;
         }
 
-        .x-3eb98f.active {
+        .x-9502a5.active {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .b-cfafc0 {
-            background: #cccccc;
+        .g-e4d2de {
+            background: #dd3333;
             color: #000000;
             display: flex;
             justify-content: center;
@@ -571,12 +571,12 @@
             border-bottom: 1px solid #C4C9DA;
         }
 
-        .b-cfafc0 img, .p-fe93a8 img {
+        .g-e4d2de img, .b-44a75c img {
             max-height: 60px;
         }
 
-        .p-fe93a8 {
-            background: #cccccc;
+        .b-44a75c {
+            background: #dd3333;
             color: #000000;
             display: flex;
             justify-content: center;
@@ -590,35 +590,35 @@
             border-bottom: 1px solid #C4C9DA;
         }
 
-        .n-48d7d8 {
+        .a-0afb79 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
             padding: 40px 20px;
             margin: 0;
-            background: #cccccc;
+            background: #dd3333;
             color: #000000;
             list-style: none;
             text-align:center;
         }
 
-        .n-48d7d8 a {
+        .a-0afb79 a {
             text-decoration: underline;
             text-align: center;
             justify-content: center;
         }
 
-        .e-0568c9 {
+        .n-6e0736 {
             padding: 20px;
             margin: 0;
             text-align: center;
             border-top: 1px solid #C4C9DA;
-            background: #cccccc;
+            background: #dd3333;
             color: #000000;
         }
 
 
-        .a-2453d0-overlay {
+        .f-835407-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -631,7 +631,7 @@
             transition: opacity 0.3s ease;
         }
 
-        .a-2453d0-overlay.active {
+        .f-835407-overlay.active {
             display: block;
             opacity: 1;
              z-index: 1001;
@@ -639,13 +639,13 @@
 
  
         @media (max-width: 991px) {
-            .a-2453d0 {
+            .f-835407 {
                 display: flex;
             }
-            .a-2453d0 a{
+            .f-835407 a{
                 width: fit-content!important;
             }
-            .r-10a8cb {
+            .m-d61968 {
                 left: -100%;
                 transition: left 0.3s ease;
                 top: 0;
@@ -653,40 +653,40 @@
                 z-index: 1001;
             }
 
-            .r-10a8cb.active {
+            .m-d61968.active {
                 left: 0;
             }
 
-            .a-1de982 {
+            .d-e13ded {
                 padding: 80px 0 0 0;
             }
 
-            .r-fe79a0 {
+            .r-02b33a {
                 width:100%;
             }
 
-            .n-48d7d8 {
+            .a-0afb79 {
                 grid-template-columns: 1fr;
             }
-                    .v-e4a3e4 p img {
+                    .q-aae69e p img {
             margin: auto;
             max-height: fit-content!important;
             width: 100%;
             margin: 0 auto;
             display: flex;
         }
-          .y-aae73c {
+          .k-5415fe {
             display: grid;
             gap: 12px;
            grid-template-columns:1fr 1fr;
         }
-         .v-e4a3e4 {
+         .q-aae69e {
             padding: 0 15px;
         }
-                .b-cfafc0 img, .p-fe93a8 img {
+                .g-e4d2de img, .b-44a75c img {
             max-height: 30px;
         }
-         .r-10a8cb {
+         .m-d61968 {
             position: fixed;
             padding: 20px;
             display: flex;
@@ -697,8 +697,8 @@
             justify-content: start;
             max-width: 250px;
             width: 100%;
-            border-right: 1px solid var(--t-4e40c0);
-            background: var(--v-20112d);
+            border-right: 1px solid var(--f-7473a4);
+            background: var(--b-f0fd23);
             z-index: 1005;
             overflow-y: auto;
         }
@@ -711,14 +711,14 @@
             overflow-x: auto;
             white-space: nowrap;
             padding:0;
-            border: 2px solid var(--t-4e40c0);
+            border: 2px solid var(--f-7473a4);
             border-radius: 18px;
             width: 100%;
         }
         }
 
         @media (min-width: 992px) {
-            .e-e6bc54 {
+            .g-c33d5d {
                 display: block!important;
             }
           
@@ -726,10 +726,10 @@
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.x-3eb98f');
+            const faqItems = document.querySelectorAll('.x-9502a5');
 
             faqItems.forEach(item => {
-                const question = item.querySelector('.c-33714f');
+                const question = item.querySelector('.b-b38747');
 
                 question.addEventListener('click', function() {
                     faqItems.forEach(otherItem => {
@@ -741,9 +741,9 @@
                 });
             });
 
-            const hamburger = document.querySelector('.d-616645');
-            const sidebar = document.querySelector('.r-10a8cb');
-            const overlay = document.querySelector('.a-2453d0-overlay');
+            const hamburger = document.querySelector('.w-a33f7c');
+            const sidebar = document.querySelector('.m-d61968');
+            const overlay = document.querySelector('.f-835407-overlay');
 
             if (hamburger && sidebar && overlay) {
                 hamburger.addEventListener('click', function() {
@@ -772,196 +772,164 @@
 </head>
 
 <body>
-    <div class="a-2453d0-overlay"></div>
+    <div class="f-835407-overlay"></div>
     
-    <header class="a-2453d0">
+    <header class="f-835407">
         
-                    <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry" class="x-5b579e">
+                    <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry" class="f-013fab">
                
        
-                                                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">
+                                                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">
                         Hrát hry                    </a>
                                    
     </header>
 
-    <header class="e-e6bc54">
-        <div class="c-11fb04">
+    <header class="g-c33d5d">
+        <div class="v-f456d7">
                             <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry">
                     </div>
     </header>
     
-    <aside class="r-10a8cb">
-        <a class="c-11fb04" href="https://thetrafficpie.com/go/">
+    <aside class="m-d61968">
+        <a class="v-f456d7" href="https://thetrafficpie.com/go/">
                             <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry">
                     </a>
 
-        <div class="q-53ec63">
-                                                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">
+        <div class="b-4feece">
+                                                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">
                         Hrát hry                    </a>
                                     </div>
         
-        <ul class="z-3dc72f">
+        <ul class="c-897876">
                     </ul>
     </aside>
     
     <main>
-        <div class="a-1de982">
-            <div class="v-e4a3e4">
-                <div class="n-e6a99b">
+        <div class="d-e13ded">
+            <div class="q-aae69e">
+                <div class="a-1baa41">
                                             <img src="img/e685ea8c8d49cb97b77e31b2f3943eb9.webp" alt="Hrát hry">
                                     </div>
                 
-                <ul class="c-42d649">
+                <ul class="g-084bb7">
                                                                         <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/72d6ef57a45afdba1007fcf43f6d338b.webp');"></span>
-                                                                                                                <span>Slots</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/d04d95e902498d34727ebfce7f1ae64b.webp');"></span>
-                                                                                                                <span>Poker</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/cefa55e815f44887e7528eddf155c9e7.webp');"></span>
-                                                                                                                <span>Jackpot Slots</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/322c0cad6e8d9148e1f564748a3c51d6.webp');"></span>
-                                                                                                                <span>Table Games</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/4cd7bbc1ee58bf269071398c5fa512ce.webp');"></span>
                                                                                                                 <span>Crash</span>
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/73363e82df8d92a72f99d98023e543d0.webp');"></span>
                                                                                                                 <span>Betting</span>
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/0c068ef7d96e16133edf40c11e1c0a0c.webp');"></span>
+                                                                                                                <span>Table Games</span>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="https://thetrafficpie.com/go/">
+                                                                                                                <span>Jackpot Slots</span>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="https://thetrafficpie.com/go/">
+                                                                                                                <span>Poker</span>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="https://thetrafficpie.com/go/">
                                                                                                                 <span>E-sports</span>
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <span class="p-164380" style="mask-image: url('img/757344e300a9a9ee97ebe6f296df30d7.webp');"></span>
+                                                                                                                <span>Slots</span>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="https://thetrafficpie.com/go/">
                                                                                                                 <span>Live Casino</span>
                                                                     </a>
                             </li>
                                                             </ul>
                 
-                <div class="y-aae73c">
-                                                                        <div class="r-fe79a0">
-                                                                    <img src="img/eedf87d30a10e04268569cffdecb9751.webp" alt="Dog House">
-                                    <span class="p-77d8c7">Dog House</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                <div class="k-5415fe">
+                                                                        <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/5b02f9212e0dd94e32d9d401e7dfeffc.webp" alt="Zeus vs Hades">
-                                    <span class="p-77d8c7">Zeus vs Hades</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/a3cc3bef0a2f95e83352bd0077839658.webp" alt="Book Of Demi Gods2">
-                                    <span class="p-77d8c7">Book Of Demi Gods2</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/332fbed75625560bd279124db9b161b7.webp" alt="Gates of Olympus">
-                                    <span class="p-77d8c7">Gates of Olympus</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/48e8207c1257ebed40c81d246fc7ef2e.webp" alt="Royal Fruits">
-                                    <span class="p-77d8c7">Royal Fruits</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/b0d582d1c1ab2e73675024550ca20ba1.webp" alt="Book of RA">
-                                    <span class="p-77d8c7">Book of RA</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/46c7e87287d9db2d2e75be9b449d0bb2.webp" alt="Lucky Lady Moon">
-                                    <span class="p-77d8c7">Lucky Lady Moon</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/11d3a9b112942431ff6fce9cea2fd858.webp" alt="Sugar Rush">
-                                    <span class="p-77d8c7">Sugar Rush</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/2e54521b9c84b3bf4c27775a7ae8f999.webp" alt="Coin Up">
-                                    <span class="p-77d8c7">Coin Up</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/8c6ae977d4b23efe830b26a922799152.webp" alt="Lava Coins">
-                                    <span class="p-77d8c7">Lava Coins</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/4dcf852809feab8ad0aeaacecf6c33de.webp" alt="Coin Volcano">
-                                    <span class="p-77d8c7">Coin Volcano</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-fe79a0">
-                                                                    <img src="img/c1df3394e649a770d515f99f2753a217.webp" alt="Jackass Gold">
-                                    <span class="p-77d8c7">Jackass Gold</span>
-                                                                <div class="c-2fbcf6">
-                                    <a class="x-dadccf" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="q-25c347" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="r-02b33a">
+                                                                <div class="n-141e91">
+                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
                                                             </div>
                 
-                <div class="b-4fa4d3">
+                <div class="p-ebce1e">
                     <h1>Beep Beep Casino</h1>
                     <p>Welcome bonus is considered one of the most favorable and generous gifts from casinos. At Beep Beep Casino, the welcome bonus includes a no-deposit bonus for registration and bonuses for the first four deposits. Let&#8217;s take a closer look at them:</p>
 <ul>
@@ -1080,14 +1048,14 @@
 </table>
                 </div>
 
-                <div class="q-07ecb8">
-                                                                        <div class="x-3eb98f active">
-                                <p class="c-33714f">beep beep casino</p>
-                                <p class="d-6ee26f">beep beep casino</p>
+                <div class="e-aa3140">
+                                                                        <div class="x-9502a5 active">
+                                <p class="b-b38747">beep beep casino</p>
+                                <p class="g-a32e1a">beep beep casino</p>
                             </div>
-                                                    <div class="x-3eb98f active">
-                                <p class="c-33714f">beep beep casino</p>
-                                <p class="d-6ee26f">beep beep casino</p>
+                                                    <div class="x-9502a5 active">
+                                <p class="b-b38747">beep beep casino</p>
+                                <p class="g-a32e1a">beep beep casino</p>
                             </div>
                                                             </div>
                 
@@ -1118,96 +1086,80 @@
             </div>
             
             <footer>
-                <ul class="b-cfafc0">
+                <ul class="g-e4d2de">
                                                                         <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/9efc33caf3c37673ae9d73ae94f1d49a.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/4faae24e8155ac05b4a2c5b6796b5e79.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/17fb904a5522631a21102edca95cbe07.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/769ccf110f38a44f077416be24fdd442.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/6f7a9f3888c4e4299999a9dc7af6c79a.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/13e0bd237417381e260cfa9914aca7c3.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/cf80fec95efbbb55acbfee748ce3c882.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/786bdcab96ed2e14b9e55129e3a192c2.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/6c565a4f5b715cd238b24d70a49d1a3e.svg" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                             </ul>
                 
-                <ul class="p-fe93a8">
+                <ul class="b-44a75c">
                                                                         <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/71ac305712bba1319b69a7604c109113.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/f97c9a801ac57704e90d719966012b95.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/9b6e212ebd7f15edf7719788701dcaf0.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/5eec973a17ca25a247b3b02ccae77e28.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/2034f7523260a9a8ddb2d53655f783f0.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/07ff11d36a6f544b4751ea9ad69710db.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                            <img src="img/3e0923b83dfec9ef0ad3c074e6aa9535.webp" alt="Hrát hry">
                                                                     </a>
                             </li>
                                                             </ul>
                 
-                <ul class="n-48d7d8">
+                <ul class="a-0afb79">
                                     </ul>
                 
-                <p class="e-0568c9">
+                <p class="n-6e0736">
                                     </p>
             </footer>
 

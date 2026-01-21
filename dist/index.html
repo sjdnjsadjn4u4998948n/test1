@@ -36,13 +36,13 @@
     
     <style>
         :root {
-            --b-f0fd23: #9ed682;
-            --v-fa90d6: #000000;
+            --b-f475cd: #9ed682;
+            --z-81599f: #000000;
             --kz-faq: #fff;
-            --b-f0fd23-faq: #13212d;
-            --v-368e37: #389d29;
-            --v-368e37-hover: #ecbe15;
-            --f-7473a4: #000000;
+            --b-f475cd-faq: #13212d;
+            --k-29ef3e: #389d29;
+            --k-29ef3e-hover: #ecbe15;
+            --y-05923d: #000000;
         }
 
         * {
@@ -74,8 +74,8 @@
 
         body {
             -webkit-font-smoothing: antialiased;
-            background-color: var(--b-f0fd23);
-            color: var(--v-fa90d6);
+            background-color: var(--b-f475cd);
+            color: var(--z-81599f);
             font-family: "Inter", sans-serif;
             font-size: 16px;
             height: auto;
@@ -150,14 +150,14 @@
             overflow-x: auto;
             white-space: nowrap;
             padding: 11px 15px;
-            border: 2px solid var(--f-7473a4);
+            border: 2px solid var(--y-05923d);
             border-radius: 18px;
             width: 100%;
         }
 
         table td {
             padding: 11px 15px;
-            border: 2px solid var(--f-7473a4);
+            border: 2px solid var(--y-05923d);
             background: #dd3333;
             white-space: normal;
         }
@@ -170,21 +170,21 @@
             background: #f2f2f2;
         }
 
-        .f-835407 {
+        .z-56e121 {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: var(--b-f0fd23);
-            border-bottom: 1px solid var(--f-7473a4);
+            background: var(--b-f475cd);
+            border-bottom: 1px solid var(--y-05923d);
             padding: 15px 20px;
             z-index: 1000;
             align-items: center;
             justify-content: space-between;
         }
 
-        .w-a33f7c {
+        .f-4503aa {
             width: 30px;
             height: 25px;
             display: flex;
@@ -194,35 +194,35 @@
             z-index: 1001;
         }
 
-        .w-a33f7c span {
+        .f-4503aa span {
             width: 100%;
             height: 3px;
-            background: var(--v-fa90d6);
+            background: var(--z-81599f);
             transition: all 0.3s;
             border-radius: 2px;
         }
 
-        .w-a33f7c.active span:nth-child(1) {
+        .f-4503aa.active span:nth-child(1) {
             transform: rotate(45deg) translate(8px, 8px);
         }
 
-        .w-a33f7c.active span:nth-child(2) {
+        .f-4503aa.active span:nth-child(2) {
             opacity: 0;
         }
 
-        .w-a33f7c.active span:nth-child(3) {
+        .f-4503aa.active span:nth-child(3) {
             transform: rotate(-45deg) translate(8px, -8px);
         }
 
-        .f-013fab {
+        .k-1daf8d {
             max-height: 40px;
         }
 
-        header.g-c33d5d {
+        header.k-ae1552 {
             display: none!important;
         }
 
-        .m-d61968 {
+        .g-7b653c {
             position: fixed;
             padding: 30px;
             display: flex;
@@ -233,22 +233,22 @@
             justify-content: start;
             max-width: 300px;
             width: 100%;
-            border-right: 1px solid var(--f-7473a4);
-            background: var(--b-f0fd23);
+            border-right: 1px solid var(--y-05923d);
+            background: var(--b-f475cd);
             z-index: 999;
             overflow-y: auto;
         }
 
-        .v-f456d7 {
+        .s-600824 {
             margin: 15px 0;
         }
 
-        .v-f456d7 img {
+        .s-600824 img {
             max-width: 100%;
             height: auto;
         }
 
-        .b-4feece {
+        .w-c4c7e6 {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -257,10 +257,10 @@
             width: 100%;
         }
 
-        .x-4a51ea {
+        .s-109476 {
             color: #ffffff !important;
             background: #389d29;
-            border: 1px solid var(--f-7473a4);
+            border: 1px solid var(--y-05923d);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -276,10 +276,10 @@
             width: -webkit-fill-available;
         }
 
-        .y-2d6170 {
+        .s-da527f {
             color: #ffffff;
             background: #389d29;
-            border: 1px solid var(--f-7473a4);
+            border: 1px solid var(--y-05923d);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -294,7 +294,7 @@
             font-weight: bold;
         }
 
-        .x-4a51ea:hover, .y-2d6170:hover {
+        .s-109476:hover, .s-da527f:hover {
             transition: .6s;
             transform: scale(1.05);
         }
@@ -302,7 +302,7 @@
         .button {
             color: #ffffff !important;
             background: #389d29;
-            border: 1px solid var(--f-7473a4);
+            border: 1px solid var(--y-05923d);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -323,7 +323,7 @@
         .btn {
             color: #ffffff;
             background: #389d29;
-            border: 1px solid var(--f-7473a4);
+            border: 1px solid var(--y-05923d);
             text-decoration: none;
             max-height: 48px;
             padding: 12px 20px;
@@ -345,7 +345,7 @@
             transform: scale(1.05);
         }
 
-        .c-897876 {
+        .c-2fa279 {
             list-style: none;
             padding: 0;
             display: flex;
@@ -354,12 +354,12 @@
             width: 100%;
         }
 
-        .p-ebce1e .c-897876 {
+        .c-4e377a .c-2fa279 {
             list-style: inherit;
             padding-left: 40px;
         }
 
-        .c-897876 li a {
+        .c-2fa279 li a {
             display: flex;
             gap: 12px;
             align-items: center;
@@ -367,11 +367,11 @@
             justify-content: center;
         }
 
-        .c-897876 li a:hover {
+        .c-2fa279 li a:hover {
             text-decoration: underline;
         }
 
-        .h-324733 {
+        .h-6d25a6 {
             width: 24px;
             height: 24px;
             background: #389d29;
@@ -382,22 +382,22 @@
             display: inline-block;
         }
 
-        .d-e13ded {
+        .w-ee4613 {
             padding: 20px 0px 0px 300px;
         }
 
        
 
-        .q-aae69e {
+        .c-71e23f {
             padding: 0 24px;
         }
 
-        .q-aae69e img {
+        .c-71e23f img {
             width: 100%;
             border-radius: 18px;
         }
 
-        .q-aae69e p img {
+        .c-71e23f p img {
             margin: auto;
             width: 100%;
             max-height: 500px;
@@ -406,7 +406,7 @@
             display: flex;
         }
 
-        .g-084bb7 {
+        .a-9c44fe {
             display: flex;
             gap: 20px;
             flex-direction: row;
@@ -415,7 +415,7 @@
             list-style: none;
         }
 
-        .g-084bb7 a {
+        .a-9c44fe a {
             border: 2px solid #222222;
             color: #222222;
             font-weight: bold;
@@ -430,32 +430,32 @@
             align-items: center;
         }
 
-        .g-084bb7 a:hover {
+        .a-9c44fe a:hover {
             text-decoration: none;
             transition: .5s;
             filter: hue-rotate(45deg);
         }
 
-        .g-084bb7 .h-324733 {
+        .a-9c44fe .h-6d25a6 {
             width: 20px;
             height: 20px;
         }
 
-        .k-5415fe {
+        .n-e9f189 {
             display: flex;
             gap: 12px;
             justify-content: space-between;
             flex-wrap: wrap;
         }
 
-        .r-02b33a {
+        .e-37f0aa {
             width: 15%;
             position: relative;
             border-radius: 18px;
             overflow: hidden;
         }
 
-        .n-141e91 {
+        .c-121671 {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -470,16 +470,16 @@
             transition: .6s;
         }
 
-        .n-141e91 .y-2d6170, .n-141e91 .x-4a51ea {
+        .c-121671 .s-da527f, .c-121671 .s-109476 {
             width: fit-content;
         }
 
-        .r-02b33a:hover .n-141e91 {
+        .e-37f0aa:hover .c-121671 {
             opacity: 1;
             transition: .6s;
         }
 
-        .r-02b33a .e-ed342c {
+        .e-37f0aa .s-485fe5 {
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -491,21 +491,22 @@
             text-align: center;
         }
 
-        .e-aa3140 {
+        .x-501734 {
             width: 100%;
             margin: 0 auto;
         }
 
-        .x-9502a5 {
-            border: 1px solid var(--f-7473a4);
+        .h-b88bdd {
+            border: 1px solid var(--y-05923d);
             border-radius: 18px;
             margin-bottom: 15px;
             overflow: hidden;
             transition: all 0.3s ease;
         }
 
-        .b-b38747 {
+        .e-896ecd {
             background: #dd3333;
+            color: #000000;
             padding: 15px 20px;
             margin: 0;
             cursor: pointer;
@@ -515,11 +516,11 @@
             transition: all 0.3s ease;
         }
 
-        .b-b38747:hover {
+        .e-896ecd:hover {
             background: #dd3333;
         }
 
-        .b-b38747::after {
+        .e-896ecd::after {
             content: '+';
             position: absolute;
             right: 20px;
@@ -530,33 +531,34 @@
             transition: all 0.3s ease;
         }
 
-        .x-9502a5.active .b-b38747::after {
+        .h-b88bdd.active .e-896ecd::after {
             content: '−';
             transform: translateY(-50%) rotate(0deg);
         }
 
-        .g-a32e1a {
+        .q-c56e29 {
             max-height: 0;
             padding: 0 20px;
             margin: 0;
             overflow: hidden;
             background: #dd3333;
+            color: #000000;
             transition: all 0.4s ease;
             opacity: 0;
             line-height: 1.6;
         }
 
-        .x-9502a5.active .g-a32e1a {
+        .h-b88bdd.active .q-c56e29 {
             max-height: 500px;
             padding: 15px 20px;
             opacity: 1;
         }
 
-        .x-9502a5.active {
+        .h-b88bdd.active {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .g-e4d2de {
+        .v-e9fb78 {
             background: #dd3333;
             color: #000000;
             display: flex;
@@ -571,11 +573,11 @@
             border-bottom: 1px solid #C4C9DA;
         }
 
-        .g-e4d2de img, .b-44a75c img {
+        .v-e9fb78 img, .c-87283b img {
             max-height: 60px;
         }
 
-        .b-44a75c {
+        .c-87283b {
             background: #dd3333;
             color: #000000;
             display: flex;
@@ -590,7 +592,7 @@
             border-bottom: 1px solid #C4C9DA;
         }
 
-        .a-0afb79 {
+        .w-600ad1 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
@@ -602,13 +604,13 @@
             text-align:center;
         }
 
-        .a-0afb79 a {
+        .w-600ad1 a {
             text-decoration: underline;
             text-align: center;
             justify-content: center;
         }
 
-        .n-6e0736 {
+        .t-ab02fe {
             padding: 20px;
             margin: 0;
             text-align: center;
@@ -618,7 +620,7 @@
         }
 
 
-        .f-835407-overlay {
+        .z-56e121-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -631,7 +633,7 @@
             transition: opacity 0.3s ease;
         }
 
-        .f-835407-overlay.active {
+        .z-56e121-overlay.active {
             display: block;
             opacity: 1;
              z-index: 1001;
@@ -639,13 +641,13 @@
 
  
         @media (max-width: 991px) {
-            .f-835407 {
+            .z-56e121 {
                 display: flex;
             }
-            .f-835407 a{
+            .z-56e121 a{
                 width: fit-content!important;
             }
-            .m-d61968 {
+            .g-7b653c {
                 left: -100%;
                 transition: left 0.3s ease;
                 top: 0;
@@ -653,40 +655,40 @@
                 z-index: 1001;
             }
 
-            .m-d61968.active {
+            .g-7b653c.active {
                 left: 0;
             }
 
-            .d-e13ded {
+            .w-ee4613 {
                 padding: 80px 0 0 0;
             }
 
-            .r-02b33a {
+            .e-37f0aa {
                 width:100%;
             }
 
-            .a-0afb79 {
+            .w-600ad1 {
                 grid-template-columns: 1fr;
             }
-                    .q-aae69e p img {
+                    .c-71e23f p img {
             margin: auto;
             max-height: fit-content!important;
             width: 100%;
             margin: 0 auto;
             display: flex;
         }
-          .k-5415fe {
+          .n-e9f189 {
             display: grid;
             gap: 12px;
            grid-template-columns:1fr 1fr;
         }
-         .q-aae69e {
+         .c-71e23f {
             padding: 0 15px;
         }
-                .g-e4d2de img, .b-44a75c img {
+                .v-e9fb78 img, .c-87283b img {
             max-height: 30px;
         }
-         .m-d61968 {
+         .g-7b653c {
             position: fixed;
             padding: 20px;
             display: flex;
@@ -697,8 +699,8 @@
             justify-content: start;
             max-width: 250px;
             width: 100%;
-            border-right: 1px solid var(--f-7473a4);
-            background: var(--b-f0fd23);
+            border-right: 1px solid var(--y-05923d);
+            background: var(--b-f475cd);
             z-index: 1005;
             overflow-y: auto;
         }
@@ -711,14 +713,14 @@
             overflow-x: auto;
             white-space: nowrap;
             padding:0;
-            border: 2px solid var(--f-7473a4);
+            border: 2px solid var(--y-05923d);
             border-radius: 18px;
             width: 100%;
         }
         }
 
         @media (min-width: 992px) {
-            .g-c33d5d {
+            .k-ae1552 {
                 display: block!important;
             }
           
@@ -726,10 +728,10 @@
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.x-9502a5');
+            const faqItems = document.querySelectorAll('.h-b88bdd');
 
             faqItems.forEach(item => {
-                const question = item.querySelector('.b-b38747');
+                const question = item.querySelector('.e-896ecd');
 
                 question.addEventListener('click', function() {
                     faqItems.forEach(otherItem => {
@@ -741,9 +743,9 @@
                 });
             });
 
-            const hamburger = document.querySelector('.w-a33f7c');
-            const sidebar = document.querySelector('.m-d61968');
-            const overlay = document.querySelector('.f-835407-overlay');
+            const hamburger = document.querySelector('.f-4503aa');
+            const sidebar = document.querySelector('.g-7b653c');
+            const overlay = document.querySelector('.z-56e121-overlay');
 
             if (hamburger && sidebar && overlay) {
                 hamburger.addEventListener('click', function() {
@@ -772,59 +774,49 @@
 </head>
 
 <body>
-    <div class="f-835407-overlay"></div>
+    <div class="z-56e121-overlay"></div>
     
-    <header class="f-835407">
+    <header class="z-56e121">
         
-                    <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry" class="f-013fab">
+                    <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry" class="k-1daf8d">
                
        
-                                                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">
+                                                                    <a class="s-109476" href="https://thetrafficpie.com/go/">
                         Hrát hry                    </a>
                                    
     </header>
 
-    <header class="g-c33d5d">
-        <div class="v-f456d7">
+    <header class="k-ae1552">
+        <div class="s-600824">
                             <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry">
                     </div>
     </header>
     
-    <aside class="m-d61968">
-        <a class="v-f456d7" href="https://thetrafficpie.com/go/">
+    <aside class="g-7b653c">
+        <a class="s-600824" href="https://thetrafficpie.com/go/">
                             <img src="img/5f2bc968111841aa82a46dbb88a88f95.webp" alt="Hrát hry">
                     </a>
 
-        <div class="b-4feece">
-                                                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">
+        <div class="w-c4c7e6">
+                                                                    <a class="s-109476" href="https://thetrafficpie.com/go/">
                         Hrát hry                    </a>
                                     </div>
         
-        <ul class="c-897876">
+        <ul class="c-2fa279">
                     </ul>
     </aside>
     
     <main>
-        <div class="d-e13ded">
-            <div class="q-aae69e">
-                <div class="a-1baa41">
+        <div class="w-ee4613">
+            <div class="c-71e23f">
+                <div class="r-e9350e">
                                             <img src="img/e685ea8c8d49cb97b77e31b2f3943eb9.webp" alt="Hrát hry">
                                     </div>
                 
-                <ul class="g-084bb7">
+                <ul class="a-9c44fe">
                                                                         <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                                                                <span>Crash</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="https://thetrafficpie.com/go/">
                                                                                                                 <span>Betting</span>
-                                                                    </a>
-                            </li>
-                                                    <li>
-                                <a href="https://thetrafficpie.com/go/">
-                                                                                                                <span>Table Games</span>
                                                                     </a>
                             </li>
                                                     <li>
@@ -834,7 +826,12 @@
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                                                                <span>Poker</span>
+                                                                                                                <span>Slots</span>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="https://thetrafficpie.com/go/">
+                                                                                                                <span>Table Games</span>
                                                                     </a>
                             </li>
                                                     <li>
@@ -844,92 +841,97 @@
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                                                                <span>Slots</span>
+                                                                                                                <span>Live Casino</span>
                                                                     </a>
                             </li>
                                                     <li>
                                 <a href="https://thetrafficpie.com/go/">
-                                                                                                                <span>Live Casino</span>
+                                                                                                                <span>Poker</span>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="https://thetrafficpie.com/go/">
+                                                                                                                <span>Crash</span>
                                                                     </a>
                             </li>
                                                             </ul>
                 
-                <div class="k-5415fe">
-                                                                        <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                <div class="n-e9f189">
+                                                                        <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
-                                                    <div class="r-02b33a">
-                                                                <div class="n-141e91">
-                                    <a class="x-4a51ea" href="https://thetrafficpie.com/go/">Hrát nyní</a>
-                                    <a class="y-2d6170" href="https://thetrafficpie.com/go/">Demo</a>
+                                                    <div class="e-37f0aa">
+                                                                <div class="c-121671">
+                                    <a class="s-109476" href="https://thetrafficpie.com/go/">Hrát nyní</a>
+                                    <a class="s-da527f" href="https://thetrafficpie.com/go/">Demo</a>
                                 </div>
                             </div>
                                                             </div>
                 
-                <div class="p-ebce1e">
+                <div class="c-4e377a">
                     <h1>Beep Beep Casino</h1>
                     <p>Welcome bonus is considered one of the most favorable and generous gifts from casinos. At Beep Beep Casino, the welcome bonus includes a no-deposit bonus for registration and bonuses for the first four deposits. Let&#8217;s take a closer look at them:</p>
 <ul>
@@ -1048,14 +1050,14 @@
 </table>
                 </div>
 
-                <div class="e-aa3140">
-                                                                        <div class="x-9502a5 active">
-                                <p class="b-b38747">beep beep casino</p>
-                                <p class="g-a32e1a">beep beep casino</p>
+                <div class="x-501734">
+                                                                        <div class="h-b88bdd active">
+                                <p class="e-896ecd">beep beep casino</p>
+                                <p class="q-c56e29">beep beep casino</p>
                             </div>
-                                                    <div class="x-9502a5 active">
-                                <p class="b-b38747">beep beep casino</p>
-                                <p class="g-a32e1a">beep beep casino</p>
+                                                    <div class="h-b88bdd active">
+                                <p class="e-896ecd">beep beep casino</p>
+                                <p class="q-c56e29">beep beep casino</p>
                             </div>
                                                             </div>
                 
@@ -1086,7 +1088,7 @@
             </div>
             
             <footer>
-                <ul class="g-e4d2de">
+                <ul class="v-e9fb78">
                                                                         <li>
                                 <a href="https://thetrafficpie.com/go/">
                                                                     </a>
@@ -1125,7 +1127,7 @@
                             </li>
                                                             </ul>
                 
-                <ul class="b-44a75c">
+                <ul class="c-87283b">
                                                                         <li>
                                 <a href="https://thetrafficpie.com/go/">
                                                                     </a>
@@ -1156,10 +1158,10 @@
                             </li>
                                                             </ul>
                 
-                <ul class="a-0afb79">
+                <ul class="w-600ad1">
                                     </ul>
                 
-                <p class="n-6e0736">
+                <p class="t-ab02fe">
                                     </p>
             </footer>
 

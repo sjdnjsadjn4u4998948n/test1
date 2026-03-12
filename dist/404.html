@@ -9,7 +9,7 @@
 <script>
 (function(){
   try {
-    var preferredHost = "auto";
+    var preferredHost = "nonwww";
     var h = location.hostname;
     var targetHost = h;
     if (preferredHost === 'www') { if (!/^www\./i.test(h)) targetHost = 'www.' + h; }
